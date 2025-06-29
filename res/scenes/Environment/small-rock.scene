@@ -1,0 +1,162 @@
+sceneName: New Scene
+uuid: 9ef699b6-d5da-81cf-37aa-2ac8b67c985f
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [-1.04056311, 0.492504716, -0.771318555]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [-1.04056311, 0.492504716, -0.771318555, 1]
+      globalPosition: [-1.04056311, 0.492504716, -0.771318555]
+      m_isDirty: false
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [0.674297929, -0.00348918187, 0.738451123]
+          Up: [0.00235276273, 0.99999398, 0.00257660635]
+          Right: [-0.738455713, 0, 0.674302101]
+          WorldUp: [0, 1, 0]
+          Yaw: 42.3999748
+          Pitch: 0.199915811
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.77777779
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+    uuid: 25a88dfc-f62a-7c78-cd31-4da7ad4fe53d
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Environment\small-rock.scene
+    name: Small rock
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Mesh
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/env/kamien.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 6b793441-2473-02c8-61f2-2d20f3ce628d
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: a8fae096-6a2d-7bb9-6d4e-87644f0bf25a
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 34
+                    texturePath: res\textures\white_rock\Rock026_2K-JPG_Color.jpg
+                    textureType: ""
+                  normal:
+                    textureID: 35
+                    texturePath: res\textures\white_rock\Rock026_2K-JPG_NormalGL.jpg
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 33
+                    texturePath: res\textures\white_rock\Rock026_2K-JPG_Roughness.jpg
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 32
+                    texturePath: res\textures\white_rock\Rock026_2K-JPG_AmbientOcclusion.jpg
+                    textureType: ""
+                  height:
+                    textureID: 31
+                    texturePath: res\textures\white_rock\Rock026_2K-JPG_Displacement.jpg
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+        uuid: ff90a9cc-9062-676a-e6ee-ec295ef53081
+    components:
+      []
+    uuid: 7e0c5cf3-aec1-f10f-aa35-ed6bb9cd6939
+LibraryAnimations:
+  {}

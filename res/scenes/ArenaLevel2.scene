@@ -1,0 +1,3734 @@
+sceneName: ArenaLevel
+uuid: b16da101-ccef-bf10-f69c-6419f7061c88
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [31.5323277, 52.7676086, 1.93409038]
+      scale: [1, 1, 1]
+      rotation: [-0.162936583, 0.00882435031, -0.985153317, -0.0533541217]
+      modelMatrix:
+        - [-0.946747422, 0, -0.321976662, 0]
+        - [-0.0347733535, 0.994150937, 0.102248363, 0]
+        - [0.320093393, 0.1079996, -0.941209793, 0]
+        - [31.5323277, 52.7676086, 1.93409038, 1]
+      globalPosition: [31.5323277, 52.7676086, 1.93409038]
+      m_isDirty: false
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [-0.898097754, -0.435230255, 0.0632063746]
+          Up: [-0.434156418, 0.900319278, 0.0305550862]
+          Right: [-0.070204407, 0, -0.997532606]
+          WorldUp: [0, 1, 0]
+          Yaw: -85.9742661
+          Pitch: 25.7999477
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.4332875
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+    uuid: 38e56e3b-f052-7969-0a63-7f4a688cf2d9
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\ArenaLevel2.scene
+    name: ArenaLevel
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Player
+        m_enabled: true
+        transform:
+          position: [15.2945557, 12.1952581, -10.7297373]
+          scale: [0.0399999991, 0.0399999991, 0.0399999991]
+          rotation: [0.962196827, 0, -0.272355288, 0]
+          modelMatrix:
+            - [0.0340658054, 0, 0.020964751, 0]
+            - [0, 0.0399999991, 0, 0]
+            - [-0.020964751, 0, 0.0340658054, 0]
+            - [15.2945557, 12.1952581, -10.7297373, 1]
+          globalPosition: [15.2945557, 12.1952581, -10.7297373]
+          m_isDirty: false
+        children:
+          - name: AttackHitbox
+            m_enabled: true
+            transform:
+              position: [6.66574097, 83.7368622, 57.9884644]
+              scale: [1.93698764, 7.03636742, 2.3095367]
+              rotation: [0.932211518, 0, 0.361913919, 0]
+              modelMatrix:
+                - [0.0761003718, 0, -0.0145535767, 0]
+                - [0, 0.281454682, 0, 0]
+                - [0.0173527263, 0, 0.0907370821, 0]
+                - [14.3059158, 15.544733, -8.61456776, 1]
+              globalPosition: [14.3059158, 15.544733, -8.61456776]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/hitbox.lua
+                  scriptName: hitbox.lua
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [1, 1, 1]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [14.2121744, 14.5501366, -8.73344326]
+                  m_WorldMax: [14.3996572, 16.5305557, -8.49569225]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+            uuid: d4ccfabc-1df4-1d5e-d548-e140d5e111db
+          - name: Lightning Combo
+            m_enabled: true
+            transform:
+              position: [0, 5, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [0.0340658054, 0, 0.020964751, 0]
+                - [0, 0.0399999991, 0, 0]
+                - [-0.020964751, 0, 0.0340658054, 0]
+                - [15.2945557, 12.3952579, -10.7297373, 1]
+              globalPosition: [15.2945557, 12.3952579, -10.7297373]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [18, 1, 18]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [14.7992811, 12.3708706, -11.2250118]
+                  m_WorldMax: [15.7898302, 12.4108715, -10.2344627]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: true
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+              - ParticleSystem:
+                  ComponentName: Particle System
+                  Enabled: true
+                  EmissionShape: 2
+                  DrawEmissionShape: false
+                  CubeSize: [18, 50, 18]
+                  SphereRadius: 1
+                  SphereSurfaceOnly: false
+                  Emitting: false
+                  MaxParticles: 150
+                  SpawnRate: 75
+                  OneShot: true
+                  MinLifeTime: 0.5
+                  MaxLifeTime: 1
+                  MinSize: 10
+                  MaxSize: 10
+                  Gravity: [0, -9.81000042, 0]
+                  Albedo: [1, 0.688888907, 0, 1]
+                  MinInitialVelocity: [0, 1, 0]
+                  MaxInitialVelocity: [0, 1, 0]
+                  CameraPosition: [-51.0285492, 20.7533512, 21.6540546]
+                  BlendingAdditive: false
+                  EmissionMultiplier: 10
+                  UseLocalSpace: false
+                  m_Initialized: true
+                  m_Texture:
+                    textureID: 31
+                    texturePath: res\textures\kenneyparticlepack\spark_05_cleaned.png
+                    textureType: ""
+                  BillboardY: true
+                  ScaleOverTime: false
+                  BeginScaling: 0.5
+                  FadeOverTime: false
+                  BeginFading: 0.5
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/player/lightning_combo.lua
+                  scriptName: lightning_combo.lua
+            uuid: a8d29027-acaf-fcf9-b9bd-6c1cb264bfb7
+          - name: Wave Combo
+            m_enabled: true
+            transform:
+              position: [0, 0, 300]
+              scale: [1, 1, 1]
+              rotation: [-1, 7.66868453e-08, 1.1920929e-07, 7.04640257e-09]
+              modelMatrix:
+                - [0.0340658017, -5.63711466e-10, 0.0209647585, 0]
+                - [3.69552478e-09, 0.0399999991, -4.92934582e-09, 0]
+                - [-0.0209647585, 6.13494766e-09, 0.0340658017, 0]
+                - [9.00513077, 12.1952581, -0.509995461, 1]
+              globalPosition: [9.00513077, 12.1952581, -0.509995461]
+              m_isDirty: false
+            children:
+              - name: Area
+                m_enabled: true
+                transform:
+                  position: [0, 5, 0]
+                  scale: [1, 1, 1]
+                  rotation: [0.962196827, 0, -0.272355288, 0]
+                  modelMatrix:
+                    - [0.0180239528, 2.73535905e-09, 0.0357090607, 0]
+                    - [3.69552478e-09, 0.0399999991, -4.92934582e-09, 0]
+                    - [-0.0357090607, 5.52025003e-09, 0.0180239528, 0]
+                    - [9.00513077, 12.3952579, -0.509995461, 1]
+                  globalPosition: [9.00513077, 12.3952579, -0.509995461]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - CollisionShape:
+                      ComponentName: CollisionShape
+                      Enabled: true
+                      m_shapeType: 0
+                      m_boxSize: [10, 1, 22]
+                      m_capsuleRadius: 0.5
+                      m_capsuleHeight: 2
+                      m_color: [0, 1, 0]
+                      m_isVisible: false
+                      m_WorldMin: [8.52221203, 12.3708706, -0.886804223]
+                      m_WorldMax: [9.48804951, 12.4108715, -0.133186698]
+                      m_IsCollisionArea: true
+                      m_collisionMask: 1
+                      m_collisionLayer: 1
+                      m_collisionPositionOffset: [0, 0, 0]
+                  - PhysicsBody:
+                      ComponentName: PhysicsBody
+                      Enabled: true
+                      mass: 1
+                      velocity: [0, 0, 0]
+                      useGravity: true
+                      isStatic: true
+                      restitution: 0.100000001
+                      invMass: 0
+                      accumulatedForces: [0, 0, 0]
+                      linearDamping: 0.100000001
+                      isGrounded: false
+                      stabilizationPosition: [0, 0, 0]
+                uuid: 9d28e1d3-8c20-fa45-16ad-bdbd6407d0ba
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: false
+                  m_shapeType: 0
+                  m_boxSize: [10, 1, 22]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-8.48033237, -4.61875057, -10.6293192]
+                  m_WorldMax: [-7.73849773, -4.57875061, -9.66289997]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: false
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: true
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+              - ParticleSystem:
+                  ComponentName: Particle System
+                  Enabled: true
+                  EmissionShape: 2
+                  DrawEmissionShape: false
+                  CubeSize: [10, 1, 22]
+                  SphereRadius: 1
+                  SphereSurfaceOnly: false
+                  Emitting: false
+                  MaxParticles: 300
+                  SpawnRate: 100
+                  OneShot: true
+                  MinLifeTime: 0.5
+                  MaxLifeTime: 1
+                  MinSize: 2.5
+                  MaxSize: 2.5
+                  Gravity: [0, 0, 0]
+                  Albedo: [0, 1, 0.822222233, 1]
+                  MinInitialVelocity: [0, 1, 0]
+                  MaxInitialVelocity: [0, 1, 0]
+                  CameraPosition: [-51.0285492, 20.7533512, 21.6540546]
+                  BlendingAdditive: false
+                  EmissionMultiplier: 2
+                  UseLocalSpace: true
+                  m_Initialized: true
+                  m_Texture:
+                    textureID: 32
+                    texturePath: res\textures\kenneyparticlepack\twirl_01_clean.png
+                    textureType: ""
+                  BillboardY: false
+                  ScaleOverTime: false
+                  BeginScaling: 0.5
+                  FadeOverTime: false
+                  BeginFading: 0.5
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/player/wave_combo.lua
+                  scriptName: wave_combo.lua
+            uuid: d8af67e1-edf9-3565-03e9-5efbdaf087d6
+          - name: Basic Slash
+            m_enabled: true
+            transform:
+              position: [0, 0, 200]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [0.0340658054, 0, 0.020964751, 0]
+                - [0, 0.0399999991, 0, 0]
+                - [-0.020964751, 0, 0.0340658054, 0]
+                - [11.1016054, 12.1952581, -3.91657639, 1]
+              globalPosition: [11.1016054, 12.1952581, -3.91657639]
+              m_isDirty: false
+            children:
+              - name: Area
+                m_enabled: true
+                transform:
+                  position: [0, -0.6506809, 0]
+                  scale: [1, 1, 1]
+                  rotation: [0.962196827, 0, -0.272355288, 0]
+                  modelMatrix:
+                    - [0.0180239584, 0, 0.035709057, 0]
+                    - [0, 0.0399999991, 0, 0]
+                    - [-0.035709057, 0, 0.0180239584, 0]
+                    - [11.1016054, 12.1692305, -3.91657639, 1]
+                  globalPosition: [11.1016054, 12.1692305, -3.91657639]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - CollisionShape:
+                      ComponentName: CollisionShape
+                      Enabled: true
+                      m_shapeType: 0
+                      m_boxSize: [15, 1, 10]
+                      m_capsuleRadius: 0.5
+                      m_capsuleHeight: 2
+                      m_color: [0, 1, 0]
+                      m_isVisible: false
+                      m_WorldMin: [10.7878809, 12.1448431, -4.2745142]
+                      m_WorldMax: [11.4153299, 12.184844, -3.55863857]
+                      m_IsCollisionArea: true
+                      m_collisionMask: 1
+                      m_collisionLayer: 1
+                      m_collisionPositionOffset: [0, 0, 0]
+                  - PhysicsBody:
+                      ComponentName: PhysicsBody
+                      Enabled: true
+                      mass: 1
+                      velocity: [0, 0, 0]
+                      useGravity: true
+                      isStatic: true
+                      restitution: 0.100000001
+                      invMass: 0
+                      accumulatedForces: [0, 0, 0]
+                      linearDamping: 0.100000001
+                      isGrounded: false
+                      stabilizationPosition: [0, 0, 0]
+                uuid: 3816ad2f-75ac-ae19-0966-0cd663a7ab65
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: false
+                  m_shapeType: 0
+                  m_boxSize: [15, 1, 10]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-5.66001177, -4.61938095, 24.0762005]
+                  m_WorldMax: [-4.98741388, -4.57938099, 24.7970715]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: false
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: true
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+              - ParticleSystem:
+                  ComponentName: Particle System
+                  Enabled: true
+                  EmissionShape: 2
+                  DrawEmissionShape: false
+                  CubeSize: [1, 1, 1]
+                  SphereRadius: 1
+                  SphereSurfaceOnly: false
+                  Emitting: false
+                  MaxParticles: 1
+                  SpawnRate: 1
+                  OneShot: true
+                  MinLifeTime: 0.5
+                  MaxLifeTime: 0.5
+                  MinSize: 14
+                  MaxSize: 14
+                  Gravity: [0, 0, 0]
+                  Albedo: [1, 0, 0, 1]
+                  MinInitialVelocity: [0, 1, 0]
+                  MaxInitialVelocity: [0, 1, 0]
+                  CameraPosition: [-51.0285492, 20.7533512, 21.6540546]
+                  BlendingAdditive: false
+                  EmissionMultiplier: 2
+                  UseLocalSpace: true
+                  m_Initialized: true
+                  m_Texture:
+                    textureID: 33
+                    texturePath: res\textures\kenneyparticlepack\slash_01_clean.png
+                    textureType: ""
+                  BillboardY: false
+                  ScaleOverTime: false
+                  BeginScaling: 0.5
+                  FadeOverTime: false
+                  BeginFading: 0.5
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/player/basic_slash.lua
+                  scriptName: basic_slash.lua
+            uuid: cbda4926-1ed8-5d8d-955a-ef5c3f918e72
+          - name: Jump Combo
+            m_enabled: true
+            transform:
+              position: [0, 5, 0]
+              scale: [1, 1, 1]
+              rotation: [0.962196827, 0, -0.272355288, 0]
+              modelMatrix:
+                - [0.0180239584, 0, 0.035709057, 0]
+                - [0, 0.0399999991, 0, 0]
+                - [-0.035709057, 0, 0.0180239584, 0]
+                - [15.2945557, 12.3952579, -10.7297373, 1]
+              globalPosition: [15.2945557, 12.3952579, -10.7297373]
+              m_isDirty: true
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [25, 1, 25]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [14.6228924, 12.3705864, -11.4014006]
+                  m_WorldMax: [15.9662189, 12.4105873, -10.058074]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: true
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+              - ParticleSystem:
+                  ComponentName: Particle System
+                  Enabled: true
+                  EmissionShape: 2
+                  DrawEmissionShape: false
+                  CubeSize: [25, 1, 25]
+                  SphereRadius: 1
+                  SphereSurfaceOnly: false
+                  Emitting: false
+                  MaxParticles: 400
+                  SpawnRate: 100
+                  OneShot: true
+                  MinLifeTime: 0.200000003
+                  MaxLifeTime: 0.5
+                  MinSize: 1
+                  MaxSize: 1
+                  Gravity: [0, 5, 0]
+                  Albedo: [0.318518519, 0.318518519, 0.318518519, 0.196078435]
+                  MinInitialVelocity: [0, 1, 0]
+                  MaxInitialVelocity: [0, 1, 0]
+                  CameraPosition: [-51.0285492, 20.7533512, 21.6540546]
+                  BlendingAdditive: false
+                  EmissionMultiplier: 2
+                  UseLocalSpace: false
+                  m_Initialized: true
+                  m_Texture:
+                    textureID: 34
+                    texturePath: res\textures\kenneyparticlepack\smoke_06_clean.png
+                    textureType: ""
+                  BillboardY: false
+                  ScaleOverTime: false
+                  BeginScaling: 0.5
+                  FadeOverTime: false
+                  BeginFading: 0.5
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/player/jump_combo.lua
+                  scriptName: jump_combo.lua
+            uuid: 3e03c4f6-1e34-ade5-972b-54946bc6a93a
+        components:
+          - AudioSource:
+              ComponentName: Audio Source
+              Enabled: true
+              pos: [15.2945557, 12.1952581, -10.7297373]
+              bankPath: res\audio\orpheus\Build\Desktop\OrpheusSounds.bank
+              eventNames:
+                []
+              isAllPaused: false
+              flag: -1045610926
+              affectedByDSP: false
+              activeEvents:
+                []
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/orpheus/orpheus2.fbx
+              MaterialBase:
+                materialName: Material
+                uuid: d30c0f72-aa78-bcdf-5da1-bd50b49477ae
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: texture_specular
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: fc0b6334-e950-930a-4a2d-f3e25e19758b
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 38
+                    texturePath: res\models\orpheus\orpheus_diffuse.png
+                    textureType: ""
+                  normal:
+                    textureID: 37
+                    texturePath: res\models\orpheus\orpheus_normal.png
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 36
+                    texturePath: res\models\orpheus\orpheus_specular.png
+                    textureType: ""
+                  emissive:
+                    textureID: 35
+                    texturePath: res\models\orpheus\orpheus_glow.png
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - PhysicsBody:
+              ComponentName: PhysicsBody
+              Enabled: true
+              mass: 1
+              velocity: [0, 0, 0]
+              useGravity: true
+              isStatic: false
+              restitution: 0
+              invMass: 1
+              accumulatedForces: [0, 0, 0]
+              linearDamping: 0.680000007
+              isGrounded: true
+              stabilizationPosition: [0, 0, 0]
+          - CollisionShape:
+              ComponentName: CollisionShape
+              Enabled: true
+              m_shapeType: 1
+              m_boxSize: [1, 1, 1]
+              m_capsuleRadius: 30
+              m_capsuleHeight: 190
+              m_color: [0, 1, 0]
+              m_isVisible: false
+              m_WorldMin: [14.0945559, 11.6908712, -11.9297371]
+              m_WorldMax: [16.4945564, 19.2908726, -9.52973747]
+              m_IsCollisionArea: false
+              m_collisionMask: 1
+              m_collisionLayer: 2
+              m_collisionPositionOffset: [0, 3.29999995, 0]
+          - Animator:
+              ComponentName: Animator
+              Enabled: true
+              CurrentAnimation: combo3
+              Playing: true
+              m_Blending: false
+              m_BlendFactor: 1
+              animations:
+                animation:
+                  animationName: idle
+                  animationPath: res/animations/idle.fbx
+                animation:
+                  animationName: run
+                  animationPath: res/animations/run.fbx
+                animation:
+                  animationName: attack
+                  animationPath: res/animations/stab1.fbx
+                animation:
+                  animationName: roll
+                  animationPath: res/animations/roll.fbx
+                animation:
+                  animationName: attack_2
+                  animationPath: res/animations/stab2.fbx
+                animation:
+                  animationName: combo1
+                  animationPath: res/animations/combo1.fbx
+                animation:
+                  animationName: combo2
+                  animationPath: res/animations/combo2.fbx
+                animation:
+                  animationName: combo3
+                  animationPath: res/animations/combo3.fbx
+                animation:
+                  animationName: die
+                  animationPath: res/animations/die.fbx
+                animation:
+                  animationName: jump
+                  animationPath: res/animations/jump.fbx
+                animation:
+                  animationName: jump_fall
+                  animationPath: res/animations/jump_fall.fbx
+              animationTransitions:
+                transition:
+                  animationBase: idle
+                  animationTarget: run
+                  duration: 0.200000003
+                  name: idle_to_run
+                transition:
+                  animationBase: run
+                  animationTarget: idle
+                  duration: 0.300000012
+                  name: run_to_idle
+                transition:
+                  animationBase: idle
+                  animationTarget: attack
+                  duration: 0.150000006
+                  name: idle_to_attack
+                transition:
+                  animationBase: attack
+                  animationTarget: idle
+                  duration: 0.200000003
+                  name: attack_to_idle
+                transition:
+                  animationBase: run
+                  animationTarget: attack
+                  duration: 0.150000006
+                  name: run_to_attack
+                transition:
+                  animationBase: attack
+                  animationTarget: run
+                  duration: 0.200000003
+                  name: attack_to_run
+                transition:
+                  animationBase: idle
+                  animationTarget: roll
+                  duration: 0.100000001
+                  name: idle_to_roll
+                transition:
+                  animationBase: roll
+                  animationTarget: idle
+                  duration: 0.25
+                  name: roll_to_idle
+                transition:
+                  animationBase: run
+                  animationTarget: roll
+                  duration: 0.0500000045
+                  name: run_to_roll
+                transition:
+                  animationBase: roll
+                  animationTarget: run
+                  duration: 0.0500000045
+                  name: roll_to_run
+                transition:
+                  animationBase: idle
+                  animationTarget: attack_2
+                  duration: 0.150000006
+                  name: idle_to_attack2
+                transition:
+                  animationBase: run
+                  animationTarget: attack_2
+                  duration: 0.150000006
+                  name: run_to_attack2
+                transition:
+                  animationBase: attack_2
+                  animationTarget: run
+                  duration: 0.150000006
+                  name: attack2_to_run
+                transition:
+                  animationBase: attack_2
+                  animationTarget: idle
+                  duration: 0.200000003
+                  name: attack2_to_idle
+                transition:
+                  animationBase: idle
+                  animationTarget: combo1
+                  duration: 0.100000001
+                  name: idle_to_combo1
+                transition:
+                  animationBase: idle
+                  animationTarget: combo2
+                  duration: 0.100000001
+                  name: idle_to_combo2
+                transition:
+                  animationBase: idle
+                  animationTarget: combo3
+                  duration: 0.100000001
+                  name: idle_to_combo3
+                transition:
+                  animationBase: combo1
+                  animationTarget: idle
+                  duration: 0.200000003
+                  name: combo1_to_idle
+                transition:
+                  animationBase: combo2
+                  animationTarget: idle
+                  duration: 0.200000003
+                  name: combo2_to_idle
+                transition:
+                  animationBase: combo3
+                  animationTarget: idle
+                  duration: 0.200000003
+                  name: combo3_to_idle
+                transition:
+                  animationBase: idle
+                  animationTarget: die
+                  duration: 0.200000003
+                  name: idle_to_die
+                transition:
+                  animationBase: idle
+                  animationTarget: jump
+                  duration: 0.150000006
+                  name: idle_to_jump
+                transition:
+                  animationBase: jump
+                  animationTarget: jump_fall
+                  duration: 0.200000003
+                  name: jump_to_jump_fall
+                transition:
+                  animationBase: jump_fall
+                  animationTarget: idle
+                  duration: 0.150000006
+                  name: jump_fall_to_idle
+                transition:
+                  animationBase: jump
+                  animationTarget: idle
+                  duration: 0.200000003
+                  name: jump_to_idle
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/player_controller.lua
+              scriptName: player_controller.lua
+          - Tag:
+              ComponentName: Tag
+              Enabled: true
+              Name: Player
+        uuid: 462a036c-a362-09a9-93e8-4318af625ddd
+      - name: TPP Camera
+        m_enabled: true
+        transform:
+          position: [16.187706, 26.5289059, 1.88628662]
+          scale: [1, 1, 1]
+          rotation: [0.805370033, 0.233981654, -0.523013413, 0.151949465]
+          modelMatrix:
+            - [0.406736672, 1.49011612e-08, 0.91354543, 0]
+            - [-0.489502192, 0.844327927, 0.217940405, 0]
+            - [-0.771331847, -0.535826862, 0.343419135, 0]
+            - [16.187706, 26.5289059, 1.88628662, 1]
+          globalPosition: [16.187706, 26.5289059, 1.88628662]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/camera/tpp_camera_controller.lua
+              scriptName: tpp_camera_controller.lua
+          - Camera:
+              ComponentName: Camera
+              Enabled: true
+              Front: [-7.92319383e-08, -0.42261824, -0.906307817]
+              Up: [-3.69464566e-08, 0.906307817, -0.42261824]
+              Right: [1, 0, -8.74227695e-08]
+              WorldUp: [0, 1, 0]
+              Yaw: 180
+              Pitch: 24.9999981
+              MovementSpeed: 12.5
+              MouseSensitivity: 0.100000001
+              Zoom: 70
+              aspectRatio: 1.4332875
+              NearPlane: 0.100000001
+              FarPlane: 400
+        uuid: 1881c08a-16e5-7a89-3a8c-c82e2485df7c
+      - name: BossMusic
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - AudioSource:
+              ComponentName: Audio Source
+              Enabled: true
+              pos: [0, 0, 0]
+              bankPath: res\audio\orpheus\Build\Desktop\BossFight.bank
+              eventNames:
+                - event:/BossFight
+              isAllPaused: false
+              flag: 1096699963
+              affectedByDSP: true
+              activeEvents:
+                - eventName: event:/BossFight
+                  isPlaying: true
+                  isPaused: false
+                  volume: 0.200000003
+                  pitch: 1
+                  parameters:
+                    - name: BossDead
+                      value: 0
+                    - name: BeatSounds
+                      value: 0
+                    - name: BegginingTransition1
+                      value: 0
+                    - name: PlayerHealth
+                      value: 1
+                    - name: MonsterAmount
+                      value: 1
+                    - name: PlayerCombo
+                      value: 0
+                    - name: BeatIntensity
+                      value: 0.504999995
+                    - name: TransitionFlag
+                      value: 1
+                    - name: FightTransition2
+                      value: 0
+        uuid: 048c1f16-0c5a-4b4a-08c8-53267aa7f48f
+      - name: World Environment
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - WorldEnvironment:
+              ComponentName: WorldEnvironment
+              Enabled: true
+              skyboxPath: res/textures/hdri/elysium.png
+              m_skyType: 0
+              irradianceStrength: 1
+              sampleDelta: 0.00999999978
+        uuid: 4d99ff05-c043-10d8-85a5-f3de42e4612a
+      - name: BuildingMain
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [16, 13, 16]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [16, 0, 0, 0]
+            - [0, 13, 0, 0]
+            - [0, 0, 16, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/blockout/ArenaEmpty.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 7f4d6e7a-1f4b-c20a-dff2-c39bcf142fdc
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 65
+                    texturePath: res/models/blockout/textures/rock_16_color.jpg
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 60
+                    texturePath: res/models/blockout/textures/rock_16_roughness.jpg
+                    textureType: texture_roughness
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: 463f38c8-6098-d096-3a92-3dc049b0499f
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 42
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Color.jpg
+                    textureType: ""
+                  normal:
+                    textureID: 41
+                    texturePath: res\textures\marble\Marble021_1K-JPG_NormalGL.jpg
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 39
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Roughness.jpg
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 40
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Displacement.jpg
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: true
+                triplanarTilingScale: 0.400000006
+          - CollisionShape:
+              ComponentName: CollisionShape
+              Enabled: true
+              m_shapeType: 0
+              m_boxSize: [80, 1.79999995, 80]
+              m_capsuleRadius: 0.5
+              m_capsuleHeight: 2
+              m_color: [0, 1, 0]
+              m_isVisible: false
+              m_WorldMin: [-10240, -152.099991, -10240]
+              m_WorldMax: [10240, 152.099991, 10240]
+              m_IsCollisionArea: false
+              m_collisionMask: 1
+              m_collisionLayer: 1
+              m_collisionPositionOffset: [0, 0, 0]
+          - PhysicsBody:
+              ComponentName: PhysicsBody
+              Enabled: true
+              mass: 0
+              velocity: [0, 0, 0]
+              useGravity: false
+              isStatic: true
+              restitution: 0
+              invMass: 0
+              accumulatedForces: [0, 0, 0]
+              linearDamping: 0
+              isGrounded: false
+              stabilizationPosition: [0, 0, 0]
+        uuid: f8711cfe-d5a0-9239-cd77-5d8266327ec7
+      - name: Lines
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [16, 13, 16]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [16, 0, 0, 0]
+            - [0, 13, 0, 0]
+            - [0, 0, 16, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/blockout/ArenaLight.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 82707b4d-6e79-c6c3-88e2-0d3cf07677fb
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - PointLight:
+              ComponentName: Point Light
+              Enabled: true
+              diffuse: [0.0976680219, 0.65925926, 0.621819735]
+              specular: [0.092592597, 0.0521262027, 0.0521262027]
+              ambient: [0.550000012, 0.550000012, 0.550000012]
+              intensity: 4.27430725
+              ambientIntensity: 0.00999999978
+              constant: 1.02199996
+              linear: 0.101000004
+              quadratic: 0.0419999994
+              castShadows: false
+              shadowDistance: 50
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/pointLightBloom.lua
+              scriptName: pointLightBloom.lua
+        uuid: cc6da7da-69a5-9221-7287-47f085d35d11
+      - name: PointLight
+        m_enabled: true
+        transform:
+          position: [0, 93.6551895, 0]
+          scale: [1, 1, 1]
+          rotation: [0.707108378, -0.707105279, -0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 4.23192978e-06, -1.00000012, 0]
+            - [0, 1.00000012, 4.23192978e-06, 0]
+            - [0, 93.6551895, 0, 1]
+          globalPosition: [0, 93.6551895, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - PointLight:
+              ComponentName: Point Light
+              Enabled: true
+              diffuse: [0.677777767, 1, 0.462962985]
+              specular: [0.422222257, 1, 0]
+              ambient: [0.874074101, 0.848175585, 0.848175585]
+              intensity: 13
+              ambientIntensity: 0.00100000005
+              constant: 1.17499995
+              linear: 0.201000005
+              quadratic: 0.0799999982
+              castShadows: true
+              shadowDistance: 197
+          - SpotLight:
+              ComponentName: Spot Light
+              Enabled: true
+              diffuse: [0.855555534, 0.811897516, 0.364403278]
+              specular: [1, 1, 1]
+              ambient: [0, 0, 0]
+              intensity: 50.2900009
+              ambientIntensity: 0.300000012
+              constant: 1.29299998
+              linear: 0.66900003
+              quadratic: 0.00499999989
+              direction: [0, -1.00000012, -4.23192978e-06]
+              innerCutOff: 0.0890000015
+              outerCutOff: 1.68900001
+              castShadows: true
+              shadowDistance: 234
+          - DirectionalLight:
+              ComponentName: Directional Light
+              Enabled: true
+              diffuse: [0.400000006, 0.400000006, 0.400000006]
+              specular: [0.5, 0.5, 0.5]
+              ambient: [0.0500000007, 0.0500000007, 0.0500000007]
+              intensity: 1.5
+              ambientIntensity: 0.00999999978
+              direction: [0, -1.00000012, -4.23192978e-06]
+        uuid: 0b7f4327-fe33-e9e4-e912-df7cec55526b
+      - isScene: true
+        pathToString: res\scenes\UI\ui.scene
+        name: UI
+        m_enabled: false
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        components:
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/ui/ui.lua
+              scriptName: ui.lua
+        uuid: ebc1f16b-f775-92f3-9ab6-63012e972b9e
+      - name: Boss
+        m_enabled: false
+        transform:
+          position: [-24.7299995, 18.396944, 8.80000019]
+          scale: [1, 1, 1]
+          rotation: [-0.525319755, 0, -0.850904882, 0]
+          modelMatrix:
+            - [-0.448078275, 0, -0.893994272, 0]
+            - [0, 1, 0, 0]
+            - [0.893994272, 0, -0.448078275, 0]
+            - [-24.7299995, 18.396944, 8.80000019, 1]
+          globalPosition: [-24.7299995, 18.396944, 8.80000019]
+          m_isDirty: false
+        children:
+          - name: Mesh
+            m_enabled: false
+            transform:
+              position: [0.106213719, -6.89310074, -0.869033813]
+              scale: [0.0799999982, 0.0799999982, 0.0799999982]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [-0.0358462594, 0, -0.0715195388, 0]
+                - [0, 0.0799999982, 0, 0]
+                - [0.0715195388, 0, -0.0358462594, 0]
+                - [-25.5545025, 11.5038433, 9.09444046, 1]
+              globalPosition: [-25.5545025, 11.5038433, 9.09444046]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - MeshInstance:
+                  ComponentName: MeshInstance
+                  Enabled: true
+                  directory: ""
+                  m_modelPath: res/models/hades/hades.fbx
+                  MaterialBase:
+                    materialName: Material
+                    uuid: 54e3bd8c-d34b-064d-ab9b-6a6f3bcb2ff3
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: texture_diffuse
+                      normal:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      ambientOcclusion:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: texture_specular
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+                  MaterialOverride:
+                    materialName: Material
+                    uuid: 86ea04e7-6fe4-72e7-a431-928a6d4df4d5
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 64
+                        texturePath: res\textures\hades\bear_diffuse.png
+                        textureType: ""
+                      normal:
+                        textureID: 63
+                        texturePath: res\textures\hades\bear_normal.png
+                        textureType: ""
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      ambientOcclusion:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 59
+                        texturePath: res\textures\hades\bear_specular.png
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+              - Animator:
+                  ComponentName: Animator
+                  Enabled: true
+                  CurrentAnimation: ""
+                  Playing: false
+                  m_Blending: true
+                  m_BlendFactor: 1
+                  animations:
+                    animation:
+                      animationName: hades_run
+                      animationPath: res/animations/hades/hades_run.fbx
+                    animation:
+                      animationName: hades_idle
+                      animationPath: res/animations/hades/hades_idle.fbx
+                    animation:
+                      animationName: hades_guitar
+                      animationPath: res/animations/hades/hades_guitar.fbx
+                    animation:
+                      animationName: hades_stun
+                      animationPath: res/animations/hades/hades_stun.fbx
+                  animationTransitions:
+                    transition:
+                      animationBase: hades_idle
+                      animationTarget: hades_run
+                      duration: 0.25
+                      name: idle-to-run
+                    transition:
+                      animationBase: hades_run
+                      animationTarget: hades_idle
+                      duration: 0.25
+                      name: run-to-idle
+                    transition:
+                      animationBase: hades_run
+                      animationTarget: hades_stun
+                      duration: 0.200000003
+                      name: run-to-stun
+                    transition:
+                      animationBase: hades_stun
+                      animationTarget: hades_idle
+                      duration: 0.25
+                      name: stun-to-idle
+                    transition:
+                      animationBase: hades_idle
+                      animationTarget: hades_guitar
+                      duration: 0.300000012
+                      name: idle-to-guitar
+            uuid: eabeb082-f7fb-e56b-394e-b646a275bb7b
+          - name: Rush Particles
+            m_enabled: false
+            transform:
+              position: [0, -3.2051599, 0.102208257]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [-0.448078275, 0, -0.893994272, 0]
+                - [0, 1, 0, 0]
+                - [0.893994272, 0, -0.448078275, 0]
+                - [-24.6386261, 15.1917839, 8.75420284, 1]
+              globalPosition: [-24.6386261, 15.1917839, 8.75420284]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - ParticleSystem:
+                  ComponentName: Particle System
+                  Enabled: true
+                  EmissionShape: 1
+                  DrawEmissionShape: false
+                  CubeSize: [1, 1, 1]
+                  SphereRadius: 1
+                  SphereSurfaceOnly: false
+                  Emitting: false
+                  MaxParticles: 300
+                  SpawnRate: 100
+                  OneShot: false
+                  MinLifeTime: 0.800000012
+                  MaxLifeTime: 2
+                  MinSize: 1
+                  MaxSize: 1
+                  Gravity: [0, 5.69999981, 0]
+                  Albedo: [1, 0.114814818, 0.114814818, 1]
+                  MinInitialVelocity: [0, 1.29999995, 0]
+                  MaxInitialVelocity: [0, 2.29999995, 0]
+                  CameraPosition: [33.3506317, 20.766901, -12.2019701]
+                  BlendingAdditive: true
+                  EmissionMultiplier: 8
+                  UseLocalSpace: false
+                  m_Initialized: true
+                  m_Texture:
+                    textureID: 55
+                    texturePath: res\textures\kenneyparticlepack\circle_05.png
+                    textureType: ""
+                  BillboardY: false
+                  ScaleOverTime: false
+                  BeginScaling: 0.5
+                  FadeOverTime: false
+                  BeginFading: 0.5
+            uuid: 66d6d4f1-b38a-0f87-58d5-7835d1059f87
+          - name: Teleport Particles
+            m_enabled: false
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [-0.448078275, 0, -0.893994272, 0]
+                - [0, 1, 0, 0]
+                - [0.893994272, 0, -0.448078275, 0]
+                - [-24.7299995, 18.396944, 8.80000019, 1]
+              globalPosition: [-24.7299995, 18.396944, 8.80000019]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - ParticleSystem:
+                  ComponentName: Particle System
+                  Enabled: true
+                  EmissionShape: 1
+                  DrawEmissionShape: false
+                  CubeSize: [1, 1, 1]
+                  SphereRadius: 4.51999998
+                  SphereSurfaceOnly: true
+                  Emitting: false
+                  MaxParticles: 500
+                  SpawnRate: 300
+                  OneShot: true
+                  MinLifeTime: 1.79999995
+                  MaxLifeTime: 2.29999995
+                  MinSize: 1
+                  MaxSize: 1
+                  Gravity: [0, 0.889999986, 0]
+                  Albedo: [1, 0.577777743, 0, 1]
+                  MinInitialVelocity: [0, 1, 0]
+                  MaxInitialVelocity: [0, 1, 0]
+                  CameraPosition: [33.3506317, 20.766901, -12.2019701]
+                  BlendingAdditive: true
+                  EmissionMultiplier: 108
+                  UseLocalSpace: false
+                  m_Initialized: true
+                  m_Texture:
+                    textureID: 54
+                    texturePath: res\textures\kenneyparticlepack\smoke_01.png
+                    textureType: ""
+                  BillboardY: false
+                  ScaleOverTime: false
+                  BeginScaling: 0.5
+                  FadeOverTime: false
+                  BeginFading: 0.5
+            uuid: 3476cdb4-f967-c798-6d3c-4832ad6466ae
+          - name: Path
+            m_enabled: false
+            transform:
+              position: [0.153929383, -7.16938686, 24.515461]
+              scale: [1, 0.540385902, 24.7382946]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [-0.448078275, 0, -0.893994272, 0]
+                - [0, 0.540385902, 0, 0]
+                - [22.1158943, 0, -11.084692, 0]
+                - [-2.88228989, 11.2275572, -2.32245731, 1]
+              globalPosition: [-2.8822906, 11.2275572, -2.32245684]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - MeshInstance:
+                  ComponentName: MeshInstance
+                  Enabled: true
+                  directory: ""
+                  m_modelPath: res/models/cube/cube.obj
+                  MaterialBase:
+                    materialName: Material
+                    uuid: 38e49d72-fa60-e040-9bec-5545bdd54d9a
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 57
+                        texturePath: res/models/cube/plastic.jpg
+                        textureType: texture_diffuse
+                      normal:
+                        textureID: 58
+                        texturePath: res/models/cube/normal.jpg
+                        textureType: texture_normal
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 56
+                        texturePath: res/models/cube/roughness.jpg
+                        textureType: texture_roughness
+                      ambientOcclusion:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+                  density: -0.344999999
+                  samples: 6
+                  fogColor: [1, 1, 0]
+                  scattering: 0.537999988
+            uuid: f0a77b94-8e28-21b3-a627-45b35db19f00
+          - name: Hitbox
+            m_enabled: false
+            transform:
+              position: [-0.139526218, -0.00023651123, 1.43413734]
+              scale: [1, 1, 1]
+              rotation: [0.986288488, -5.93379248e-08, 0.16503033, -4.98860189e-08]
+              modelMatrix:
+                - [-0.714697897, -1.17989131e-07, -0.699433208, 0]
+                - [-1.54677821e-07, 1, -1.06389066e-08, 0]
+                - [0.699433208, 1.00583208e-07, -0.714697897, 0]
+                - [-23.3853703, 18.3967075, 8.28213024, 1]
+              globalPosition: [-23.3853703, 18.3967075, 8.28213024]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [11.5, 19.5, 9]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-33.1227226, 8.64670658, 2.8859849]
+                  m_WorldMax: [-18.6753883, 28.1467094, 16.3986855]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+            uuid: 0076138e-2681-f11e-6b80-ad1d70199319
+        components:
+          - AudioSource:
+              ComponentName: Audio Source
+              Enabled: true
+              pos: [-24.7299995, 18.396944, 8.80000019]
+              bankPath: res\audio\orpheus\Build\Desktop\BossSounds.bank
+              eventNames:
+                - event:/Hades_Roar
+                - event:/Hades_OnHit
+                - event:/Hades_LightingBolt
+              isAllPaused: false
+              flag: -988060512
+              affectedByDSP: false
+              activeEvents:
+                []
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/boss/boss_bhvr.lua
+              scriptName: boss_bhvr.lua
+          - CollisionShape:
+              ComponentName: CollisionShape
+              Enabled: true
+              m_shapeType: 0
+              m_boxSize: [8, 14.3000002, 9.10000038]
+              m_capsuleRadius: 0.5
+              m_capsuleHeight: 2
+              m_color: [0, 1, 0]
+              m_isVisible: false
+              m_WorldMin: [-30.3443871, 11.2468548, 3.52352738]
+              m_WorldMax: [-19.115612, 25.546854, 14.0764732]
+              m_IsCollisionArea: false
+              m_collisionMask: 3
+              m_collisionLayer: 2
+              m_collisionPositionOffset: [0, 0, 0]
+          - PhysicsBody:
+              ComponentName: PhysicsBody
+              Enabled: true
+              mass: 120
+              velocity: [4.23030578e-12, 0, 7.00308075e-11]
+              useGravity: true
+              isStatic: false
+              restitution: 0.100000001
+              invMass: 0.00833333377
+              accumulatedForces: [0, 0, 0]
+              linearDamping: 0.100000001
+              isGrounded: true
+              stabilizationPosition: [0, 0, 0]
+          - Tag:
+              ComponentName: Tag
+              Enabled: true
+              Name: Boss
+        uuid: e7bdb661-9833-6c46-7312-cb1657bc2028
+      - name: Thunder
+        m_enabled: true
+        transform:
+          position: [32.4701271, 35.1223259, 7.72337866]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [32.4701271, 35.1223259, 7.72337866, 1]
+          globalPosition: [32.4701271, 35.1223259, 7.72337866]
+          m_isDirty: false
+        children:
+          - name: Tracer
+            m_enabled: true
+            transform:
+              position: [0, -39.5905991, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [32.4701271, -4.46827316, 7.72337866, 1]
+              globalPosition: [32.4701271, -4.46827316, 7.72337866]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - ParticleSystem:
+                  ComponentName: Particle System
+                  Enabled: true
+                  EmissionShape: 0
+                  DrawEmissionShape: false
+                  CubeSize: [1, 1, 1]
+                  SphereRadius: 1
+                  SphereSurfaceOnly: false
+                  Emitting: false
+                  MaxParticles: 300
+                  SpawnRate: 50
+                  OneShot: false
+                  MinLifeTime: 0.699999988
+                  MaxLifeTime: 1.29999995
+                  MinSize: 5.4000001
+                  MaxSize: 6.19999981
+                  Gravity: [0, 0, 0]
+                  Albedo: [1, 0, 0, 1]
+                  MinInitialVelocity: [-2, 0, -2]
+                  MaxInitialVelocity: [2, 0, 2]
+                  CameraPosition: [-51.0285492, 20.7533512, 21.6540546]
+                  BlendingAdditive: false
+                  EmissionMultiplier: 2
+                  UseLocalSpace: false
+                  m_Initialized: true
+                  m_Texture:
+                    textureID: 62
+                    texturePath: res\textures\kenneyparticlepack\spark_01.png
+                    textureType: ""
+                  BillboardY: false
+                  ScaleOverTime: false
+                  BeginScaling: 0.5
+                  FadeOverTime: false
+                  BeginFading: 0.5
+            uuid: 0ac40cba-db34-fabf-5151-6bcb536cffad
+        components:
+          - ParticleSystem:
+              ComponentName: Particle System
+              Enabled: true
+              EmissionShape: 2
+              DrawEmissionShape: false
+              CubeSize: [1, 100, 1]
+              SphereRadius: 1
+              SphereSurfaceOnly: false
+              Emitting: false
+              MaxParticles: 500
+              SpawnRate: 240
+              OneShot: true
+              MinLifeTime: 0.800000012
+              MaxLifeTime: 1
+              MinSize: 5
+              MaxSize: 6
+              Gravity: [0, 0, 0]
+              Albedo: [0, 0.555555582, 1, 1]
+              MinInitialVelocity: [0, 0, 0]
+              MaxInitialVelocity: [0, 0, 0]
+              CameraPosition: [-51.0285492, 20.7533512, 21.6540546]
+              BlendingAdditive: false
+              EmissionMultiplier: 199
+              UseLocalSpace: false
+              m_Initialized: true
+              m_Texture:
+                textureID: 61
+                texturePath: res\textures\kenneyparticlepack\spark_06.png
+                textureType: ""
+              BillboardY: false
+              ScaleOverTime: false
+              BeginScaling: 0.5
+              FadeOverTime: false
+              BeginFading: 0.5
+        uuid: 46b7ae5c-5b79-0fff-50b0-01ac1d38be61
+      - name: Volcanos
+        m_enabled: true
+        transform:
+          position: [0, 6.5, 0]
+          scale: [7.5, 7.5, 7.19999981]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [7.5, 0, 0, 0]
+            - [0, 7.5, 0, 0]
+            - [0, 0, 7.19999981, 0]
+            - [0, 6.5, 0, 1]
+          globalPosition: [0, 6.5, 0]
+          m_isDirty: false
+        children:
+          - isScene: true
+            pathToString: res\scenes\Objects\volcano.scene
+            name: VolcanoFirework
+            m_enabled: true
+            transform:
+              position: [11.5618534, 1.83988118, -1.31589925]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [7.5, 0, 0, 0]
+                - [0, 7.5, 0, 0]
+                - [0, 0, 7.19999981, 0]
+                - [86.7138977, 20.2991085, -9.47447395, 1]
+              globalPosition: [86.7138977, 20.2991085, -9.47447395]
+              m_isDirty: false
+            components:
+              []
+            uuid: 1a9fcf72-3f39-a3ec-e92a-f5f9ee4c1e5c
+          - isScene: true
+            pathToString: res\scenes\Objects\volcano.scene
+            name: VolcanoFirework1
+            m_enabled: true
+            transform:
+              position: [0.328404695, 1.83878326, -12.2822838]
+              scale: [1, 1.00056827, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [7.5, 0, 0, 0]
+                - [0, 7.50426197, 0, 0]
+                - [0, 0, 7.19999981, 0]
+                - [2.46303511, 20.2908745, -88.4324417, 1]
+              globalPosition: [2.46303511, 20.2908745, -88.4324417]
+              m_isDirty: false
+            components:
+              []
+            uuid: ec791d9c-089a-dae4-bdda-81933003d307
+          - isScene: true
+            pathToString: res\scenes\Objects\volcano.scene
+            name: VolcanoFirework2
+            m_enabled: true
+            transform:
+              position: [5.42889071, 1.80109596, 10.495141]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [7.5, 0, 0, 0]
+                - [0, 7.5, 0, 0]
+                - [0, 0, 7.19999981, 0]
+                - [40.7166786, 20.0082207, 75.5650101, 1]
+              globalPosition: [40.7166786, 20.0082207, 75.5650101]
+              m_isDirty: false
+            components:
+              []
+            uuid: a6a98e11-c5c1-5be2-de5f-e64985a6dbe4
+        components:
+          []
+        uuid: 162c47f7-261f-b720-f13d-c652f02911bf
+      - name: Environment
+        m_enabled: false
+        transform:
+          position: [0, 0, 0]
+          scale: [6.0999999, 10, 6.0999999]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [6.0999999, 0, 0, 0]
+            - [0, 10, 0, 0]
+            - [0, 0, 6.0999999, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/blockout/arenaLevelLEnvironment.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 4ab5b377-1a44-2d91-ca55-8389b2e777a4
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              density: 0.0209999997
+              samples: 3
+              fogColor: [0.699186981, 0.699186981, 0.699186981]
+              scattering: 0
+        uuid: 1c39621b-7d02-e0b1-675e-2a6c0447e9ed
+      - name: DjPanel
+        m_enabled: true
+        transform:
+          position: [-122.628822, 5.38841391, 27.2756653]
+          scale: [10, 10, 10]
+          rotation: [-0.165044218, -1.04766798e-06, 0.986286163, -1.04766798e-06]
+          modelMatrix:
+            - [-9.45520782, -1.7207778e-05, 3.25561666, 0]
+            - [-2.41242396e-05, 10, -1.7207778e-05, 0]
+            - [-3.25561666, -2.41242396e-05, -9.45520782, 0]
+            - [-122.628822, 5.38841391, 27.2756653, 1]
+          globalPosition: [-122.628822, 5.38841391, 27.2756653]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/djPanel/djPanel.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 04ed1e7a-c4dc-3714-fcce-93d39b52d486
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              density: 0.0250000004
+              samples: 1
+              fogColor: [1, 0.100000024, 0.100000024]
+              scattering: 2.83400011
+        uuid: 3edb0a8e-f90d-450d-b224-33446eb35c75
+      - name: Walls
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [-53.7072144, 12.0752325, -10.8112736]
+              scale: [1.83783543, 0.999999821, 1.80056012]
+              rotation: [0.825570881, -0.000110434128, 0.564298451, 8.39391141e-05]
+              modelMatrix:
+                - [0.667381465, 2.56557578e-05, -1.71237886, 0]
+                - [-0.000263230933, 0.999999762, -8.76089543e-05, 0]
+                - [1.67764807, 0.000498891692, 0.653845489, 0]
+                - [-53.7072144, 12.0752325, -10.8112736, 1]
+              globalPosition: [-53.7072144, 12.0752325, -10.8112736]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [58.4000015, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-92.5460968, -0.427038193, -103.884125]
+                  m_WorldMax: [-14.8683281, 24.5775032, 82.2615738]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 5433c35e-82bd-789b-84c2-73b31534072a
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [-38.659008, 13.1686106, -38.0920601]
+              scale: [1, 1, 2.79999995]
+              rotation: [0.963558197, 0, 0.267498761, 0]
+              modelMatrix:
+                - [0.856888831, 0, -0.515501261, 0]
+                - [0, 1, 0, 0]
+                - [1.44340348, 0, 2.39928865, 0]
+                - [-38.659008, 13.1686106, -38.0920601, 1]
+              globalPosition: [-38.659008, 13.1686106, -38.0920601]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [57.9000015, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-67.5074692, 0.668610573, -59.7338295]
+                  m_WorldMax: [-9.81054497, 25.6686096, -16.4502907]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: dfe3980b-1fd9-ea61-832d-3307bfaa58a7
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [-20.1165657, 10.533946, -52.1557732]
+              scale: [1, 1, 3.4000001]
+              rotation: [0.99995178, 0, -0.00982063264, 0]
+              modelMatrix:
+                - [0.999807119, 0, 0.019640319, 0]
+                - [0, 1, 0, 0]
+                - [-0.0667770877, 0, 3.39934421, 0]
+                - [-20.1165657, 10.533946, -52.1557732, 1]
+              globalPosition: [-20.1165657, 10.533946, -52.1557732]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [100, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-70.3339615, -1.96605396, -64.6955566]
+                  m_WorldMax: [30.100832, 23.033947, -39.6159859]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 8465fb8d-08d7-7362-ccd2-5ee62c7290c2
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [20.6728783, 9.99998951, -47.4946709]
+              scale: [1, 1, 3.20000005]
+              rotation: [0.939921916, 0, -0.341389567, 0]
+              modelMatrix:
+                - [0.766906321, 0, 0.641759098, 0]
+                - [0, 1, 0, 0]
+                - [-2.05362916, 0, 2.45410037, 0]
+                - [20.6728783, 9.99998951, -47.4946709, 1]
+              globalPosition: [20.6728783, 9.99998951, -47.4946709]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [84.5, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-18.3005257, -2.50001049, -82.4621124]
+                  m_WorldMax: [59.6462822, 22.4999886, -12.5272255]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 7910eb9b-63fd-6c27-44a3-702ad820431c
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [51.560257, 10.999939, -17.6622562]
+              scale: [1, 1, 3.5]
+              rotation: [0.751155674, 3.10563314e-06, -0.660125077, 2.60581237e-06]
+              modelMatrix:
+                - [0.128469765, -1.85470981e-07, 0.991713405, 0]
+                - [-8.0149548e-06, 1, 1.22530355e-06, 0]
+                - [-3.47099686, -2.83708305e-05, 0.449644178, 0]
+                - [51.560257, 10.999939, -17.6622562, 1]
+              globalPosition: [51.560257, 10.999939, -17.6622562]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [100, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [32.9881783, -1.50016975, -68.821701]
+                  m_WorldMax: [70.1323395, 23.5000477, 33.4971848]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 72d53ff1-c36a-fed9-fb92-48b90a0aba20
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [49.8854713, 11, 18.3033619]
+              scale: [1, 1, 3.81440973]
+              rotation: [0.490765572, -0.0151813552, -0.871151209, 0.003770913]
+              modelMatrix:
+                - [-0.517837405, 0.0301517788, 0.854947567, 0]
+                - [0.0227492433, 0.999510586, -0.021471044, 0]
+                - [-3.26199389, 0.031777475, -1.97689378, 0]
+                - [49.8854713, 11, 18.3033619, 1]
+              globalPosition: [49.8854713, 11, 18.3033619]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [90.0999985, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [13.8299503, -2.97343159, -28.0210953]
+                  m_WorldMax: [85.9409943, 24.9734306, 64.6278229]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 3f7cf743-4bcd-af86-ca50-77c0df3f2a62
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [34.3451843, 10, 44.0976257]
+              scale: [1, 1, 3.79999995]
+              rotation: [0.965159237, 0, 0.261663258, 0]
+              modelMatrix:
+                - [0.863064647, 0, -0.505093396, 0]
+                - [0, 1, 0, 0]
+                - [1.91935492, 0, 3.27964568, 0]
+                - [34.3451843, 10, 44.0976257, 1]
+              globalPosition: [34.3451843, 10, 44.0976257]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [77.5999985, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-6.43527222, -2.5, 12.0373478]
+                  m_WorldMax: [75.1256409, 22.5, 76.1579056]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 823ba8ae-edfe-a2ae-d8e3-694a46d13a8e
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [12.914835, 10, 51.9558983]
+              scale: [1, 1, 3.22209239]
+              rotation: [0.998861909, 0, 0.0476956181, 0]
+              modelMatrix:
+                - [0.995450258, 0, -0.0952826738, 0]
+                - [0, 1, 0, 0]
+                - [0.307009578, 0, 3.20743275, 0]
+                - [12.914835, 10, 51.9558983, 1]
+              globalPosition: [12.914835, 10, 51.9558983]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [100, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-37.8468933, -2.5, 36.8571205]
+                  m_WorldMax: [63.6765633, 22.5, 67.0546722]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 74adaaf0-6160-163c-6c3c-33862f2fec94
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [-11.7274466, 9.99999809, 54.4239235]
+              scale: [1, 1, 3.5531373]
+              rotation: [0.9872787, 0, -0.15899989, 0]
+              modelMatrix:
+                - [0.949438095, 0, 0.313954413, 0]
+                - [0, 1, 0, 0]
+                - [-1.1155231, 0, 3.3734839, 0]
+                - [-11.7274466, 9.99999809, 54.4239235, 1]
+              globalPosition: [-11.7274466, 9.99999809, 54.4239235]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [100, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-63.1629562, -2.50000191, 26.7397537]
+                  m_WorldMax: [39.708065, 22.4999981, 82.1081009]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 08fb2983-65f5-6c0a-2db7-1499e9b38a5d
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [-38.1783333, 10.9997787, 37.7129974]
+              scale: [1, 1, 2.58222771]
+              rotation: [0.920669198, 0, -0.390343726, 0]
+              modelMatrix:
+                - [0.695263565, 0, 0.718754888, 0]
+                - [0, 1, 0, 0]
+                - [-1.85598874, 0, 1.79532886, 0]
+                - [-38.1783333, 10.9997787, 37.7129974, 1]
+              globalPosition: [-38.1783333, 10.9997787, 37.7129974]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [98, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-77.0388336, -1.50022125, -2.14194107]
+                  m_WorldMax: [0.682163239, 23.4997787, 77.5679321]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: b9013df0-7295-7a04-2c24-9a49fadfff25
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [-49.7826843, 12.1525908, 22.051342]
+              scale: [2.06588078, 1, 3.71801758]
+              rotation: [0.812680066, 0, -0.582710147, 0]
+              modelMatrix:
+                - [0.662936509, 0, 1.95662427, 0]
+                - [0, 1, 0, 0]
+                - [-3.52138591, 0, 1.19310355, 0]
+                - [-49.7826843, 12.1525908, 22.051342, 1]
+              globalPosition: [-49.7826843, 12.1525908, 22.051342]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [36.5999985, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-87.9379883, -0.347409248, -56.3560257]
+                  m_WorldMax: [-11.6273842, 24.6525917, 100.45871]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 4f96a628-382a-0ace-3a39-ba7cf6c370a7
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [-54.3293304, 12, 9.00142097]
+              scale: [0.757487655, 1, 1]
+              rotation: [0.73779428, 0, -0.675025642, 0]
+              modelMatrix:
+                - [0.0671745688, 0, 0.75450325, 0]
+                - [0, 1, 0, 0]
+                - [-0.996060133, 0, 0.0886807442, 0]
+                - [-54.3293304, 12, 9.00142097, 1]
+              globalPosition: [-54.3293304, 12, 9.00142097]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [36.7000008, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-56.2591095, -0.5, -1.5747776]
+                  m_WorldMax: [-52.3995514, 24.5, 19.5776196]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 928ece96-a056-e0c4-250d-c02dc66a6f5d
+          - name: Empty
+            m_enabled: true
+            transform:
+              position: [-69.4355392, 12.1835938, 45.0142365]
+              scale: [1.14690292, 1, 1]
+              rotation: [0.988373041, 0, 0.152048439, 0]
+              modelMatrix:
+                - [1.09387302, 0, -0.344714463, 0]
+                - [0, 1, 0, 0]
+                - [0.30056116, 0, 0.953762531, 0]
+                - [-69.4355392, 12.1835938, 45.0142365, 1]
+              globalPosition: [-69.4355392, 12.1835938, 45.0142365]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [32.2999992, 25, 2]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-89.997345, -0.31640625, 37.6755066]
+                  m_WorldMax: [-48.8737335, 24.6835938, 52.3529663]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 0
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 80e77fcc-4638-21c7-9238-2a0bfadcc051
+          - name: Empty1
+            m_enabled: true
+            transform:
+              position: [-50.0999985, 26.4085655, -5.99632454]
+              scale: [1.50000024, 1.30000007, 3.61935449]
+              rotation: [-0.0176479779, 0.707135916, -0.023194287, 0.706476808]
+              modelMatrix:
+                - [0.00105768454, -0.0866082162, 1.49749768, 0]
+                - [-0.010227426, -1.29779172, -0.0750509426, 0]
+                - [3.61924219, -0.0282795094, -0.00419250317, 0]
+                - [-50.0999985, 26.4085655, -5.99632454, 1]
+              globalPosition: [-50.0999985, 26.4085655, -5.99632454]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [28.7999992, 21.3999996, 1]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-56.8147659, 6.43436813, -39.3938255]
+                  m_WorldMax: [-43.385231, 46.3827629, 27.4011784]
+                  m_IsCollisionArea: false
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+            uuid: 0117cc5c-8535-7a54-df3f-5f1e6711c063
+        components:
+          []
+        uuid: 486dae1e-3fa2-545b-1a03-eac5b1341bad
+      - name: Dummy boss
+        m_enabled: true
+        transform:
+          position: [-79.6596832, 21.3006401, 31.0450039]
+          scale: [0.0599999987, 0.0599999987, 0.0599999987]
+          rotation: [0.572936714, 2.24454084e-07, 0.819599628, 2.24454084e-07]
+          modelMatrix:
+            - [-0.0206092279, 3.7507256e-08, -0.0563494451, 0]
+            - [6.64373934e-09, 0.0599999987, 3.7507256e-08, 0]
+            - [0.0563494451, 6.64373934e-09, -0.0206092279, 0]
+            - [-79.6596832, 21.3006401, 31.0450039, 1]
+          globalPosition: [-79.6596832, 21.3006401, 31.0450039]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/hades/hades.fbx
+              MaterialBase:
+                materialName: Material
+                uuid: 54e3bd8c-d34b-064d-ab9b-6a6f3bcb2ff3
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: texture_specular
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: 86ea04e7-6fe4-72e7-a431-928a6d4df4d5
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 64
+                    texturePath: res\textures\hades\bear_diffuse.png
+                    textureType: ""
+                  normal:
+                    textureID: 63
+                    texturePath: res\textures\hades\bear_normal.png
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 59
+                    texturePath: res\textures\hades\bear_specular.png
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - Animator:
+              ComponentName: Animator
+              Enabled: true
+              CurrentAnimation: hades-pose-1
+              Playing: true
+              m_Blending: false
+              m_BlendFactor: 1
+              animations:
+                animation:
+                  animationName: hades_idle
+                  animationPath: res/animations/hades/hades_idle.fbx
+                animation:
+                  animationName: hades_attack
+                  animationPath: res/animations/hades/hades_attack.fbx
+                animation:
+                  animationName: hades_music_vibe
+                  animationPath: res/animations/hades/hades_music_vibe.fbx
+                animation:
+                  animationName: hades_jump_attack
+                  animationPath: res/animations/hades/hades_jump_attack.fbx
+                animation:
+                  animationName: hades_scream
+                  animationPath: res/animations/hades/hades_scream.fbx
+                animation:
+                  animationName: hades-pose-1
+                  animationPath: res/animations/hades/hades-pose-1.fbx
+                animation:
+                  animationName: hades-pose-2
+                  animationPath: res/animations/hades/hades-pose-2.fbx
+                animation:
+                  animationName: hades-pose-3
+                  animationPath: res/animations/hades/hades-pose-3.fbx
+              animationTransitions:
+                transition:
+                  animationBase: hades_music_vibe
+                  animationTarget: hades_idle
+                  duration: 0.25
+                  name: vibe-to-idle
+                transition:
+                  animationBase: hades_idle
+                  animationTarget: hades_jump_attack
+                  duration: 0.25
+                  name: idle-to-jump
+                transition:
+                  animationBase: hades_jump_attack
+                  animationTarget: hades_scream
+                  duration: 0.349999994
+                  name: jump-to-scream
+                transition:
+                  animationBase: hades_idle
+                  animationTarget: hades_music_vibe
+                  duration: 0.25
+                  name: idle-to-vibe
+                transition:
+                  animationBase: hades-pose-1
+                  animationTarget: hades-pose-2
+                  duration: 0.200000003
+                  name: pose-1-to-2
+                transition:
+                  animationBase: hades-pose-2
+                  animationTarget: hades-pose-1
+                  duration: 0.200000003
+                  name: pose-2-to-1
+                transition:
+                  animationBase: hades-pose-1
+                  animationTarget: hades-pose-3
+                  duration: 0.200000003
+                  name: pose-1-to-3
+                transition:
+                  animationBase: hades-pose-2
+                  animationTarget: hades-pose-3
+                  duration: 0.200000003
+                  name: pose-2-to-3
+                transition:
+                  animationBase: hades-pose-3
+                  animationTarget: hades-pose-2
+                  duration: 0.200000003
+                  name: pose-3-to-2
+                transition:
+                  animationBase: hades-pose-3
+                  animationTarget: hades-pose-1
+                  duration: 0.200000003
+                  name: pose-3-to-1
+                transition:
+                  animationBase: hades_idle
+                  animationTarget: hades-pose-1
+                  duration: 0.200000003
+                  name: idle-to-pose-1
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/boss/dummy-boss.lua
+              scriptName: dummy-boss.lua
+        uuid: 2e1959c5-ef97-52ea-8ef5-fc5354b2945b
+      - name: Fillers
+        m_enabled: true
+        transform:
+          position: [-59.780407, 16.2840996, 25.8971882]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [-59.780407, 16.2840996, 25.8971882, 1]
+          globalPosition: [-59.780407, 16.2840996, 25.8971882]
+          m_isDirty: false
+        children:
+          - isScene: true
+            pathToString: res\scenes\Environment\small-rock.scene
+            name: Small rock
+            m_enabled: true
+            transform:
+              position: [0.328430176, -3.83452225, 27.9557743]
+              scale: [11.1027994, 11.1028013, 11.1027994]
+              rotation: [0.665950298, -0.23604542, 0.312885106, -0.634740591]
+              modelMatrix:
+                - [-0.0176033061, -11.0264292, -1.29987836, 0]
+                - [7.74643755, 0.919021785, -7.90065098, 0]
+                - [7.95390224, -0.919452786, 7.69169712, 0]
+                - [-59.4519768, 12.4495773, 53.8529625, 1]
+              globalPosition: [-59.4519768, 12.4495773, 53.8529625]
+              m_isDirty: false
+            components:
+              []
+            uuid: b45109d2-f4ff-f4db-44bc-88db83e51fe9
+          - isScene: true
+            pathToString: res\scenes\Environment\small-rock.scene
+            name: Small rock1
+            m_enabled: true
+            transform:
+              position: [-4.70428848, -4.21590424, 17.715147]
+              scale: [9.39719963, 9.39719963, 9.39719963]
+              rotation: [0.790201485, 0.139882877, -0.0646303967, -0.593158901]
+              modelMatrix:
+                - [2.70611954, -8.9791317, -0.59957397, 0]
+                - [8.63930321, 2.41687131, 2.79795504, 0]
+                - [-2.51927304, -1.35694754, 8.95093918, 0]
+                - [-64.4846954, 12.0681953, 43.6123352, 1]
+              globalPosition: [-64.4846954, 12.0681953, 43.6123352]
+              m_isDirty: false
+            components:
+              []
+            uuid: 62baec22-0282-0bae-5d82-f1e27e3a3dcc
+          - isScene: true
+            pathToString: res\scenes\Environment\small-rock.scene
+            name: Small rock2
+            m_enabled: true
+            transform:
+              position: [-15.8049355, 0.0866451263, -19.1240597]
+              scale: [9.44579983, 9.44579983, 9.44579983]
+              rotation: [0.377575219, -0.200282961, 0.084010303, -0.900147736]
+              modelMatrix:
+                - [-5.99475193, -6.73862076, 2.80661249, 0]
+                - [6.10288715, -6.61922407, -2.85723281, 0]
+                - [4.00510311, 3.65958795e-06, 8.55466461, 0]
+                - [-75.5853424, 16.3707447, 6.77312851, 1]
+              globalPosition: [-75.5853424, 16.3707447, 6.77312851]
+              m_isDirty: false
+            components:
+              []
+            uuid: aae4f342-240b-deee-cf71-243229d45f3d
+          - isScene: true
+            pathToString: res\scenes\Environment\small-rock.scene
+            name: Small rock3
+            m_enabled: true
+            transform:
+              position: [-14.9289207, -2.81123352, -10.5601377]
+              scale: [6.61999989, 6.61999989, 6.61999989]
+              rotation: [0.655823231, 0.0906125084, -0.0797444135, -0.745202124]
+              modelMatrix:
+                - [-0.816714466, -6.56633425, -0.201597452, 0]
+                - [6.3749938, -0.841227531, 1.57359385, 0]
+                - [-1.58645487, -1.03577975e-06, 6.42709589, 0]
+                - [-74.7093277, 13.4728661, 15.3370504, 1]
+              globalPosition: [-74.7093277, 13.4728661, 15.3370504]
+              m_isDirty: false
+            components:
+              []
+            uuid: 37dae601-c279-b3b2-7546-8c9edc311fb3
+          - isScene: true
+            pathToString: res\scenes\Environment\pillar-rock.scene
+            name: Rock pillar
+            m_enabled: true
+            transform:
+              position: [8.11086273, -7.57336712, 31.620779]
+              scale: [11.7390003, 11.7390003, 11.7390003]
+              rotation: [0.993461311, 0.036648158, -0.0608843789, -0.089357093]
+              modelMatrix:
+                - [11.4645052, -2.13659477, 1.34321177, 0]
+                - [2.03182173, 11.5200033, 0.982530355, 0]
+                - [-1.49698198, -0.727068543, 11.6204367, 0]
+                - [-51.6695442, 8.71073246, 57.5179672, 1]
+              globalPosition: [-51.6695442, 8.71073246, 57.5179672]
+              m_isDirty: false
+            components:
+              []
+            uuid: cc35dde8-841e-91a4-2545-3c0fb1440b1e
+          - isScene: true
+            pathToString: res\scenes\Environment\pillar-rock.scene
+            name: Rock pillar1
+            m_enabled: true
+            transform:
+              position: [-17.665081, -5.37527561, -26.8348732]
+              scale: [10.1719799, 10.1719799, 10.1719799]
+              rotation: [0.93539834, -0.145383462, 0.318725049, -0.0480410866]
+              modelMatrix:
+                - [8.0583725, -1.85689294, -5.92315435, 0]
+                - [-0.0284774788, 9.69503021, -3.07810926, 0]
+                - [6.20733452, 2.45510006, 7.67532825, 0]
+                - [-77.445488, 10.908824, -0.937685013, 1]
+              globalPosition: [-77.445488, 10.908824, -0.937685013]
+              m_isDirty: false
+            components:
+              []
+            uuid: d82f3886-efa7-3ead-e886-145a58a73d27
+        components:
+          []
+        uuid: dac86aac-fed0-9cb7-6a85-9d2d40cb3fa1
+      - name: Speakers
+        m_enabled: true
+        transform:
+          position: [0, 16.8700008, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 16.8700008, 0, 1]
+          globalPosition: [0, 16.8700008, 0]
+          m_isDirty: false
+        children:
+          - isScene: true
+            pathToString: res\scenes\Objects\SpeakerForArena.scene
+            name: Speaker
+            m_enabled: true
+            transform:
+              position: [2.90479755, 0, 46.8020897]
+              scale: [5, 5, 5]
+              rotation: [-1.50023439e-07, 1, -3.73796927e-14, 2.50343504e-07]
+              modelMatrix:
+                - [5, -7.49370834e-13, 2.5034351e-06, 0]
+                - [1.77700736e-15, -5, -1.50023436e-06, 0]
+                - [2.5034351e-06, 1.50023436e-06, -5, 0]
+                - [2.90479755, 16.8700008, 46.8020897, 1]
+              globalPosition: [2.90479755, 16.8700008, 46.8020897]
+              m_isDirty: false
+            components:
+              - AudioSource:
+                  ComponentName: Audio Source
+                  Enabled: true
+                  pos: [2.90479755, 0, 46.8020897]
+                  bankPath: res\audio\orpheus\Build\Desktop\SpeakerSounds.bank
+                  eventNames:
+                    []
+                  isAllPaused: false
+                  flag: 60
+                  affectedByDSP: false
+                  activeEvents:
+                    []
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [1, 2, 1]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-9.59520912, -8.13000298, 34.3020744]
+                  m_WorldMax: [15.4048042, 41.8700027, 59.3021049]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/speakers/speaker_collider.lua
+                  scriptName: speaker_collider.lua
+            uuid: f18c957d-25ec-5b11-5e2b-4452263467b6
+          - isScene: true
+            pathToString: res\scenes\Objects\SpeakerForArena.scene
+            name: Speaker1
+            m_enabled: true
+            transform:
+              position: [-15.8546095, 0, -44.1859741]
+              scale: [5, 5, 5]
+              rotation: [0.966617227, 0, 0.256224781, 0]
+              modelMatrix:
+                - [4.34348869, 0, -2.47671294, 0]
+                - [0, 5, 0, 0]
+                - [2.47671294, 0, 4.34348869, 0]
+                - [-15.8546095, 16.8700008, -44.1859741, 1]
+              globalPosition: [-15.8546095, 16.8700008, -44.1859741]
+              m_isDirty: false
+            components:
+              - AudioSource:
+                  ComponentName: Audio Source
+                  Enabled: true
+                  pos: [-15.8546095, 0, -44.1859741]
+                  bankPath: res\audio\orpheus\Build\Desktop\SpeakerSounds.bank
+                  eventNames:
+                    []
+                  isAllPaused: false
+                  flag: 60
+                  affectedByDSP: false
+                  activeEvents:
+                    []
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [1, 2, 1]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-32.9051132, -8.12999916, -61.2364807]
+                  m_WorldMax: [1.1958952, 41.8700027, -27.1354694]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/speakers/speaker_collider.lua
+                  scriptName: speaker_collider.lua
+            uuid: d31dbfb1-f519-e289-fa3e-a080fea3f0a1
+          - isScene: true
+            pathToString: res\scenes\Objects\SpeakerForArena.scene
+            name: Speaker2
+            m_enabled: true
+            transform:
+              position: [44.7924194, 0, -17.6973457]
+              scale: [5, 5, 5]
+              rotation: [0.844428658, -3.16439127e-07, -0.535668015, 2.07316958e-07]
+              modelMatrix:
+                - [2.13059783, 3.44570708e-06, 4.52333403, 0]
+                - [-5.55806423e-08, 5, -3.78263303e-06, 0]
+                - [-4.52333403, 1.56157193e-06, 2.13059783, 0]
+                - [44.7924194, 16.8700008, -17.6973457, 1]
+              globalPosition: [44.7924194, 16.8700008, -17.6973457]
+              m_isDirty: false
+            components:
+              - AudioSource:
+                  ComponentName: Audio Source
+                  Enabled: true
+                  pos: [44.7924194, 0, -17.6973457]
+                  bankPath: res\audio\orpheus\Build\Desktop\SpeakerSounds.bank
+                  eventNames:
+                    []
+                  isAllPaused: false
+                  flag: 90
+                  affectedByDSP: false
+                  activeEvents:
+                    []
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [1, 2, 1]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [28.157589, -8.13001251, -34.3321953]
+                  m_WorldMax: [61.4272499, 41.8700142, -1.06249714]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/speakers/speaker_collider.lua
+                  scriptName: speaker_collider.lua
+            uuid: 58d2c5e4-86cd-3818-07f0-ebd44da11ea8
+          - isScene: true
+            pathToString: res\scenes\Objects\SpeakerForArena.scene
+            name: Speaker3
+            m_enabled: true
+            transform:
+              position: [44.68293, 4.76837158e-05, 10.7557802]
+              scale: [5, 5, 5]
+              rotation: [-0.477530479, -2.13858712e-05, 0.878615201, -3.83116821e-05]
+              modelMatrix:
+                - [-2.71964669, -4.94956112e-06, 4.19565535, 0]
+                - [-0.000370849448, 5, -0.000234488194, 0]
+                - [-4.19565535, -0.000438736315, -2.71964669, 0]
+                - [44.68293, 16.8700485, 10.7557802, 1]
+              globalPosition: [44.68293, 16.8700485, 10.7557802]
+              m_isDirty: false
+            components:
+              - AudioSource:
+                  ComponentName: Audio Source
+                  Enabled: true
+                  pos: [44.68293, 4.76837158e-05, 10.7557802]
+                  bankPath: res\audio\orpheus\Build\Desktop\SpeakerSounds.bank
+                  eventNames:
+                    []
+                  isAllPaused: false
+                  flag: 60
+                  affectedByDSP: false
+                  activeEvents:
+                    []
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [1, 2, 1]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [27.3928185, -8.13105965, -6.53364706]
+                  m_WorldMax: [61.9730415, 41.8711548, 28.045208]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - PhysicsBody:
+                  ComponentName: PhysicsBody
+                  Enabled: true
+                  mass: 1
+                  velocity: [0, 0, 0]
+                  useGravity: false
+                  isStatic: true
+                  restitution: 0.100000001
+                  invMass: 0
+                  accumulatedForces: [0, 0, 0]
+                  linearDamping: 0.100000001
+                  isGrounded: false
+                  stabilizationPosition: [0, 0, 0]
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/speakers/speaker_collider.lua
+                  scriptName: speaker_collider.lua
+            uuid: ca27f975-b384-49da-ee1b-8be5941023da
+        components:
+          []
+        uuid: f352c13e-18b8-e4ef-9d57-084ac31d090b
+      - name: ParticleCircle
+        m_enabled: false
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - ParticleSystem:
+              ComponentName: Particle System
+              Enabled: true
+              EmissionShape: 1
+              DrawEmissionShape: true
+              CubeSize: [1, 1, 1]
+              SphereRadius: 56
+              SphereSurfaceOnly: true
+              Emitting: false
+              MaxParticles: 5000
+              SpawnRate: 1000
+              OneShot: false
+              MinLifeTime: 25
+              MaxLifeTime: 100
+              MinSize: 0.5
+              MaxSize: 0.600000024
+              Gravity: [0, 0, 0]
+              Albedo: [0, 1, 0.822222233, 1]
+              MinInitialVelocity: [0, 0, 0]
+              MaxInitialVelocity: [0, 1, 0]
+              CameraPosition: [52.0598564, 30.7618103, -35.3965797]
+              BlendingAdditive: false
+              EmissionMultiplier: 10
+              UseLocalSpace: false
+              m_Initialized: true
+              m_Texture:
+                textureID: 74
+                texturePath: res\textures\kenneyparticlepack\fire_02.png
+                textureType: ""
+              BillboardY: false
+              ScaleOverTime: false
+              BeginScaling: 0.5
+              FadeOverTime: false
+              BeginFading: 0.5
+        uuid: 143f6dd0-cfa4-ec6b-9731-6668ca09d799
+      - name: Phase 2 Indicators
+        m_enabled: true
+        transform:
+          position: [0, 12.3427124, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 12.3427124, 0, 1]
+          globalPosition: [0, 12.3427124, 0]
+          m_isDirty: false
+        children:
+          - isScene: true
+            pathToString: res\scenes\Helper\attack-indicator.scene
+            name: Indicator1
+            m_enabled: true
+            transform:
+              position: [-33.2304726, 0, -23.1657085]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [-33.2304726, 12.3427124, -23.1657085, 1]
+              globalPosition: [-33.2304726, 12.3427124, -23.1657085]
+              m_isDirty: false
+            components:
+              []
+            uuid: cb72338c-30ce-eb5c-ec6b-e61daf1b70cb
+          - isScene: true
+            pathToString: res\scenes\Helper\attack-indicator.scene
+            name: Indicator2
+            m_enabled: true
+            transform:
+              position: [8.69068241, 0, -15.7025309]
+              scale: [1, 1, 1]
+              rotation: [0.999315023, -0.0270049311, 0.0252953693, -0.000683567137]
+              modelMatrix:
+                - [0.998719335, -0.00273239729, -0.0505191684, 0]
+                - [-1.62981451e-09, 0.998540521, -0.0540074483, 0]
+                - [0.0505930036, 0.0539382845, 0.997261763, 0]
+                - [8.69068241, 12.3427124, -15.7025309, 1]
+              globalPosition: [8.69068241, 12.3427124, -15.7025309]
+              m_isDirty: false
+            components:
+              []
+            uuid: fec1af8a-c257-d6aa-197a-a5874603c1fe
+          - isScene: true
+            pathToString: res\scenes\Helper\attack-indicator.scene
+            name: Indicator3
+            m_enabled: true
+            transform:
+              position: [-20.7169685, 0, -23.0838718]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [-20.7169685, 12.3427124, -23.0838718, 1]
+              globalPosition: [-20.7169685, 12.3427124, -23.0838718]
+              m_isDirty: false
+            components:
+              []
+            uuid: 466f4e13-1e61-e920-c4fe-8522114b9e32
+          - isScene: true
+            pathToString: res\scenes\Helper\attack-indicator.scene
+            name: Indicator4
+            m_enabled: true
+            transform:
+              position: [23.7330685, 0, -39.1991272]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [23.7330685, 12.3427124, -39.1991272, 1]
+              globalPosition: [23.7330685, 12.3427124, -39.1991272]
+              m_isDirty: false
+            components:
+              []
+            uuid: 354262fc-c540-666b-b091-45098a978446
+          - name: FirePillar
+            m_enabled: false
+            transform:
+              position: [-17.801136, 0, 32.3655434]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [-17.801136, 12.3427124, 32.3655434, 1]
+              globalPosition: [-17.801136, 12.3427124, 32.3655434]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - ParticleSystem:
+                  ComponentName: Particle System
+                  Enabled: true
+                  EmissionShape: 1
+                  DrawEmissionShape: false
+                  CubeSize: [1, 1, 1]
+                  SphereRadius: 1
+                  SphereSurfaceOnly: false
+                  Emitting: false
+                  MaxParticles: 10000
+                  SpawnRate: 1000
+                  OneShot: false
+                  MinLifeTime: 0.300000012
+                  MaxLifeTime: 0.5
+                  MinSize: 1
+                  MaxSize: 2
+                  Gravity: [0, 0, 0]
+                  Albedo: [1, 0.555555522, 0, 1]
+                  MinInitialVelocity: [0, 73.5999985, 0]
+                  MaxInitialVelocity: [0, 73.5999985, 0]
+                  CameraPosition: [31.750824, 23.1717968, -51.404995]
+                  BlendingAdditive: true
+                  EmissionMultiplier: 18
+                  UseLocalSpace: true
+                  m_Initialized: true
+                  m_Texture:
+                    textureID: 76
+                    texturePath: res\textures\kenneyparticlepack\flame_01.png
+                    textureType: ""
+                  BillboardY: false
+                  ScaleOverTime: true
+                  BeginScaling: 0.600000024
+                  FadeOverTime: true
+                  BeginFading: 0.5
+              - CollisionShape:
+                  ComponentName: CollisionShape
+                  Enabled: true
+                  m_shapeType: 0
+                  m_boxSize: [1, 63, 1]
+                  m_capsuleRadius: 0.5
+                  m_capsuleHeight: 2
+                  m_color: [0, 1, 0]
+                  m_isVisible: false
+                  m_WorldMin: [-18.301136, -19.1572876, 31.8655434]
+                  m_WorldMax: [-17.301136, 43.8427124, 32.8655434]
+                  m_IsCollisionArea: true
+                  m_collisionMask: 1
+                  m_collisionLayer: 1
+                  m_collisionPositionOffset: [0, 0, 0]
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/boss/fire-pillar.lua
+                  scriptName: fire-pillar.lua
+            uuid: 923b7e9d-3f42-cfae-62d7-f253e5630a20
+        components:
+          []
+        uuid: c1433545-a8cf-65ba-0cbc-491d995e809d
+      - name: Ambient particles
+        m_enabled: true
+        transform:
+          position: [0, 19.6250229, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 19.6250229, 0, 1]
+          globalPosition: [0, 19.6250229, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - ParticleSystem:
+              ComponentName: Particle System
+              Enabled: true
+              EmissionShape: 2
+              DrawEmissionShape: false
+              CubeSize: [101.599998, 41.9000015, 77.1999969]
+              SphereRadius: 1
+              SphereSurfaceOnly: false
+              Emitting: true
+              MaxParticles: 2000
+              SpawnRate: 400
+              OneShot: false
+              MinLifeTime: 1.89999998
+              MaxLifeTime: 3.20000005
+              MinSize: 0.699999988
+              MaxSize: 0.800000012
+              Gravity: [0, 0, 0]
+              Albedo: [1, 1, 1, 1]
+              MinInitialVelocity: [0, 0, 0]
+              MaxInitialVelocity: [0, 0.600000024, 0]
+              CameraPosition: [-51.0285492, 20.7533512, 21.6540546]
+              BlendingAdditive: true
+              EmissionMultiplier: 1
+              UseLocalSpace: false
+              m_Initialized: true
+              m_Texture:
+                textureID: 77
+                texturePath: res\textures\kenneyparticlepack\flare_01.png
+                textureType: ""
+              BillboardY: false
+              ScaleOverTime: true
+              BeginScaling: 0.800000012
+              FadeOverTime: true
+              BeginFading: 0.74000001
+        uuid: 7fb70f3b-b7ce-9f5b-0a1a-b3f7e232d70d
+      - name: Cutscene
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: Camera Front
+            m_enabled: true
+            transform:
+              position: [-51.0285492, 20.7533512, 21.6540546]
+              scale: [1, 1, 1]
+              rotation: [0.975748241, 0.166787803, -0.139738426, 0.0238859411]
+              modelMatrix:
+                - [0.95980525, 0, 0.280666828, 0]
+                - [-0.0932266638, 0.943222582, 0.318810254, 0]
+                - [-0.264731288, -0.332161397, 0.905310035, 0]
+                - [-51.0285492, 20.7533512, 21.6540546, 1]
+              globalPosition: [-51.0285492, 20.7533512, 21.6540546]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Camera:
+                  ComponentName: Camera
+                  Enabled: true
+                  Front: [-0.905310094, 0.280666888, 0.318809867]
+                  Up: [0.264731407, 0.95980525, -0.0932265967]
+                  Right: [-0.33216098, 0, -0.943222642]
+                  WorldUp: [0, 1, 0]
+                  Yaw: -70.6000061
+                  Pitch: -16.3000107
+                  MovementSpeed: 12.5
+                  MouseSensitivity: 0.100000001
+                  Zoom: 70
+                  aspectRatio: 1.4332875
+                  NearPlane: 0.100000001
+                  FarPlane: 400
+            uuid: 68b7ca91-ec3b-65f7-ffb6-19afb400ce89
+          - name: Camera Far
+            m_enabled: true
+            transform:
+              position: [-38, 16.4500008, 17.6299992]
+              scale: [1, 1, 1]
+              rotation: [0.979129255, 0.199658439, -0.0359318219, 0.0123050995]
+              modelMatrix:
+                - [0.997114956, 0.00974838249, 0.0752774328, 0]
+                - [-0.03844475, 0.919970155, 0.390098542, 0]
+                - [-0.0654501617, -0.391867131, 0.917690814, 0]
+                - [-38, 16.4500008, 17.6299992, 1]
+              globalPosition: [-38, 16.4500008, 17.6299992]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Camera:
+                  ComponentName: Camera
+                  Enabled: true
+                  Front: [-0.917182088, 0.0750068575, 0.391345084]
+                  Up: [0.0689892918, 0.997183084, -0.0294364896]
+                  Right: [-0.392450601, 0, -0.919773042]
+                  WorldUp: [0, 1, 0]
+                  Yaw: -66.8929367
+                  Pitch: -4.30161667
+                  MovementSpeed: 12.5
+                  MouseSensitivity: 0.100000001
+                  Zoom: 70
+                  aspectRatio: 1.4332875
+                  NearPlane: 0.100000001
+                  FarPlane: 400
+            uuid: 287d8ac6-86cf-f037-9d52-a98456f229b1
+        components:
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/cutscene/cutscene-manager.lua
+              scriptName: cutscene-manager.lua
+        uuid: 7f3aaf6b-d269-eaf7-1d40-92ed46926885
+      - name: Dialog Box
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: Bg
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [0, 1, 0.956862748, 0.400000006]
+                  m_HasTexture: false
+                  Clipping: [0, 0, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [0, 57]
+                  Size: [600, 100]
+                  Rotation: 0
+                  Emission: 1
+                  anchor: 7
+            uuid: 718522fd-0a71-23de-4dc2-396ea8faf678
+          - name: Text
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Text:
+                  Text: It's really brave of you, coming here.
+                  FontSize: 26
+                  Color: [1, 1, 1]
+                  ComponentName: Text
+                  Enabled: true
+                  Position: [0, 124]
+                  Size: [570, 90]
+                  Rotation: 0
+                  Emission: 1
+                  anchor: 7
+            uuid: 2cb295e9-ec01-b4fb-6639-b4062dccac62
+          - name: Confirm
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [1, 1, 1, 0.999999762]
+                  m_HasTexture: true
+                  m_Texture:
+                    textureID: 78
+                    texturePath: res\textures\UI\keys\space.png
+                    textureType: ""
+                  Clipping: [0, 0, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [0, 44.2999992]
+                  Size: [75, 26]
+                  Rotation: 0
+                  Emission: 1
+                  anchor: 7
+            uuid: 1a934b0c-60f4-8f13-4321-4413f271b222
+        components:
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/ui/dialog-box.lua
+              scriptName: dialog-box.lua
+        uuid: 0699101e-7b53-d57c-bbda-ccc689b56d29
+      - isScene: true
+        pathToString: res\scenes\Other\death-screen.scene
+        name: Death screen
+        m_enabled: false
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        components:
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/ui/death-screen.lua
+              scriptName: death-screen.lua
+        uuid: f5a85781-23cc-37f1-d0d1-e7fa9987f818
+    components:
+      []
+    uuid: 0bd0a1bd-7c03-ba2b-7faa-bb2a82aa5f01
+LibraryAnimations:
+  Animation:
+    animationName: idle
+    animationPath: res/animations/idle.fbx
+  Animation:
+    animationName: run
+    animationPath: res/animations/run.fbx
+  Animation:
+    animationName: attack
+    animationPath: res/animations/stab1.fbx
+  Animation:
+    animationName: hades_idle
+    animationPath: res/animations/hades/hades_idle.fbx
+  Animation:
+    animationName: dance
+    animationPath: res/models/skeleton/skeleton.fbx
+  Animation:
+    animationName: attack_2
+    animationPath: res/animations/stab2.fbx
+  Animation:
+    animationName: combo1
+    animationPath: res/animations/combo1.fbx
+  Animation:
+    animationName: hades_run
+    animationPath: res/animations/hades/hades_run.fbx
+  Animation:
+    animationName: hades-pose-3
+    animationPath: res/animations/hades/hades-pose-3.fbx
+  Animation:
+    animationName: twerk
+    animationPath: res/animations/twerk.fbx
+  Animation:
+    animationName: hades_guitar
+    animationPath: res/animations/hades/hades_guitar.fbx
+  Animation:
+    animationName: hades_stun
+    animationPath: res/animations/hades/hades_stun.fbx
+  Animation:
+    animationName: roll
+    animationPath: res/animations/roll.fbx
+  Animation:
+    animationName: hades_attack
+    animationPath: res/animations/hades/hades_attack.fbx
+  Animation:
+    animationName: combo2
+    animationPath: res/animations/combo2.fbx
+  Animation:
+    animationName: combo3
+    animationPath: res/animations/combo3.fbx
+  Animation:
+    animationName: hades-pose-1
+    animationPath: res/animations/hades/hades-pose-1.fbx
+  Animation:
+    animationName: die
+    animationPath: res/animations/die.fbx
+  Animation:
+    animationName: jump
+    animationPath: res/animations/jump.fbx
+  Animation:
+    animationName: jump_fall
+    animationPath: res/animations/jump_fall.fbx
+  Animation:
+    animationName: hades_death
+    animationPath: res/animations/hades/hades_death.fbx
+  Animation:
+    animationName: hades_music_vibe
+    animationPath: res/animations/hades/hades_music_vibe.fbx
+  Animation:
+    animationName: hades_laying_down_death
+    animationPath: res/animations/hades/hades_laying_down_death.fbx
+  Animation:
+    animationName: hades_jump_attack
+    animationPath: res/animations/hades/hades_jump_attack.fbx
+  Animation:
+    animationName: hades_scream
+    animationPath: res/animations/hades/hades_scream.fbx
+  Animation:
+    animationName: hades-pose-2
+    animationPath: res/animations/hades/hades-pose-2.fbx

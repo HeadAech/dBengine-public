@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{9cc60430-2e17-4293-bf28-441f3d651cf3}">
+		<property name="assetPath">
+			<value>water.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.3919999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ec547861-701b-4319-bbcc-dca4886b6b74}</destination>
+		</relationship>
+	</object>
+</objects>

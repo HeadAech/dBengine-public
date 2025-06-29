@@ -1,0 +1,45 @@
+# Blender 4.2.3 LTS MTL File: 'POZIOMPO POPRAWKACH2.blend'
+# www.blender.org
+
+newmtl tree
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/tree_bark_43_color.jpg
+map_Ns textures/tree_bark_43_roughness.jpg
+
+newmtl vineleaf
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/Green leaf bc.png
+map_Ns textures/Green leaf rg.png
+map_d textures/Green leaf bc.png
+map_Bump -bm 1.000000 textures/Green leaf nm.png
+
+newmtl vineleaf.001
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/Green leaf bc.png
+map_Ns textures/Green leaf rg.png
+map_d textures/Green leaf bc.png
+map_Bump -bm 1.000000 textures/Green leaf nm.png
+
+newmtl vineleaf.002
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd textures/Green leaf bc.png
+map_Ns textures/Green leaf rg.png
+map_d textures/Green leaf bc.png
+map_Bump -bm 1.000000 textures/Green leaf nm.png

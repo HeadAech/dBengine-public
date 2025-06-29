@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{e132f136-c361-4ec1-86e9-a7624b50323e}">
+		<property name="name">
+			<value>FightTransition2</value>
+		</property>
+		<relationship name="folder">
+			<destination>{69acb2ca-d010-42f5-9544-c2901e82bb17}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f13d7061-1f23-41f4-a4ee-53004430a527}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f13d7061-1f23-41f4-a4ee-53004430a527}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

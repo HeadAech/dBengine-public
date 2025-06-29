@@ -1,0 +1,182 @@
+sceneName: New Scene
+uuid: d8a24292-0084-8483-c4ea-8770bfacb0d3
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [-0.522059202, 0.700464487, -2.32527995]
+      scale: [1, 1, 1]
+      rotation: [-0.995055616, -0.0993195549, 7.44142289e-06, -7.4275124e-07]
+      modelMatrix:
+        - [1, 0, 1.49567986e-05, 0]
+        - [-2.95631526e-06, 0.98027128, 0.197656959, 0]
+        - [-1.46617203e-05, -0.197656959, 0.98027128, 0]
+        - [-0.522059202, 0.700464487, -2.32527995, 1]
+      globalPosition: [-0.522059202, 0.700464487, -2.32527995]
+      m_isDirty: true
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [0, -0.197656959, 0.98027128]
+          Up: [0, 0.98027128, 0.197656959]
+          Right: [-1, 0, 0]
+          WorldUp: [0, 1, 0]
+          Yaw: -360.000854
+          Pitch: 11.3999777
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.77777779
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Objects\OtherGreenStuff\Flower.scene
+    name: Flower
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Base
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [2, 2, 2]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/flower/FlowerBase.obj
+              MaterialBase:
+                materialName: Material
+                uuid: f971a811-da4d-8e2c-e98b-0412da0807eb
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+              density: 0.949999988
+              samples: 291
+              fogColor: [0.0799862891, 0.440740764, 0.0244856104]
+              scattering: 1.16999996
+      - name: Top
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [2, 2, 2]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/flower/FlowerTop.obj
+              MaterialBase:
+                materialName: Material
+                uuid: c3a435ca-90fa-10a0-0554-45dbf3aafe3f
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+              density: 1.07799995
+              samples: 95
+              fogColor: [1, 0, 0]
+              scattering: 5.79799986
+    components:
+      []

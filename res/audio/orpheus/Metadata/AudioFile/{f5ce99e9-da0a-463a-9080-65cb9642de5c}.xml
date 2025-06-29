@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{f5ce99e9-da0a-463a-9080-65cb9642de5c}">
+		<property name="assetPath">
+			<value>hadesfire.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.6240000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ec547861-701b-4319-bbcc-dca4886b6b74}</destination>
+		</relationship>
+	</object>
+</objects>

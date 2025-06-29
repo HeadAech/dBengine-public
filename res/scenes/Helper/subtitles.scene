@@ -1,0 +1,92 @@
+sceneName: New Scene
+uuid: 0c7ef570-0d59-d06b-d263-0663dbbad024
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [-5, -5, -5]
+      scale: [1, 1, 1]
+      rotation: [0.813241541, 0.208805025, -0.526109755, 0.135082081]
+      modelMatrix:
+        - [0.409922719, 0, 0.912120223, 0]
+        - [-0.439417452, 0.876306593, 0.197481841, 0]
+        - [-0.799296975, -0.481753856, 0.359217942, 0]
+        - [-5, -5, -5, 1]
+      globalPosition: [-5, -5, -5]
+      m_isDirty: true
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [-0.799296975, -0.481753856, 0.359217942]
+          Up: [-0.439417481, 0.876306653, 0.197481856]
+          Right: [-0.409922659, 0, -0.912120223]
+          WorldUp: [0, 1, 0]
+          Yaw: -65.8000183
+          Pitch: 28.8000107
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.77777779
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Helper\subtitles.scene
+    name: Subtitles
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Text
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Text:
+              Text: Subtitles are here
+              FontSize: 24
+              Color: [1, 1, 1]
+              ComponentName: Text
+              Enabled: true
+              Position: [0, 68.9000015]
+              Size: [155.399994, 50]
+              Rotation: 0
+              Emission: 1
+              anchor: 7
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/helper/subtitles.lua
+              scriptName: subtitles.lua
+    components:
+      []
+LibraryAnimations:
+  {}

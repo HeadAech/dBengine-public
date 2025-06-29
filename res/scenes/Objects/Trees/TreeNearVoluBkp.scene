@@ -1,0 +1,186 @@
+sceneName: New Scene
+uuid: 967bdc00-2ccb-e57f-9a9d-2adaf1d9be43
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [0.416948259, 4.18269491, -5.35456276]
+      scale: [1, 1, 1]
+      rotation: [0.969644189, 0.241758719, -0.0355569646, 0.00886532106]
+      modelMatrix:
+        - [0.997314215, 1.86264515e-09, 0.0732417405, 0]
+        - [-0.0343848243, 0.882948279, 0.468209445, 0]
+        - [-0.0646686703, -0.469470322, 0.880576849, 0]
+        - [0.416948259, 4.18269491, -5.35456276, 1]
+      globalPosition: [0.416948259, 4.18269491, -5.35456276]
+      m_isDirty: true
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [-0.0646686703, -0.469470322, 0.880576849]
+          Up: [-0.0343848281, 0.882948339, 0.468209475]
+          Right: [-0.997314215, 0, -0.0732417405]
+          WorldUp: [0, 1, 0]
+          Yaw: -724.200195
+          Pitch: 27.9999199
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.77777779
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Objects\Trees\TreeNearVoluBkp.scene
+    name: TreeNear
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Bark
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/tree/TreeBark.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 97fde1ff-b87a-7209-67e3-ca9df65ed9dc
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              density: 0.229000002
+              samples: 1
+              fogColor: [0.607407451, 0.323950619, 0]
+              scattering: 0.600000024
+      - name: Leaves
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/tree/TreeLeaves.obj
+              MaterialBase:
+                materialName: Material
+                uuid: b919e209-edad-c43a-f17b-f2b807fad38f
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              density: 0.229000002
+              samples: 1
+              fogColor: [0.128230512, 0.633333325, 0.035185203]
+              scattering: 0.600000024
+    components:
+      []

@@ -1,0 +1,206 @@
+sceneName: New Scene
+uuid: 1f580961-0fa5-d6f1-60fa-45a5c221a3c9
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [-5, -5, -5]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [-5, -5, -5, 1]
+      globalPosition: [-5, -5, -5]
+      m_isDirty: false
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [0.613654971, 0.582123041, 0.53344214]
+          Up: [-0.439333797, 0.813100755, -0.381907046]
+          Right: [-0.656059086, 0, 0.754709601]
+          WorldUp: [0, 1, 0]
+          Yaw: 49
+          Pitch: -35.6000023
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.77777779
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+    uuid: 3f7cc638-4863-244c-7556-6ba5fe749132
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Environment\pillar-rock.scene
+    name: Rock pillar
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Mesh
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/env/pilar.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 72a6a815-5afe-18d2-308b-8c134116a085
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: a8fae096-6a2d-7bb9-6d4e-87644f0bf25a
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 34
+                    texturePath: res\textures\white_rock\Rock026_2K-JPG_Color.jpg
+                    textureType: ""
+                  normal:
+                    textureID: 35
+                    texturePath: res\textures\white_rock\Rock026_2K-JPG_NormalGL.jpg
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 33
+                    texturePath: res\textures\white_rock\Rock026_2K-JPG_Roughness.jpg
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 32
+                    texturePath: res\textures\white_rock\Rock026_2K-JPG_AmbientOcclusion.jpg
+                    textureType: ""
+                  height:
+                    textureID: 31
+                    texturePath: res\textures\white_rock\Rock026_2K-JPG_Displacement.jpg
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+        uuid: 397daaac-c221-6054-9d72-a8a2ec25ec78
+    components:
+      []
+    uuid: c2e1b245-7f86-95c5-d40e-7570cc6fbf80
+LibraryAnimations:
+  Animation:
+    animationName: idle
+    animationPath: res/animations/idle.fbx
+  Animation:
+    animationName: run
+    animationPath: res/animations/run.fbx
+  Animation:
+    animationName: hades_idle
+    animationPath: res/animations/hades/hades_idle.fbx
+  Animation:
+    animationName: attack
+    animationPath: res/animations/attack_1.fbx
+  Animation:
+    animationName: attack_2
+    animationPath: res/animations/attack_2.fbx
+  Animation:
+    animationName: dance
+    animationPath: res/models/skeleton/skeleton.fbx
+  Animation:
+    animationName: combo1
+    animationPath: res/animations/combo1.fbx
+  Animation:
+    animationName: hades_run
+    animationPath: res/animations/hades/hades_run.fbx
+  Animation:
+    animationName: twerk
+    animationPath: res/animations/twerk.fbx
+  Animation:
+    animationName: hades_guitar
+    animationPath: res/animations/hades/hades_guitar.fbx
+  Animation:
+    animationName: hades_stun
+    animationPath: res/animations/hades/hades_stun.fbx
+  Animation:
+    animationName: roll
+    animationPath: res/animations/roll.fbx
+  Animation:
+    animationName: hades_attack
+    animationPath: res/animations/hades/hades_attack.fbx
+  Animation:
+    animationName: combo2
+    animationPath: res/animations/combo2.fbx
+  Animation:
+    animationName: combo3
+    animationPath: res/animations/combo3.fbx

@@ -1,0 +1,157 @@
+sceneName: New Scene
+uuid: f35b6679-be99-f4bd-c1f8-b313354f3831
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [11.3623142, 9.28023815, -25.4346809]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [11.3623142, 9.28023815, -25.4346809, 1]
+      globalPosition: [11.3623142, 9.28023815, -25.4346809]
+      m_isDirty: false
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [-0.307852834, -0.295706809, 0.90431428]
+          Up: [-0.0952959135, 0.955278754, 0.279930681]
+          Right: [-0.946649551, 0, -0.32226491]
+          WorldUp: [0, 1, 0]
+          Yaw: -18.7999535
+          Pitch: 17.1999245
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.4332875
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+    uuid: 7fd00fd2-1862-d28f-7545-be3be1f75ae2
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Helper\attack-indicator.scene
+    name: Attack Indicator
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Particles
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - ParticleSystem:
+              ComponentName: Particle System
+              Enabled: true
+              EmissionShape: 0
+              DrawEmissionShape: false
+              CubeSize: [1, 1, 1]
+              SphereRadius: 4.73999977
+              SphereSurfaceOnly: false
+              Emitting: true
+              MaxParticles: 500
+              SpawnRate: 100
+              OneShot: false
+              MinLifeTime: 0.899999976
+              MaxLifeTime: 1
+              MinSize: 1.79999995
+              MaxSize: 2.79999995
+              Gravity: [0, 0, 0]
+              Albedo: [1, 0, 0, 1]
+              MinInitialVelocity: [-9, 16.8999996, -9]
+              MaxInitialVelocity: [9, 19.7999992, 9]
+              CameraPosition: [11.3623142, 9.28023815, -25.4346809]
+              BlendingAdditive: true
+              EmissionMultiplier: 5
+              UseLocalSpace: true
+              m_Initialized: true
+              m_Texture:
+                textureID: 55
+                texturePath: res\textures\kenneyparticlepack\spark_02.png
+                textureType: ""
+              BillboardY: false
+              ScaleOverTime: true
+              BeginScaling: 0.400000006
+              FadeOverTime: true
+              BeginFading: 0.0299999993
+        uuid: 32437140-ba8c-02fd-ebe7-eb9b2798f8d3
+    components:
+      []
+    uuid: d3f3c9e2-dfd2-e1ee-9413-403f32cbf5fe
+LibraryAnimations:
+  Animation:
+    animationName: idle
+    animationPath: res/animations/idle.fbx
+  Animation:
+    animationName: run
+    animationPath: res/animations/run.fbx
+  Animation:
+    animationName: hades_idle
+    animationPath: res/animations/hades/hades_idle.fbx
+  Animation:
+    animationName: attack
+    animationPath: res/animations/attack_1.fbx
+  Animation:
+    animationName: attack_2
+    animationPath: res/animations/attack_2.fbx
+  Animation:
+    animationName: dance
+    animationPath: res/models/skeleton/skeleton.fbx
+  Animation:
+    animationName: combo1
+    animationPath: res/animations/combo1.fbx
+  Animation:
+    animationName: hades_run
+    animationPath: res/animations/hades/hades_run.fbx
+  Animation:
+    animationName: twerk
+    animationPath: res/animations/twerk.fbx
+  Animation:
+    animationName: hades_guitar
+    animationPath: res/animations/hades/hades_guitar.fbx
+  Animation:
+    animationName: hades_stun
+    animationPath: res/animations/hades/hades_stun.fbx
+  Animation:
+    animationName: roll
+    animationPath: res/animations/roll.fbx
+  Animation:
+    animationName: hades_attack
+    animationPath: res/animations/hades/hades_attack.fbx
+  Animation:
+    animationName: combo2
+    animationPath: res/animations/combo2.fbx
+  Animation:
+    animationName: combo3
+    animationPath: res/animations/combo3.fbx

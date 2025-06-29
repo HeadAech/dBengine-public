@@ -1,0 +1,211 @@
+sceneName: Main Scene
+uuid: 1a86f72b-4aa3-1256-3fbe-6f2fe8562929
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [8.92028713, 3.48570251, -9.31809044]
+      scale: [1, 1, 1]
+      rotation: [-0.87769115, 0.0444620624, 0.476548612, 0.0241409931]
+      modelMatrix:
+        - [0.544637263, -3.7252903e-09, 0.838671744, 0]
+        - [0.0847533345, 0.994880676, -0.0550392047, 0]
+        - [-0.834378302, 0.101056628, 0.541849077, 0]
+        - [8.92028713, 3.48570251, -9.31809044, 1]
+      globalPosition: [8.92028713, 3.48570251, -9.31809044]
+      m_isDirty: false
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [-0.834378302, 0.101056628, 0.541849077]
+          Up: [0.084753342, 0.994880676, -0.0550392047]
+          Right: [-0.544637263, 0, -0.838671744]
+          WorldUp: [0, 1, 0]
+          Yaw: -417.000122
+          Pitch: -5.80001926
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.4332875
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+    uuid: 05d0e293-d565-7725-5d98-021356d68310
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Objects\volcano.scene
+    name: VolcanoFirework
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Mesh
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [0.400000006, 0.600000024, 0.400000006]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [0.400000006, 0, 0, 0]
+            - [0, 0.600000024, 0, 0]
+            - [0, 0, 0.400000006, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: ParticleSystem
+            m_enabled: true
+            transform:
+              position: [0, 1.3884275, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [0.400000006, 0, 0, 0]
+                - [0, 0.600000024, 0, 0]
+                - [0, 0, 0.400000006, 0]
+                - [0, 0.833056509, 0, 1]
+              globalPosition: [0, 0.833056509, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - ParticleSystem:
+                  ComponentName: Particle System
+                  Enabled: true
+                  EmissionShape: 0
+                  DrawEmissionShape: true
+                  CubeSize: [1, 1, 1]
+                  SphereRadius: 1
+                  SphereSurfaceOnly: false
+                  Emitting: true
+                  MaxParticles: 1000
+                  SpawnRate: 250
+                  OneShot: false
+                  MinLifeTime: 0.5
+                  MaxLifeTime: 1.5
+                  MinSize: 0.100000001
+                  MaxSize: 0.600000024
+                  Gravity: [0, 5, 0]
+                  Albedo: [1, 1, 1, 1]
+                  MinInitialVelocity: [-2, 5, -2]
+                  MaxInitialVelocity: [2, 5, 2]
+                  CameraPosition: [8.92028713, 3.48570251, -9.31809044]
+                  BlendingAdditive: true
+                  EmissionMultiplier: 8
+                  UseLocalSpace: true
+                  m_Initialized: true
+                  m_Texture:
+                    textureID: 58
+                    texturePath: res\textures\kenneyparticlepack\circle_05.png
+                    textureType: ""
+                  BillboardY: false
+                  ScaleOverTime: false
+                  BeginScaling: 0.5
+                  FadeOverTime: false
+                  BeginFading: 0.5
+            uuid: f2fb7bf0-35bc-1d43-9acc-93cd079196c7
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/vulcano_fireworks/fajerwerki.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 2d682e28-e7a7-f969-b980-85934683c378
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+        uuid: 5bf9f4b5-570b-cff6-7b02-6654c9fadbd8
+    components:
+      []
+    uuid: 4d5993b2-d9f0-401c-60a6-ff58fdfc284b
+LibraryAnimations:
+  Animation:
+    animationName: idle
+    animationPath: res/animations/idle.fbx
+  Animation:
+    animationName: hades_music_vibe
+    animationPath: res/animations/hades/hades_music_vibe.fbx
+  Animation:
+    animationName: hades_guitar
+    animationPath: res/animations/hades/hades_guitar.fbx
+  Animation:
+    animationName: run
+    animationPath: res/animations/run.fbx
+  Animation:
+    animationName: hades_idle
+    animationPath: res/animations/hades/hades_idle.fbx
+  Animation:
+    animationName: attack
+    animationPath: res/animations/attack_1.fbx
+  Animation:
+    animationName: attack_2
+    animationPath: res/animations/attack_2.fbx
+  Animation:
+    animationName: dance
+    animationPath: res/models/skeleton/skeleton.fbx
+  Animation:
+    animationName: twerk
+    animationPath: res/animations/twerk.fbx
+  Animation:
+    animationName: hades_run
+    animationPath: res/animations/hades/hades_run.fbx
+  Animation:
+    animationName: hades_stun
+    animationPath: res/animations/hades/hades_stun.fbx
+  Animation:
+    animationName: roll
+    animationPath: res/animations/roll.fbx
+  Animation:
+    animationName: hades_attack
+    animationPath: res/animations/hades/hades_attack.fbx

@@ -1,0 +1,256 @@
+sceneName: New Scene
+uuid: 17bad6cf-fc4a-6b10-4db9-db308f66d22e
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [0.416948259, 4.18269491, -5.35456276]
+      scale: [1, 1, 1]
+      rotation: [0.969644189, 0.241758719, -0.0355569646, 0.00886532106]
+      modelMatrix:
+        - [0.997314215, 1.86264515e-09, 0.0732417405, 0]
+        - [-0.0343848243, 0.882948279, 0.468209445, 0]
+        - [-0.0646686703, -0.469470322, 0.880576849, 0]
+        - [0.416948259, 4.18269491, -5.35456276, 1]
+      globalPosition: [0.416948259, 4.18269491, -5.35456276]
+      m_isDirty: true
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [-0.0646686703, -0.469470322, 0.880576849]
+          Up: [-0.0343848281, 0.882948339, 0.468209475]
+          Right: [-0.997314215, 0, -0.0732417405]
+          WorldUp: [0, 1, 0]
+          Yaw: -724.200195
+          Pitch: 27.9999199
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.77777779
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Objects\Trees\TreeNear.scene
+    name: TreeNear
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Bark
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/tree/TreeBark.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 97fde1ff-b87a-7209-67e3-ca9df65ed9dc
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: ff7ded6e-0dba-89e8-c255-a7d63254e022
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 179
+                    texturePath: res\textures\tree\bark\Bark014_1K-JPG_Color.jpg
+                    textureType: ""
+                  normal:
+                    textureID: 181
+                    texturePath: res\textures\tree\bark\Bark014_1K-JPG_NormalGL.jpg
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 182
+                    texturePath: res\textures\tree\bark\Bark014_1K-JPG_Roughness.jpg
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 180
+                    texturePath: res\textures\tree\bark\Bark014_1K-JPG_AmbientOcclusion.jpg
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: true
+                triplanarTilingScale: 1
+      - name: Leaves
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/tree/TreeLeaves.obj
+              MaterialBase:
+                materialName: Material
+                uuid: b919e209-edad-c43a-f17b-f2b807fad38f
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: 3fd84362-2641-48dc-9d52-0756df4426f6
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 176
+                    texturePath: res\textures\tree\leaves\ScatteredLeaves008_1K-JPG_Color.jpg
+                    textureType: ""
+                  normal:
+                    textureID: 177
+                    texturePath: res\textures\tree\leaves\ScatteredLeaves008_1K-JPG_NormalGL.jpg
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 178
+                    texturePath: res\textures\tree\leaves\ScatteredLeaves008_1K-JPG_Roughness.jpg
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 175
+                    texturePath: res\textures\tree\leaves\ScatteredLeaves008_1K-JPG_AmbientOcclusion.jpg
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: true
+                triplanarTilingScale: 1
+    components:
+      []

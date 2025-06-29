@@ -1,0 +1,1195 @@
+sceneName: Main Scene
+uuid: 9d8ce65c-28a8-bc8c-d1a3-ce7922743bce
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [0.471621662, -4.20580149, 4.57008934]
+      scale: [1, 1, 1]
+      rotation: [-0.674675822, -0.15452145, 0.703542352, -0.161132768]
+      modelMatrix:
+        - [-0.0418711901, 0, 0.999122977, 0]
+        - [-0.43484953, 0.900318682, -0.018223688, 0]
+        - [-0.899529099, -0.435231209, -0.0376974344, 0]
+        - [0.471621662, -4.20580149, 4.57008934, 1]
+      globalPosition: [0.471621662, -4.20580149, 4.57008934]
+      m_isDirty: false
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [-0.157309219, -0.811064005, -0.563408554]
+          Up: [-0.218114659, 0.58495754, -0.781185389]
+          Right: [0.963161349, 0, -0.268924147]
+          WorldUp: [0, 1, 0]
+          Yaw: 195.60025
+          Pitch: 54.2000046
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.79779923
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+    uuid: 765b7ac3-1654-36ae-d0c8-c0b30b9c07c2
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\UI\ui.scene
+    name: UI
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: UI Imported
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: Combo Thing
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              - name: InputQueue
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  - name: L1
+                    m_enabled: false
+                    transform:
+                      position: [0, 0, 0]
+                      scale: [1, 1, 1]
+                      rotation: [1, 0, 0, 0]
+                      modelMatrix:
+                        - [1, 0, 0, 0]
+                        - [0, 1, 0, 0]
+                        - [0, 0, 1, 0]
+                        - [0, 0, 0, 1]
+                      globalPosition: [0, 0, 0]
+                      m_isDirty: false
+                    children:
+                      []
+                    components:
+                      - Sprite:
+                          ModulateColor: [0, 0, 0, 0]
+                          m_HasTexture: true
+                          m_Texture:
+                            textureID: 31
+                            texturePath: res\textures\UI\ikonki\lpm.png
+                            textureType: ""
+                          Clipping: [0, 0, 0, 0]
+                          ComponentName: Sprite
+                          Enabled: true
+                          Position: [133.699997, 154.199997]
+                          Size: [50, 50]
+                          Rotation: 0
+                          Emission: 1
+                          anchor: 6
+                    uuid: c94ef358-8000-2e99-98ff-6211e456bbef
+                  - name: L2
+                    m_enabled: false
+                    transform:
+                      position: [0, 0, 0]
+                      scale: [1, 1, 1]
+                      rotation: [1, 0, 0, 0]
+                      modelMatrix:
+                        - [1, 0, 0, 0]
+                        - [0, 1, 0, 0]
+                        - [0, 0, 1, 0]
+                        - [0, 0, 0, 1]
+                      globalPosition: [0, 0, 0]
+                      m_isDirty: false
+                    children:
+                      []
+                    components:
+                      - Sprite:
+                          ModulateColor: [0, 0, 0, 0]
+                          m_HasTexture: true
+                          m_Texture:
+                            textureID: 31
+                            texturePath: res\textures\UI\ikonki\lpm.png
+                            textureType: ""
+                          Clipping: [0, 0, 0, 0]
+                          ComponentName: Sprite
+                          Enabled: true
+                          Position: [133.699997, 154.199997]
+                          Size: [50, 50]
+                          Rotation: 0
+                          Emission: 1
+                          anchor: 6
+                    uuid: 7fa0ff66-2111-b620-4299-ba3cd7714e5f
+                  - name: L3
+                    m_enabled: false
+                    transform:
+                      position: [0, 0, 0]
+                      scale: [1, 1, 1]
+                      rotation: [1, 0, 0, 0]
+                      modelMatrix:
+                        - [1, 0, 0, 0]
+                        - [0, 1, 0, 0]
+                        - [0, 0, 1, 0]
+                        - [0, 0, 0, 1]
+                      globalPosition: [0, 0, 0]
+                      m_isDirty: false
+                    children:
+                      []
+                    components:
+                      - Sprite:
+                          ModulateColor: [0, 0, 0, 0]
+                          m_HasTexture: true
+                          m_Texture:
+                            textureID: 31
+                            texturePath: res\textures\UI\ikonki\lpm.png
+                            textureType: ""
+                          Clipping: [0, 0, 0, 0]
+                          ComponentName: Sprite
+                          Enabled: true
+                          Position: [133.699997, 154.199997]
+                          Size: [50, 50]
+                          Rotation: 0
+                          Emission: 1
+                          anchor: 6
+                    uuid: 497c1cfb-09d3-ad86-42a6-08360bcb7b88
+                  - name: R1
+                    m_enabled: false
+                    transform:
+                      position: [0, 0, 0]
+                      scale: [1, 1, 1]
+                      rotation: [1, 0, 0, 0]
+                      modelMatrix:
+                        - [1, 0, 0, 0]
+                        - [0, 1, 0, 0]
+                        - [0, 0, 1, 0]
+                        - [0, 0, 0, 1]
+                      globalPosition: [0, 0, 0]
+                      m_isDirty: false
+                    children:
+                      []
+                    components:
+                      - Sprite:
+                          ModulateColor: [0, 0, 0, 0]
+                          m_HasTexture: true
+                          m_Texture:
+                            textureID: 32
+                            texturePath: res\textures\UI\ikonki\ppm.png
+                            textureType: ""
+                          Clipping: [0, 0, 0, 0]
+                          ComponentName: Sprite
+                          Enabled: true
+                          Position: [133.699997, 154.199997]
+                          Size: [50, 50]
+                          Rotation: 0
+                          Emission: 1
+                          anchor: 6
+                    uuid: d7de658b-4e82-e798-1a61-2593e8b798b1
+                  - name: R2
+                    m_enabled: false
+                    transform:
+                      position: [0, 0, 0]
+                      scale: [1, 1, 1]
+                      rotation: [1, 0, 0, 0]
+                      modelMatrix:
+                        - [1, 0, 0, 0]
+                        - [0, 1, 0, 0]
+                        - [0, 0, 1, 0]
+                        - [0, 0, 0, 1]
+                      globalPosition: [0, 0, 0]
+                      m_isDirty: false
+                    children:
+                      []
+                    components:
+                      - Sprite:
+                          ModulateColor: [0, 0, 0, 0]
+                          m_HasTexture: true
+                          m_Texture:
+                            textureID: 32
+                            texturePath: res\textures\UI\ikonki\ppm.png
+                            textureType: ""
+                          Clipping: [0, 0, 0, 0]
+                          ComponentName: Sprite
+                          Enabled: true
+                          Position: [133.699997, 154.199997]
+                          Size: [50, 50]
+                          Rotation: 0
+                          Emission: 1
+                          anchor: 6
+                    uuid: c338e0a7-1232-c8ab-6feb-9149ca39b89f
+                  - name: R3
+                    m_enabled: false
+                    transform:
+                      position: [0, 0, 0]
+                      scale: [1, 1, 1]
+                      rotation: [1, 0, 0, 0]
+                      modelMatrix:
+                        - [1, 0, 0, 0]
+                        - [0, 1, 0, 0]
+                        - [0, 0, 1, 0]
+                        - [0, 0, 0, 1]
+                      globalPosition: [0, 0, 0]
+                      m_isDirty: false
+                    children:
+                      []
+                    components:
+                      - Sprite:
+                          ModulateColor: [0, 0, 0, 0]
+                          m_HasTexture: true
+                          m_Texture:
+                            textureID: 32
+                            texturePath: res\textures\UI\ikonki\ppm.png
+                            textureType: ""
+                          Clipping: [0, 0, 0, 0]
+                          ComponentName: Sprite
+                          Enabled: true
+                          Position: [133.699997, 154.199997]
+                          Size: [50, 50]
+                          Rotation: 0
+                          Emission: 1
+                          anchor: 6
+                    uuid: e4584f4f-dfdb-1a96-f2c0-930f876041a3
+                  - name: L4
+                    m_enabled: false
+                    transform:
+                      position: [0, 0, 0]
+                      scale: [1, 1, 1]
+                      rotation: [1, 0, 0, 0]
+                      modelMatrix:
+                        - [1, 0, 0, 0]
+                        - [0, 1, 0, 0]
+                        - [0, 0, 1, 0]
+                        - [0, 0, 0, 1]
+                      globalPosition: [0, 0, 0]
+                      m_isDirty: false
+                    children:
+                      []
+                    components:
+                      - Sprite:
+                          ModulateColor: [0, 0, 0, 0]
+                          m_HasTexture: true
+                          m_Texture:
+                            textureID: 31
+                            texturePath: res\textures\UI\ikonki\lpm.png
+                            textureType: ""
+                          Clipping: [0, 0, 0, 0]
+                          ComponentName: Sprite
+                          Enabled: true
+                          Position: [133.699997, 154.199997]
+                          Size: [50, 50]
+                          Rotation: 0
+                          Emission: 1
+                          anchor: 6
+                    uuid: b3be1151-44aa-a9ad-2047-48a1b7c07b51
+                  - name: R4
+                    m_enabled: false
+                    transform:
+                      position: [0, 0, 0]
+                      scale: [1, 1, 1]
+                      rotation: [1, 0, 0, 0]
+                      modelMatrix:
+                        - [1, 0, 0, 0]
+                        - [0, 1, 0, 0]
+                        - [0, 0, 1, 0]
+                        - [0, 0, 0, 1]
+                      globalPosition: [0, 0, 0]
+                      m_isDirty: false
+                    children:
+                      []
+                    components:
+                      - Sprite:
+                          ModulateColor: [0, 0, 0, 0]
+                          m_HasTexture: true
+                          m_Texture:
+                            textureID: 32
+                            texturePath: res\textures\UI\ikonki\ppm.png
+                            textureType: ""
+                          Clipping: [0, 0, 0, 0]
+                          ComponentName: Sprite
+                          Enabled: true
+                          Position: [133.699997, 154.199997]
+                          Size: [50, 50]
+                          Rotation: 0
+                          Emission: 1
+                          anchor: 6
+                    uuid: c76d4db6-01dd-c396-775d-e605bcc8504d
+                  - name: L5
+                    m_enabled: false
+                    transform:
+                      position: [0, 0, 0]
+                      scale: [1, 1, 1]
+                      rotation: [1, 0, 0, 0]
+                      modelMatrix:
+                        - [1, 0, 0, 0]
+                        - [0, 1, 0, 0]
+                        - [0, 0, 1, 0]
+                        - [0, 0, 0, 1]
+                      globalPosition: [0, 0, 0]
+                      m_isDirty: false
+                    children:
+                      []
+                    components:
+                      - Sprite:
+                          ModulateColor: [0, 0, 0, 0]
+                          m_HasTexture: true
+                          m_Texture:
+                            textureID: 31
+                            texturePath: res\textures\UI\ikonki\lpm.png
+                            textureType: ""
+                          Clipping: [0, 0, 0, 0]
+                          ComponentName: Sprite
+                          Enabled: true
+                          Position: [133.699997, 154.199997]
+                          Size: [50, 50]
+                          Rotation: 0
+                          Emission: 1
+                          anchor: 6
+                    uuid: 93c0f1d2-93c1-fe69-767a-ca6cf8776313
+                components:
+                  - LuaComponent:
+                      ComponentName: Lua Script
+                      Enabled: true
+                      scriptPath: res/scripts/ui/inputqueue.lua
+                      scriptName: inputqueue.lua
+                uuid: fb41fb73-2d76-1674-ef25-498ded908414
+              - name: Column1
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Sprite:
+                      ModulateColor: [0, 0, 0, 1]
+                      m_HasTexture: true
+                      m_Texture:
+                        textureID: 33
+                        texturePath: res\textures\UI\ikonki\podest.png
+                        textureType: ""
+                      Clipping: [0, 0, 0, 0]
+                      ComponentName: Sprite
+                      Enabled: true
+                      Position: [300.299988, 103.599998]
+                      Size: [50, 50]
+                      Rotation: 0
+                      Emission: 1
+                      anchor: 6
+                uuid: 87416a45-8323-a92e-70f7-e15bd001f04d
+              - name: Column2
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Sprite:
+                      ModulateColor: [0, 0, 0, 1]
+                      m_HasTexture: true
+                      m_Texture:
+                        textureID: 33
+                        texturePath: res\textures\UI\ikonki\podest.png
+                        textureType: ""
+                      Clipping: [0, 0, 0, 0]
+                      ComponentName: Sprite
+                      Enabled: true
+                      Position: [219.699997, 104]
+                      Size: [50, 50]
+                      Rotation: 0
+                      Emission: 1
+                      anchor: 6
+                uuid: f0078300-42d0-ef1d-134f-14ea5f8e0515
+              - name: Column3
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Sprite:
+                      ModulateColor: [0, 0, 0, 1]
+                      m_HasTexture: true
+                      m_Texture:
+                        textureID: 33
+                        texturePath: res\textures\UI\ikonki\podest.png
+                        textureType: ""
+                      Clipping: [0, 0, 0, 0]
+                      ComponentName: Sprite
+                      Enabled: true
+                      Position: [134.5, 103.800003]
+                      Size: [50, 50]
+                      Rotation: 0
+                      Emission: 1
+                      anchor: 6
+                uuid: 215e19bc-5c07-0ede-50f5-ae5dbe11d116
+            components:
+              []
+            uuid: 8c550f13-7f44-5c17-277b-07892c1eba41
+        components:
+          []
+        uuid: 025849e1-7625-fb84-0d23-73e60f7d6914
+      - name: HP Bar
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: InsideGray
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [0, 0, 0, 1]
+                  m_HasTexture: true
+                  m_Texture:
+                    textureID: 34
+                    texturePath: res\textures\UI\bar\bar_inside_grayV2.png
+                    textureType: ""
+                  Clipping: [0, 0, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [109, 99.3000031]
+                  Size: [395, 25.2000008]
+                  Rotation: 0
+                  Emission: 1
+                  anchor: 6
+            uuid: 2bf2c7a5-4447-ed8d-3fc8-458fff4e1da0
+          - name: Border
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [1, 1, 1, 1]
+                  m_HasTexture: true
+                  m_Texture:
+                    textureID: 35
+                    texturePath: res\textures\UI\bar\bar_outside.png
+                    textureType: ""
+                  Clipping: [0, 0, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [105.900002, 97.0999985]
+                  Size: [400, 30]
+                  Rotation: 0
+                  Emission: 13.8999996
+                  anchor: 6
+            uuid: 1af39023-485c-6833-bef0-5b346bac5bc8
+          - name: Inside
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [0, 0, 0, 1]
+                  m_HasTexture: true
+                  m_Texture:
+                    textureID: 36
+                    texturePath: res\textures\UI\bar\bar_inside.png
+                    textureType: ""
+                  Clipping: [0, -2.75495606e-34, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [109, 99.3000031]
+                  Size: [395, 25.2000008]
+                  Rotation: 0
+                  Emission: 2
+                  anchor: 6
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/player/hpbar-ui.lua
+                  scriptName: hpbar-ui.lua
+            uuid: b77748a2-74d9-fc86-25ca-bf1c48ae9cf1
+        components:
+          []
+        uuid: b48444bb-4ff5-d761-020f-afb49bc0dc7f
+      - name: Boss HP
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: HP Bar bg
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [0.359259248, 0.359259248, 0.359259248, 1]
+                  m_HasTexture: false
+                  Clipping: [0, 0, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [0, 77]
+                  Size: [400, 7]
+                  Rotation: 0
+                  Emission: 1
+                  anchor: 1
+            uuid: 9549021a-cdf5-0799-4d92-010b6d3d64f7
+          - name: HP Bar
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [1, 0, 0, 1]
+                  m_HasTexture: false
+                  Clipping: [-3.09933045e-34, -3.09933045e-34, -49.4999962, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [0, 77]
+                  Size: [400, 7]
+                  Rotation: 0
+                  Emission: 1
+                  anchor: 1
+              - LuaComponent:
+                  ComponentName: Lua Script
+                  Enabled: true
+                  scriptPath: res/scripts/boss/boss-hp-bar.lua
+                  scriptName: boss-hp-bar.lua
+            uuid: 25fd5819-8309-e9dd-58f1-b8639717c0fe
+          - name: Name
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Text:
+                  Text: "- Hades -"
+                  FontSize: 32
+                  Color: [1, 1, 1]
+                  ComponentName: Text
+                  Enabled: true
+                  Position: [0, 0]
+                  Size: [89.8000031, 50.7000008]
+                  Rotation: 0
+                  Emission: 1
+                  anchor: 1
+            uuid: 68ff2099-acca-e1e8-1a13-f2752a6ca288
+          - name: Title
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Text:
+                  Text: Warden of the Damned
+                  FontSize: 18.5
+                  Color: [0.718518496, 0.718518496, 0.718518496]
+                  ComponentName: Text
+                  Enabled: true
+                  Position: [0, 0]
+                  Size: [126.699997, 68.6999969]
+                  Rotation: 0
+                  Emission: 1
+                  anchor: 1
+            uuid: a0e6801c-2e13-0459-7444-93979d2e0f3d
+        components:
+          []
+        uuid: 50ab270a-d9c6-eee6-567f-8aea5a43dddb
+      - name: Keys
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: Movement
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              - name: Pic
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Sprite:
+                      ModulateColor: [0, 0, 0, 1]
+                      m_HasTexture: true
+                      m_Texture:
+                        textureID: 37
+                        texturePath: res\textures\UI\keys\WASD.png
+                        textureType: ""
+                      Clipping: [0, 0, 0, 0]
+                      ComponentName: Sprite
+                      Enabled: true
+                      Position: [87.8000031, 82.8000031]
+                      Size: [44.5, 37.4000015]
+                      Rotation: 0
+                      Emission: 1
+                      anchor: 8
+                uuid: e109270d-8fc7-f6ab-6149-18dcdb45b44d
+              - name: Text
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Text:
+                      Text: Movement
+                      FontSize: 28.5
+                      Color: [1, 1, 1]
+                      ComponentName: Text
+                      Enabled: true
+                      Position: [113, 93.6999969]
+                      Size: [139.399994, 68.9000015]
+                      Rotation: 0
+                      Emission: 1
+                      anchor: 8
+                uuid: 882e528e-696a-bf7d-da55-db59c902d5e2
+            components:
+              []
+            uuid: 7549bea7-a35b-6824-7fc7-1283b21bf65f
+          - name: Action
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              - name: Sprite
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Sprite:
+                      ModulateColor: [0, 0, 0, 1]
+                      m_HasTexture: true
+                      m_Texture:
+                        textureID: 38
+                        texturePath: res\textures\UI\keys\LSHIFT.png
+                        textureType: ""
+                      Clipping: [0, 0, 0, 0]
+                      ComponentName: Sprite
+                      Enabled: true
+                      Position: [93.5999985, 132.600006]
+                      Size: [50, 22]
+                      Rotation: 0
+                      Emission: 1
+                      anchor: 8
+                uuid: ed0c27ac-6ce6-ae73-62a4-7ba4115fb379
+              - name: Text
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Text:
+                      Text: Dodge
+                      FontSize: 28.5
+                      Color: [1, 1, 1]
+                      ComponentName: Text
+                      Enabled: true
+                      Position: [118.300003, 135]
+                      Size: [100, 50]
+                      Rotation: 0
+                      Emission: 1
+                      anchor: 8
+                uuid: 7447ba77-3b3b-b0ee-d8bc-fcd58947f041
+            components:
+              []
+            uuid: 44bd89c0-72a0-82d1-ded2-982e7f503923
+          - name: Attack
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              - name: Sprite1
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Sprite:
+                      ModulateColor: [0, 0, 0, 1]
+                      m_HasTexture: true
+                      m_Texture:
+                        textureID: 39
+                        texturePath: res\textures\UI\keys\RMB.png
+                        textureType: ""
+                      Clipping: [0, 0, 0, 0]
+                      ComponentName: Sprite
+                      Enabled: true
+                      Position: [93.1999969, 168.699997]
+                      Size: [24, 26.2999992]
+                      Rotation: 0
+                      Emission: 1
+                      anchor: 8
+                uuid: bcdad3ff-4c7a-dc72-8a34-90648130f2b2
+              - name: Sprite2
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Sprite:
+                      ModulateColor: [0, 0, 0, 1]
+                      m_HasTexture: true
+                      m_Texture:
+                        textureID: 40
+                        texturePath: res\textures\UI\keys\LMB.png
+                        textureType: ""
+                      Clipping: [0, 0, 0, 0]
+                      ComponentName: Sprite
+                      Enabled: true
+                      Position: [123, 168.5]
+                      Size: [24, 26.2999992]
+                      Rotation: 0
+                      Emission: 1
+                      anchor: 8
+                uuid: ee14620e-4328-9cd0-7a9d-4ae65fb21ba1
+              - name: Text
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Text:
+                      Text: Attack
+                      FontSize: 29
+                      Color: [1, 1, 1]
+                      ComponentName: Text
+                      Enabled: true
+                      Position: [128.600006, 173.399994]
+                      Size: [100, 51.2999992]
+                      Rotation: 0
+                      Emission: 1
+                      anchor: 8
+                uuid: 81f52ad0-a6fb-f64a-a484-c32127780214
+            components:
+              []
+            uuid: c9d8d42c-c10c-0ede-f751-cdf5899e3fd4
+          - name: Combos
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Text:
+                  Text: Combos  TAB
+                  FontSize: 31
+                  Color: [1, 1, 1]
+                  ComponentName: Text
+                  Enabled: true
+                  Position: [138.800003, 208.100006]
+                  Size: [100, 50]
+                  Rotation: 0
+                  Emission: 1
+                  anchor: 8
+            uuid: d404d670-e33b-46e6-1ddd-1131eaaf2a92
+        components:
+          []
+        uuid: 93d07fbe-1097-6a25-aab6-b8ed53610108
+      - name: ComboList
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: aaaa
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [0, 0, 0, 1]
+                  m_HasTexture: true
+                  m_Texture:
+                    textureID: 41
+                    texturePath: res\textures\UI\combos-list-white-text.png
+                    textureType: ""
+                  Clipping: [0, 0, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [-250, 0]
+                  Size: [250, 300]
+                  Rotation: 0
+                  Emission: 1
+                  anchor: 5
+            uuid: 97ef69b6-2008-8f30-814a-02906812132f
+        components:
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/ui/combolist.lua
+              scriptName: combolist.lua
+        uuid: 5626f686-b5c3-a4d7-ca26-17e37ab439df
+    components:
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/ui/ui.lua
+          scriptName: ui.lua
+    uuid: 18d55424-504a-05af-f46c-8e494eb69ac5
+LibraryAnimations:
+  Animation:
+    animationName: idle
+    animationPath: res/animations/idle.fbx
+  Animation:
+    animationName: run
+    animationPath: res/animations/run.fbx
+  Animation:
+    animationName: attack
+    animationPath: res/animations/stab1.fbx
+  Animation:
+    animationName: hades_idle
+    animationPath: res/animations/hades/hades_idle.fbx
+  Animation:
+    animationName: attack_2
+    animationPath: res/animations/stab2.fbx
+  Animation:
+    animationName: dance
+    animationPath: res/models/skeleton/skeleton.fbx
+  Animation:
+    animationName: combo1
+    animationPath: res/animations/combo1.fbx
+  Animation:
+    animationName: hades_run
+    animationPath: res/animations/hades/hades_run.fbx
+  Animation:
+    animationName: hades-pose-3
+    animationPath: res/animations/hades/hades-pose-3.fbx
+  Animation:
+    animationName: twerk
+    animationPath: res/animations/twerk.fbx
+  Animation:
+    animationName: hades_guitar
+    animationPath: res/animations/hades/hades_guitar.fbx
+  Animation:
+    animationName: hades_stun
+    animationPath: res/animations/hades/hades_stun.fbx
+  Animation:
+    animationName: roll
+    animationPath: res/animations/roll.fbx
+  Animation:
+    animationName: hades_attack
+    animationPath: res/animations/hades/hades_attack.fbx
+  Animation:
+    animationName: combo2
+    animationPath: res/animations/combo2.fbx
+  Animation:
+    animationName: combo3
+    animationPath: res/animations/combo3.fbx
+  Animation:
+    animationName: hades-pose-1
+    animationPath: res/animations/hades/hades-pose-1.fbx
+  Animation:
+    animationName: die
+    animationPath: res/animations/die.fbx
+  Animation:
+    animationName: jump
+    animationPath: res/animations/jump.fbx
+  Animation:
+    animationName: jump_fall
+    animationPath: res/animations/jump_fall.fbx
+  Animation:
+    animationName: hades_death
+    animationPath: res/animations/hades/hades_death.fbx
+  Animation:
+    animationName: hades_music_vibe
+    animationPath: res/animations/hades/hades_music_vibe.fbx
+  Animation:
+    animationName: hades_laying_down_death
+    animationPath: res/animations/hades/hades_laying_down_death.fbx
+  Animation:
+    animationName: hades_jump_attack
+    animationPath: res/animations/hades/hades_jump_attack.fbx
+  Animation:
+    animationName: hades_scream
+    animationPath: res/animations/hades/hades_scream.fbx
+  Animation:
+    animationName: hades-pose-2
+    animationPath: res/animations/hades/hades-pose-2.fbx

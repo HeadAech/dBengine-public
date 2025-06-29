@@ -1,0 +1,1198 @@
+sceneName: Main Scene
+uuid: dfc3a395-ffd8-401c-8531-4a9c38b3a1d1
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [0, 0, -5]
+      scale: [1, 1, 1]
+      rotation: [0.707106769, 0, -0.707106769, 0]
+      modelMatrix:
+        - [5.96046448e-08, 0, 0.99999994, 0]
+        - [0, 1, 0, 0]
+        - [-0.99999994, 0, 5.96046448e-08, 0]
+        - [0, 0, -5, 1]
+      globalPosition: [0, 0, -5]
+      m_isDirty: true
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [-1, 0, 0]
+          Up: [0, 1, 0]
+          Right: [0, 0, -1]
+          WorldUp: [0, 1, 0]
+          Yaw: -90
+          Pitch: 0
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.4332875
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\MainTutorialCamera.scene
+    name: Main Scene
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Camera1
+        m_enabled: true
+        transform:
+          position: [-5, -5, -5]
+          scale: [1, 1, 1]
+          rotation: [0.707106769, 0, -0.707106769, 0]
+          modelMatrix:
+            - [5.96046448e-08, 0, 0.99999994, 0]
+            - [0, 1, 0, 0]
+            - [-0.99999994, 0, 5.96046448e-08, 0]
+            - [-5, -5, -5, 1]
+          globalPosition: [-5, -5, -5]
+          m_isDirty: true
+        children:
+          []
+        components:
+          - Camera:
+              ComponentName: Camera
+              Enabled: true
+              Front: [-1, 0, 0]
+              Up: [0, 1, 0]
+              Right: [0, 0, -1]
+              WorldUp: [0, 1, 0]
+              Yaw: -90
+              Pitch: 0
+              MovementSpeed: 12.5
+              MouseSensitivity: 0.100000001
+              Zoom: 70
+              aspectRatio: 1.4332875
+              NearPlane: 0.100000001
+              FarPlane: 400
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/camera/camera_controller.lua
+              scriptName: camera_controller.lua
+      - name: Camera2
+        m_enabled: true
+        transform:
+          position: [5, 5, -5]
+          scale: [1, 1, 1]
+          rotation: [0.707106769, 0, -0.707106769, 0]
+          modelMatrix:
+            - [5.96046448e-08, 0, 0.99999994, 0]
+            - [0, 1, 0, 0]
+            - [-0.99999994, 0, 5.96046448e-08, 0]
+            - [5, 5, -5, 1]
+          globalPosition: [5, 5, -5]
+          m_isDirty: true
+        children:
+          []
+        components:
+          - Camera:
+              ComponentName: Camera
+              Enabled: true
+              Front: [-1, 0, 0]
+              Up: [0, 1, 0]
+              Right: [0, 0, -1]
+              WorldUp: [0, 1, 0]
+              Yaw: -90
+              Pitch: 0
+              MovementSpeed: 12.5
+              MouseSensitivity: 0.100000001
+              Zoom: 70
+              aspectRatio: 1.4332875
+              NearPlane: 0.100000001
+              FarPlane: 400
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/camera/camera_controller.lua
+              scriptName: camera_controller.lua
+      - name: World Environment
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - WorldEnvironment:
+              ComponentName: WorldEnvironment
+              Enabled: true
+              skyboxPath: res/textures/hdri/skybox.hdr
+              m_skyType: 0
+      - name: Audio Source
+        m_enabled: true
+        transform:
+          position: [0, 5, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 5, 0, 1]
+          globalPosition: [0, 5, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - AudioSource:
+              ComponentName: Audio Source
+              Enabled: true
+              pos: [0, 5, 0]
+              bankPath: res\audio\orpheus\Build\Desktop\BackgroundMusic.bank
+              flag: 3452816845
+      - name: Cube
+        m_enabled: true
+        transform:
+          position: [-20, 0, 10]
+          scale: [1, 1, 1]
+          rotation: [0.70186919, 0.423107713, 0.423107713, 0.423107713]
+          modelMatrix:
+            - [0.285589218, 0.951200843, -0.236790061, 0]
+            - [-0.236790061, 0.285589218, 0.951200843, 0]
+            - [0.951200843, -0.236790061, 0.285589218, 0]
+            - [-20, 0, 10, 1]
+          globalPosition: [-20, 0, 10]
+          m_isDirty: true
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/cube/cube.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 3632ab25-5a26-4c38-32b8-3c3fc5d7a5ae
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 148
+                    texturePath: res/models/cube/plastic.jpg
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 149
+                    texturePath: res/models/cube/normal.jpg
+                    textureType: texture_normal
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 147
+                    texturePath: res/models/cube/roughness.jpg
+                    textureType: texture_roughness
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/test.lua
+              scriptName: test.lua
+          - Timer:
+              ComponentName: Timer
+              Enabled: true
+              OneShot: true
+              HasStarted: false
+              HasTimedOut: false
+              TimeoutMs: 500
+              ElapsedMs: 0
+              SignalMessage: onBeat
+      - name: Blockout
+        m_enabled: true
+        transform:
+          position: [0, -5, 0]
+          scale: [10, 10, 10]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [10, 0, 0, 0]
+            - [0, 10, 0, 0]
+            - [0, 0, 10, 0]
+            - [0, -5, 0, 1]
+          globalPosition: [0, -5, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/blockout/blockout2.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 2d025b73-63da-78aa-9528-c5732af8cdb8
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 161
+                    texturePath: res/models/blockout/diffuse.jpg
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - CollisionShape:
+              ComponentName: CollisionShape
+              Enabled: true
+              m_shapeType: 0
+              m_boxSize: [10, 1.89999998, 10]
+              m_capsuleRadius: 0.5
+              m_capsuleHeight: 2
+              m_color: [0, 1, 0]
+              m_isVisible: true
+              m_WorldMin: [-500, -100, -500]
+              m_WorldMax: [500, 90, 500]
+          - PhysicsBody:
+              ComponentName: PhysicsBody
+              Enabled: true
+              mass: 1
+              velocity: [0, 0, 0]
+              useGravity: true
+              isStatic: true
+              restitution: 0.100000001
+              invMass: 0
+              accumulatedForces: [0, 0, 0]
+              linearDamping: 0.100000001
+              isGrounded: false
+              stabilizationPosition: [0, 0, 0]
+      - name: Box_0
+        m_enabled: true
+        transform:
+          position: [-20, 5, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [-20, 5, 0, 1]
+          globalPosition: [-20, 5, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/cube/cube.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 3632ab25-5a26-4c38-32b8-3c3fc5d7a5ae
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 148
+                    texturePath: res/models/cube/plastic.jpg
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 149
+                    texturePath: res/models/cube/normal.jpg
+                    textureType: texture_normal
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 147
+                    texturePath: res/models/cube/roughness.jpg
+                    textureType: texture_roughness
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - CollisionShape:
+              ComponentName: CollisionShape
+              Enabled: true
+              m_shapeType: 0
+              m_boxSize: [2, 2, 2]
+              m_capsuleRadius: 0.5
+              m_capsuleHeight: 2
+              m_color: [0, 1, 0]
+              m_isVisible: true
+              m_WorldMin: [-21, 4, -1]
+              m_WorldMax: [-19, 6, 1]
+          - PhysicsBody:
+              ComponentName: PhysicsBody
+              Enabled: true
+              mass: 1
+              velocity: [0, 0, 0]
+              useGravity: true
+              isStatic: true
+              restitution: 0.100000001
+              invMass: 0
+              accumulatedForces: [0, 0, 0]
+              linearDamping: 0.100000001
+              isGrounded: false
+              stabilizationPosition: [0, 0, 0]
+      - name: Box_1
+        m_enabled: true
+        transform:
+          position: [-17, 5, 3]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [-17, 5, 3, 1]
+          globalPosition: [-17, 5, 3]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/cube/cube.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 3632ab25-5a26-4c38-32b8-3c3fc5d7a5ae
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 148
+                    texturePath: res/models/cube/plastic.jpg
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 149
+                    texturePath: res/models/cube/normal.jpg
+                    textureType: texture_normal
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 147
+                    texturePath: res/models/cube/roughness.jpg
+                    textureType: texture_roughness
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - CollisionShape:
+              ComponentName: CollisionShape
+              Enabled: true
+              m_shapeType: 0
+              m_boxSize: [2, 2, 2]
+              m_capsuleRadius: 0.5
+              m_capsuleHeight: 2
+              m_color: [0, 1, 0]
+              m_isVisible: true
+              m_WorldMin: [-18, 4, 2]
+              m_WorldMax: [-16, 6, 4]
+          - PhysicsBody:
+              ComponentName: PhysicsBody
+              Enabled: true
+              mass: 1
+              velocity: [0, 0, 0]
+              useGravity: true
+              isStatic: true
+              restitution: 0.100000001
+              invMass: 0
+              accumulatedForces: [0, 0, 0]
+              linearDamping: 0.100000001
+              isGrounded: false
+              stabilizationPosition: [0, 0, 0]
+      - name: Box_2
+        m_enabled: true
+        transform:
+          position: [-14, 5, 6]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [-14, 5, 6, 1]
+          globalPosition: [-14, 5, 6]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/cube/cube.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 3632ab25-5a26-4c38-32b8-3c3fc5d7a5ae
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 148
+                    texturePath: res/models/cube/plastic.jpg
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 149
+                    texturePath: res/models/cube/normal.jpg
+                    textureType: texture_normal
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 147
+                    texturePath: res/models/cube/roughness.jpg
+                    textureType: texture_roughness
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - CollisionShape:
+              ComponentName: CollisionShape
+              Enabled: true
+              m_shapeType: 0
+              m_boxSize: [2, 2, 2]
+              m_capsuleRadius: 0.5
+              m_capsuleHeight: 2
+              m_color: [0, 1, 0]
+              m_isVisible: true
+              m_WorldMin: [-15, 4, 5]
+              m_WorldMax: [-13, 6, 7]
+          - PhysicsBody:
+              ComponentName: PhysicsBody
+              Enabled: true
+              mass: 1
+              velocity: [0, 0, 0]
+              useGravity: true
+              isStatic: true
+              restitution: 0.100000001
+              invMass: 0
+              accumulatedForces: [0, 0, 0]
+              linearDamping: 0.100000001
+              isGrounded: false
+              stabilizationPosition: [0, 0, 0]
+      - name: Box_3
+        m_enabled: true
+        transform:
+          position: [-11, 5, 9]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [-11, 5, 9, 1]
+          globalPosition: [-11, 5, 9]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/cube/cube.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 3632ab25-5a26-4c38-32b8-3c3fc5d7a5ae
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 148
+                    texturePath: res/models/cube/plastic.jpg
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 149
+                    texturePath: res/models/cube/normal.jpg
+                    textureType: texture_normal
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 147
+                    texturePath: res/models/cube/roughness.jpg
+                    textureType: texture_roughness
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - CollisionShape:
+              ComponentName: CollisionShape
+              Enabled: true
+              m_shapeType: 0
+              m_boxSize: [2, 2, 2]
+              m_capsuleRadius: 0.5
+              m_capsuleHeight: 2
+              m_color: [0, 1, 0]
+              m_isVisible: true
+              m_WorldMin: [-12, 4, 8]
+              m_WorldMax: [-10, 6, 10]
+          - PhysicsBody:
+              ComponentName: PhysicsBody
+              Enabled: true
+              mass: 1
+              velocity: [0, 0, 0]
+              useGravity: true
+              isStatic: true
+              restitution: 0.100000001
+              invMass: 0
+              accumulatedForces: [0, 0, 0]
+              linearDamping: 0.100000001
+              isGrounded: false
+              stabilizationPosition: [0, 0, 0]
+      - name: Player
+        m_enabled: true
+        transform:
+          position: [0, 6.49568653, 5]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 6.49568653, 5, 1]
+          globalPosition: [0, 6.49568653, 5]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/monkey/monkey.obj
+              MaterialBase:
+                materialName: Material
+                uuid: f797d4bf-0be1-d6a4-06b7-f245f494d136
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 151
+                    texturePath: res/models/monkey/../brick_wall/diffuse.jpg
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 152
+                    texturePath: res/models/monkey/../brick_wall/normal.jpg
+                    textureType: texture_normal
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 150
+                    texturePath: res/models/monkey/../brick_wall/roughness.jpg
+                    textureType: texture_roughness
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - PhysicsBody:
+              ComponentName: PhysicsBody
+              Enabled: true
+              mass: 1
+              velocity: [0, 0.0143385231, 0]
+              useGravity: true
+              isStatic: false
+              restitution: 0.100000001
+              invMass: 1
+              accumulatedForces: [0, 0, 0]
+              linearDamping: 0.100000001
+              isGrounded: true
+              stabilizationPosition: [0, 0, 0]
+          - CollisionShape:
+              ComponentName: CollisionShape
+              Enabled: true
+              m_shapeType: 1
+              m_boxSize: [1, 1, 1]
+              m_capsuleRadius: 1.5
+              m_capsuleHeight: 4
+              m_color: [0, 1, 0]
+              m_isVisible: true
+              m_WorldMin: [-1.5, 4.49734211, 3.5]
+              m_WorldMax: [1.5, 8.49734211, 6.5]
+          - PlayerController:
+              moveSpeed: 8
+              acceleration: 30
+              deceleration: 20
+              maxSpeed: 12
+              ComponentName: Player Controller
+              Enabled: true
+      - name: TPP Camera
+        m_enabled: true
+        transform:
+          position: [8.33113194, 12.9897242, 13.3311319]
+          scale: [1, 1, 1]
+          rotation: [0.373612314, 0.0828278586, -0.901979864, 0.199964136]
+          modelMatrix:
+            - [-0.707106709, 1.49011612e-08, 0.707106769, 0]
+            - [-0.298836291, 0.906307757, -0.298836261, 0]
+            - [-0.640856326, -0.4226183, -0.640856266, 0]
+            - [8.33113194, 12.9895611, 13.3311319, 1]
+          globalPosition: [8.33113194, 12.9895611, 13.3311319]
+          m_isDirty: true
+        children:
+          []
+        components:
+          - ThirdPersonCamera:
+              ComponentName: Third Person Camera
+              Enabled: true
+              Front: [-0.640856385, -0.42261833, -0.640856326]
+              Up: [-0.298836321, 0.906307817, -0.298836291]
+              Right: [0.707106709, 0, -0.707106769]
+              WorldUp: [0, 1, 0]
+              Yaw: -135
+              Pitch: 25.0000019
+              MovementSpeed: 12.5
+              MouseSensitivity: 0.100000001
+              Zoom: 70
+              aspectRatio: 1.4332875
+              NearPlane: 0.100000001
+              FarPlane: 400
+              orbitDistance: 13
+              orbitYaw: 45
+              orbitPitch: 25
+              targetHeightOffset: 1
+              minOrbitPitch: 0
+              maxOrbitPitch: 60
+              minDistance: 1
+              maxDistance: 15
+              positionSmoothing: 0
+              rotationSmoothing: 0
+              Pos: [8.33113194, 12.9897242, 13.3311319]
+              mouseOrbitSpeed: 1
+              enableMouseOrbit: true
+              lastMouseX: 0
+              lastMouseY: 0
+              isMouseControlActive: false
+      - name: Text
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - TextRenderer:
+              ComponentName: TextRenderer
+              Enabled: true
+              text: T
+              font_size: 50
+              scale: [1, 1]
+              color: [1, 1, 1]
+              position: [0, 0]
+      - name: Directional Light
+        m_enabled: false
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [-0.153357223, 0.25396955, 0.789543092, 0.537217736]
+          modelMatrix:
+            - [-0.823962331, 0.236267373, 0.515038192, 0]
+            - [0.56581223, 0.293793142, 0.770416975, 0]
+            - [0.0307096392, 0.926209211, -0.375757575, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - DirectionalLight:
+              ComponentName: Directional Light
+              Enabled: true
+              diffuse: [0.400000006, 0.400000006, 0.400000006]
+              specular: [0.5, 0.5, 0.5]
+              ambient: [0.0500000007, 0.0500000007, 0.0500000007]
+              intensity: 1.5
+              ambientIntensity: 0.00999999978
+              direction: [-0.0307096392, -0.926209211, 0.375757575]
+      - name: Point Light
+        m_enabled: false
+        transform:
+          position: [-0.100000001, 0.5, 13]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [-0.100000001, 0.5, 13, 1]
+          globalPosition: [-0.100000001, 0.5, 13]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - PointLight:
+              ComponentName: Point Light
+              Enabled: true
+              diffuse: [1, 1, 1]
+              specular: [1, 1, 1]
+              ambient: [0.550000012, 0.550000012, 0.550000012]
+              intensity: 1
+              ambientIntensity: 0.00999999978
+              constant: 1
+              linear: 0.0900000036
+              quadratic: 0.0320000015
+      - name: Point Light 1
+        m_enabled: false
+        transform:
+          position: [-0.100000001, 3.5, 13]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [-0.100000001, 3.5, 13, 1]
+          globalPosition: [-0.100000001, 3.5, 13]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - PointLight:
+              ComponentName: Point Light
+              Enabled: true
+              diffuse: [1, 1, 1]
+              specular: [1, 1, 1]
+              ambient: [0.550000012, 0.550000012, 0.550000012]
+              intensity: 1
+              ambientIntensity: 0.00999999978
+              constant: 1
+              linear: 0.0900000036
+              quadratic: 0.0320000015
+      - name: Point Light 2
+        m_enabled: false
+        transform:
+          position: [-6.0999999, 3.5, 13]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [-6.0999999, 3.5, 13, 1]
+          globalPosition: [-6.0999999, 3.5, 13]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - PointLight:
+              ComponentName: Point Light
+              Enabled: true
+              diffuse: [1, 1, 1]
+              specular: [1, 1, 1]
+              ambient: [0.550000012, 0.550000012, 0.550000012]
+              intensity: 1
+              ambientIntensity: 0.00999999978
+              constant: 1
+              linear: 0.0900000036
+              quadratic: 0.0320000015
+      - name: Spot Light
+        m_enabled: false
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - SpotLight:
+              ComponentName: Spot Light
+              Enabled: true
+              diffuse: [1, 0, 0]
+              specular: [1, 1, 1]
+              ambient: [0, 0, 0]
+              intensity: 8
+              ambientIntensity: 0.00999999978
+              constant: 1
+              linear: 0.0900000036
+              quadratic: 0.0320000015
+              direction: [0, 0, -1]
+              innerCutOff: 0.974683225
+              outerCutOff: 0.954812706
+      - name: Skeleton
+        m_enabled: true
+        transform:
+          position: [3, -12, 0]
+          scale: [0.0399999991, 0.0399999991, 0.0399999991]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [0.0399999991, 0, 0, 0]
+            - [0, 0.0399999991, 0, 0]
+            - [0, 0, 0.0399999991, 0]
+            - [3, -12, 0, 1]
+          globalPosition: [3, -12, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/skeleton/skeleton1.fbx
+              MaterialBase:
+                materialName: Material
+                uuid: e0b0620e-44ed-8a5f-48cd-a77b94b3b12c
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 154
+                    texturePath: skeleton.fbm\maria_diffuse.png
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 153
+                    texturePath: skeleton.fbm\maria_specular.png
+                    textureType: texture_specular
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - Animator:
+              ComponentName: Animator
+              Enabled: true
+              CurrentAnimation: dance
+              Playing: true
+              m_Blending: true
+              m_BlendFactor: 1
+              animationNames:
+                - dance
+                - twerk
+      - name: Skeleton 1
+        m_enabled: true
+        transform:
+          position: [-3, -12, 0]
+          scale: [0.0399999991, 0.0399999991, 0.0399999991]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [0.0399999991, 0, 0, 0]
+            - [0, 0.0399999991, 0, 0]
+            - [0, 0, 0.0399999991, 0]
+            - [-3, -12, 0, 1]
+          globalPosition: [-3, -12, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/skeleton/skeleton1.fbx
+              MaterialBase:
+                materialName: Material
+                uuid: e0b0620e-44ed-8a5f-48cd-a77b94b3b12c
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 154
+                    texturePath: skeleton.fbm\maria_diffuse.png
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 153
+                    texturePath: skeleton.fbm\maria_specular.png
+                    textureType: texture_specular
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - Animator:
+              ComponentName: Animator
+              Enabled: true
+              CurrentAnimation: ""
+              Playing: false
+              m_Blending: false
+              m_BlendFactor: 0
+              animationNames:
+                - dance
+      - name: Particle System
+        m_enabled: true
+        transform:
+          position: [10, 2, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [10, 2, 0, 1]
+          globalPosition: [10, 2, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - ParticleSystem:
+              ComponentName: Particle System
+              Enabled: true
+              EmissionShape: 1
+              DrawEmissionShape: false
+              CubeSize: [1, 1, 1]
+              SphereRadius: 1
+              SphereSurfaceOnly: false
+              Emitting: true
+              MaxParticles: 100
+              SpawnRate: 5
+              OneShot: false
+              MinLifeTime: 0.5
+              MaxLifeTime: 1
+              MinSize: 1
+              MaxSize: 1
+              Gravity: [0, -9.81000042, 0]
+              Albedo: [1, 1, 1, 1]
+              MinInitialVelocity: [0, 1, 0]
+              MaxInitialVelocity: [0, 1, 0]
+              CameraPosition: [0, 0, -5]
+              BlendingAdditive: false
+              EmissionMultiplier: 1
+              UseLocalSpace: false
+              m_Initialized: true
+              m_Texture:
+                textureID: 156
+                texturePath: res/textures/stone.jpg
+                textureType: ""
+      - name: Button
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Button:
+              Color: [1, 1, 1]
+              m_HasTexture: true
+              m_Texture:
+                textureID: 155
+                texturePath: res/textures/buttons/settings_btn.png
+                textureType: ""
+              ComponentName: Button
+              Enabled: true
+              Position: [100, 100]
+              Size: [250, 100]
+              Emission: 1
+      - name: Spawner
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/spawner.lua
+              scriptName: spawner.lua
+    components:
+      []

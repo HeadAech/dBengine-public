@@ -1,0 +1,122 @@
+sceneName: New Scene
+uuid: acce7b5f-040c-c770-2db4-8cd35da8078f
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [-5, -5, -5]
+      scale: [1, 1, 1]
+      rotation: [-0.885570109, 0.272436976, -0.359591246, -0.110624738]
+      modelMatrix:
+        - [0.716912627, 2.98023224e-08, -0.697163105, 0]
+        - [-0.391863823, 0.827080488, -0.402964711, 0]
+        - [0.576609969, 0.562083483, 0.592944443, 0]
+        - [-5, -5, -5, 1]
+      globalPosition: [-5, -5, -5]
+      m_isDirty: true
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [0.576609969, 0.562083483, 0.592944443]
+          Up: [-0.391863883, 0.827080607, -0.402964771]
+          Right: [-0.716912568, 0, 0.697163045]
+          WorldUp: [0, 1, 0]
+          Yaw: -315.800171
+          Pitch: -34.2000084
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.77777779
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Objects\OtherGreenStuff\Bush.scene
+    name: Bush
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: BushMesh
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [3, 3, 3]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/bush/bush.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 47239130-7419-5620-be80-3fcca17f824f
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              density: 0.515999973
+              samples: 5
+              fogColor: [0.444444537, 1, 0]
+              scattering: 0.173999995
+    components:
+      []

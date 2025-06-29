@@ -1,0 +1,211 @@
+sceneName: Main Scene
+uuid: 91c2328e-37ea-85c9-aaf8-76ca37b3d4dd
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [0, 0, -5]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, -5, 1]
+      globalPosition: [0, 0, -5]
+      m_isDirty: false
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [-1, 0, 5.96046519e-08]
+          Up: [0, 1, 0]
+          Right: [-5.96046519e-08, 0, -1]
+          WorldUp: [0, 1, 0]
+          Yaw: -90
+          Pitch: 0
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.50343883
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+    uuid: 7c07b47f-e32f-35d3-bd34-61cae76a2ee6
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Other\death-screen.scene
+    name: Death screen
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: World Environment
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - WorldEnvironment:
+              ComponentName: WorldEnvironment
+              Enabled: true
+              skyboxPath: res/textures/hdri/skybox.hdr
+              m_skyType: 0
+              irradianceStrength: 1
+              sampleDelta: 0.00999999978
+        uuid: f43b41dc-33f6-9f22-090c-2d43109589a7
+      - name: Perished
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Sprite:
+              ModulateColor: [0, 0, 0, 1]
+              m_HasTexture: true
+              m_Texture:
+                textureID: 31
+                texturePath: res\textures\UI\buttons\death\YOU-HAVE-PERISHED.png
+                textureType: ""
+              Clipping: [0, 0, 0, 0]
+              ComponentName: Sprite
+              Enabled: true
+              Position: [0, 193]
+              Size: [800, 140]
+              Rotation: 0
+              Emission: 1
+              anchor: 4
+        uuid: 500c6832-7ac7-b1b6-08ec-af4d2d901a00
+      - name: Menu Btn
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Button:
+              Color: [0, 0, 0]
+              m_HasTexture: true
+              m_Texture:
+                textureID: 33
+                texturePath: res\textures\UI\buttons\death\dont-give-up.png
+                textureType: ""
+              m_HoverTexture:
+                textureID: 32
+                texturePath: res\textures\UI\buttons\death\dont-give-up-hover.png
+                textureType: ""
+              ComponentName: Button
+              Enabled: true
+              Position: [0, -42]
+              Size: [300, 60]
+              Rotation: 0
+              Emission: 1
+              anchor: 4
+        uuid: 66dd654e-8d80-b7a1-7f06-f6a39b9dd9c2
+      - name: Death text
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Text:
+              Text: Your loved one awaits you in afterlife...
+              FontSize: 33
+              Color: [1, 1, 1]
+              ComponentName: Text
+              Enabled: true
+              Position: [0, 86]
+              Size: [435, 50]
+              Rotation: 0
+              Emission: 1
+              anchor: 4
+        uuid: c4c085c1-703a-8536-1400-f4b87ed11e07
+    components:
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/ui/death-screen.lua
+          scriptName: death-screen.lua
+    uuid: 046ee965-f65c-c391-80e1-7ebe29e314c1
+LibraryAnimations:
+  Animation:
+    animationName: idle
+    animationPath: res/animations/idle.fbx
+  Animation:
+    animationName: run
+    animationPath: res/animations/run.fbx
+  Animation:
+    animationName: hades_idle
+    animationPath: res/animations/hades/hades_idle.fbx
+  Animation:
+    animationName: attack
+    animationPath: res/animations/attack_1.fbx
+  Animation:
+    animationName: dance
+    animationPath: res/models/skeleton/skeleton.fbx
+  Animation:
+    animationName: hades_run
+    animationPath: res/animations/hades/hades_run.fbx
+  Animation:
+    animationName: twerk
+    animationPath: res/animations/twerk.fbx
+  Animation:
+    animationName: hades_guitar
+    animationPath: res/animations/hades/hades_guitar.fbx
+  Animation:
+    animationName: hades_stun
+    animationPath: res/animations/hades/hades_stun.fbx

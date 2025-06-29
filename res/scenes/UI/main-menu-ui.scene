@@ -1,0 +1,361 @@
+sceneName: New Scene
+uuid: 0c35040e-0077-7b94-c553-7317b1b6f1a8
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [-4.84169292, -5, -3.92794561]
+      scale: [1, 1, 1]
+      rotation: [0.732216656, 0.192093745, -0.632032812, 0.165810958]
+      modelMatrix:
+        - [0.14608252, -1.49011612e-08, 0.989272356, 0]
+        - [-0.485638201, 0.871213436, 0.0717125386, 0]
+        - [-0.861867428, -0.490904391, 0.12726903, 0]
+        - [-4.84169292, -5, -3.92794561, 1]
+      globalPosition: [-4.84169292, -5, -3.92794561]
+      m_isDirty: false
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [0.711814046, -0.0244331993, 0.701942921]
+          Up: [0.0173970871, 0.9997015, 0.0171558335]
+          Right: [-0.70215255, 0, 0.712026596]
+          WorldUp: [0, 1, 0]
+          Yaw: 45.4000473
+          Pitch: 1.40005851
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.65134704
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+    uuid: f1cfb5e2-cc48-e255-62c2-0577cc61b4fc
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\UI\main-menu-ui.scene
+    name: Menu UI
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: bg
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Sprite:
+              ModulateColor: [0, 0, 0, 0.490196079]
+              m_HasTexture: false
+              Clipping: [0, 0, 0.319999993, 0]
+              ComponentName: Sprite
+              Enabled: true
+              Position: [-690.799988, -82.9000015]
+              Size: [1000, 2000]
+              Rotation: 142.300003
+              Emission: 1
+              anchor: 3
+        uuid: 7f1ff724-1b1d-33be-e185-eb72150362b9
+      - name: Title
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Sprite:
+              ModulateColor: [0, 0, 0, 1]
+              m_HasTexture: true
+              m_Texture:
+                textureID: 42
+                texturePath: res\textures\UI\buttons\other\orpheus-title.png
+                textureType: ""
+              Clipping: [0, 0, 0, 0]
+              ComponentName: Sprite
+              Enabled: true
+              Position: [36.7000008, 34]
+              Size: [700, 100]
+              Rotation: 0
+              Emission: 1
+              anchor: 0
+        uuid: 95bab930-bf93-6449-e7b1-846292ca420d
+      - name: Start Button
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Button:
+              Color: [0, 0, 0]
+              m_HasTexture: true
+              m_Texture:
+                textureID: 38
+                texturePath: res\textures\UI\buttons\Start\start.png
+                textureType: ""
+              m_HoverTexture:
+                textureID: 39
+                texturePath: res\textures\UI\buttons\Start\start-hover.png
+                textureType: ""
+              ComponentName: Button
+              Enabled: true
+              Position: [84.8000031, 120.400002]
+              Size: [350, 60]
+              Rotation: 0
+              Emission: 1
+              anchor: 3
+        uuid: 91351994-e31a-f95d-2e37-27b326af5e6b
+      - name: Quit Button
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Button:
+              Color: [0, 0, 0]
+              m_HasTexture: true
+              m_Texture:
+                textureID: 40
+                texturePath: res\textures\UI\buttons\quit\quit.png
+                textureType: ""
+              m_HoverTexture:
+                textureID: 41
+                texturePath: res\textures\UI\buttons\quit\quit-hover.png
+                textureType: ""
+              ComponentName: Button
+              Enabled: true
+              Position: [65, 43.5999985]
+              Size: [262.299988, 48.4000015]
+              Rotation: 0
+              Emission: 2.79999995
+              anchor: 3
+        uuid: 1eaae90a-d16a-61a0-b2b4-8aed62dc1216
+      - name: fmodLogo
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, -2.12771454e-08, 9.01990061e-05, -1.86264515e-09]
+          modelMatrix:
+            - [1, -3.72912856e-09, -0.000180398012, 0]
+            - [3.72145204e-09, 1, -4.25546283e-08, 0]
+            - [0.000180398012, 4.25539533e-08, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Sprite:
+              ModulateColor: [0, 0, 0, 1]
+              m_HasTexture: true
+              m_Texture:
+                textureID: 47
+                texturePath: res\textures\FMOD_LOGOS\FMOD Logo White - Transparent Background.png
+                textureType: ""
+              Clipping: [0, 0, 0, 0]
+              ComponentName: Sprite
+              Enabled: true
+              Position: [64.5999985, 64.1999969]
+              Size: [162, 64]
+              Rotation: 357.5
+              Emission: 1
+              anchor: 6
+        uuid: 1ee4ac81-9ccd-846a-be0a-0f94d82135eb
+      - name: CreditText1
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Text:
+              Text: "Audio Engine: FMOD Studio by \n"
+              FontSize: 16
+              Color: [1, 1, 1]
+              ComponentName: Text
+              Enabled: true
+              Position: [43.0999985, 195.899994]
+              Size: [100, 50]
+              Rotation: 0
+              Emission: 1
+              anchor: 6
+        uuid: c67395e9-a3e8-553f-fb3c-addad6fd8a60
+      - name: CreditText2
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Text:
+              Text: Firelight Technologies Pty Ltd.
+              FontSize: 16
+              Color: [1, 1, 1]
+              ComponentName: Text
+              Enabled: true
+              Position: [123, 176.5]
+              Size: [100, 50]
+              Rotation: 0
+              Emission: 1
+              anchor: 6
+        uuid: f8c45eae-9091-1385-865a-a10c2f9ffd3b
+    components:
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/ui/menu.lua
+          scriptName: menu.lua
+    uuid: a7175edd-e25f-f895-b7b9-7e749b6b1976
+LibraryAnimations:
+  Animation:
+    animationName: idle
+    animationPath: res/animations/idle.fbx
+  Animation:
+    animationName: run
+    animationPath: res/animations/run.fbx
+  Animation:
+    animationName: hades_idle
+    animationPath: res/animations/hades/hades_idle.fbx
+  Animation:
+    animationName: attack
+    animationPath: res/animations/attack_1.fbx
+  Animation:
+    animationName: attack_2
+    animationPath: res/animations/stab2.fbx
+  Animation:
+    animationName: dance
+    animationPath: res/models/skeleton/skeleton.fbx
+  Animation:
+    animationName: hades-pose-3
+    animationPath: res/animations/hades/hades-pose-3.fbx
+  Animation:
+    animationName: combo1
+    animationPath: res/animations/combo1.fbx
+  Animation:
+    animationName: hades_run
+    animationPath: res/animations/hades/hades_run.fbx
+  Animation:
+    animationName: twerk
+    animationPath: res/animations/twerk.fbx
+  Animation:
+    animationName: hades_guitar
+    animationPath: res/animations/hades/hades_guitar.fbx
+  Animation:
+    animationName: hades_stun
+    animationPath: res/animations/hades/hades_stun.fbx
+  Animation:
+    animationName: roll
+    animationPath: res/animations/roll.fbx
+  Animation:
+    animationName: hades_attack
+    animationPath: res/animations/hades/hades_attack.fbx
+  Animation:
+    animationName: combo2
+    animationPath: res/animations/combo2.fbx
+  Animation:
+    animationName: hades-pose-1
+    animationPath: res/animations/hades/hades-pose-1.fbx
+  Animation:
+    animationName: combo3
+    animationPath: res/animations/combo3.fbx
+  Animation:
+    animationName: die
+    animationPath: res/animations/die.fbx
+  Animation:
+    animationName: jump
+    animationPath: res/animations/jump.fbx
+  Animation:
+    animationName: jump_fall
+    animationPath: res/animations/jump_fall.fbx
+  Animation:
+    animationName: hades_death
+    animationPath: res/animations/hades/hades_death.fbx
+  Animation:
+    animationName: hades_music_vibe
+    animationPath: res/animations/hades/hades_music_vibe.fbx
+  Animation:
+    animationName: hades_laying_down_death
+    animationPath: res/animations/hades/hades_laying_down_death.fbx
+  Animation:
+    animationName: hades_jump_attack
+    animationPath: res/animations/hades/hades_jump_attack.fbx
+  Animation:
+    animationName: hades_scream
+    animationPath: res/animations/hades/hades_scream.fbx
+  Animation:
+    animationName: hades-pose-2
+    animationPath: res/animations/hades/hades-pose-2.fbx

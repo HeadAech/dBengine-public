@@ -1,0 +1,248 @@
+sceneName: Main Scene
+uuid: ceb6ce0e-2119-ab7e-6c77-29aa4aa28546
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [4.3233037, 2.6553452, 0.331743777]
+      scale: [1, 1, 1]
+      rotation: [0.825313747, -0.0360342748, -0.562987268, -0.0245807562]
+      modelMatrix:
+        - [0.364882231, 3.7252903e-09, 0.931053758, 0]
+        - [0.0811473429, 0.996194661, -0.0318018608, 0]
+        - [-0.927510738, 0.0871564746, 0.363493741, 0]
+        - [4.3233037, 2.6553452, 0.331743777, 1]
+      globalPosition: [4.3233037, 2.6553452, 0.331743777]
+      m_isDirty: true
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [-0.927510738, 0.0871564746, 0.363493741]
+          Up: [0.0811473578, 0.99619472, -0.0318018533]
+          Right: [-0.364882231, 0, -0.931053638]
+          WorldUp: [0, 1, 0]
+          Yaw: -68.5996628
+          Pitch: -5.00004148
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.4332875
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Other\main-menu.scene
+    name: Main Scene
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: World Environment
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - WorldEnvironment:
+              ComponentName: WorldEnvironment
+              Enabled: true
+              skyboxPath: res/textures/hdri/elysium.png
+              m_skyType: 0
+      - name: Directional Light
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [-0.157075673, 0.248457879, 0.791296959, 0.536138952]
+          modelMatrix:
+            - [-0.82719183, 0.224779159, 0.515002906, 0]
+            - [0.561636686, 0.301647425, 0.770436883, 0]
+            - [0.0178288817, 0.926543593, -0.375764489, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - DirectionalLight:
+              ComponentName: Directional Light
+              Enabled: true
+              diffuse: [0.400000006, 0.400000006, 0.400000006]
+              specular: [0.5, 0.5, 0.5]
+              ambient: [0.0500000007, 0.0500000007, 0.0500000007]
+              intensity: 1.5
+              ambientIntensity: 0.00999999978
+              direction: [-0.0178288817, -0.926543593, 0.375764489]
+      - name: Cube
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/blockout/poziompostep.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 98925cb2-d017-e048-a63e-63aaef1494a5
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: 463f38c8-6098-d096-3a92-3dc049b0499f
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 28
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Color.jpg
+                    textureType: ""
+                  normal:
+                    textureID: 29
+                    texturePath: res\textures\marble\Marble021_1K-JPG_NormalGL.jpg
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 30
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Roughness.jpg
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 31
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Displacement.jpg
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: true
+                triplanarTilingScale: 0.400000006
+      - isScene: true
+        pathToString: res\scenes\UI\main-menu-ui.scene
+        name: Menu UI
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        components:
+          []
+    components:
+      []
+LibraryAnimations:
+  Animation:
+    animationName: idle
+    animationPath: res/animations/idle.fbx
+  Animation:
+    animationName: run
+    animationPath: res/animations/run.fbx
+  Animation:
+    animationName: attack
+    animationPath: res/animations/attack_1.fbx
+  Animation:
+    animationName: hades_idle
+    animationPath: res/animations/hades/hades_idle.fbx
+  Animation:
+    animationName: dance
+    animationPath: res/models/skeleton/skeleton.fbx
+  Animation:
+    animationName: twerk
+    animationPath: res/animations/twerk.fbx
+  Animation:
+    animationName: hades_run
+    animationPath: res/animations/hades/hades_run.fbx
+  Animation:
+    animationName: hades_guitar
+    animationPath: res/animations/hades/hades_guitar.fbx
+  Animation:
+    animationName: hades_stun
+    animationPath: res/animations/hades/hades_stun.fbx

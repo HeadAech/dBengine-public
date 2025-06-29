@@ -1,0 +1,418 @@
+sceneName: Main Scene
+uuid: 1556be1c-329d-0120-3ebc-220fee01e1cd
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [0, 0, -5]
+      scale: [1, 1, 1]
+      rotation: [0.688116848, 0.0180188995, 0.725127637, -0.0189880561]
+      modelMatrix:
+        - [-0.0523412228, 1.86264515e-09, -0.998629332, 0]
+        - [0.0522640049, 0.99862957, -0.00273931213, 0]
+        - [0.997260809, -0.0523357466, -0.0522694588, 0]
+        - [0, 0, -5, 1]
+      globalPosition: [0, 0, -5]
+      m_isDirty: true
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [0.99726069, -0.0523357391, -0.0522694513]
+          Up: [0.0522640012, 0.99862957, -0.00273931446]
+          Right: [0.0523411818, 0, 0.998629272]
+          WorldUp: [0, 1, 0]
+          Yaw: 93.0002975
+          Pitch: 2.9999876
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.4332875
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\UI\ui-no-we.scene
+    name: Main Scene
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: HP Bar
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: Border
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [1, 1, 1, 1]
+                  m_HasTexture: true
+                  m_Texture:
+                    textureID: 28
+                    texturePath: res\textures\UI\bar\bar_outside.png
+                    textureType: ""
+                  Clipping: [0, 0, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [66.5999985, 50]
+                  Size: [400, 30]
+                  Emission: 13.8999996
+                  anchor: 6
+          - name: Inside
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [0, 0, 0, 1]
+                  m_HasTexture: true
+                  m_Texture:
+                    textureID: 29
+                    texturePath: res\textures\UI\bar\bar_inside.png
+                    textureType: ""
+                  Clipping: [0, 0, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [69.3000031, 52.5999985]
+                  Size: [395, 25.2000008]
+                  Emission: 2
+                  anchor: 6
+        components:
+          []
+      - name: Combo Container
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: Combo Text
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Text:
+                  Text: COMBO
+                  FontSize: 35
+                  Color: [1, 1, 1]
+                  ComponentName: Text
+                  Enabled: true
+                  Position: [40, 120.800003]
+                  Size: [100, 50]
+                  Emission: 1
+                  anchor: 3
+          - name: Combo Counter
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Text:
+                  Text: x10
+                  FontSize: 31
+                  Color: [0.651550114, 0.940740764, 0.940740764]
+                  ComponentName: Text
+                  Enabled: true
+                  Position: [141.5, 122.900002]
+                  Size: [100, 50]
+                  Emission: 1
+                  anchor: 3
+          - name: Recent
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              - name: Recent1
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Text:
+                      Text: Thunderstrike
+                      FontSize: 18
+                      Color: [0.677777767, 0.677777767, 0.677777767]
+                      ComponentName: Text
+                      Enabled: true
+                      Position: [40, 59.2000008]
+                      Size: [100, 50]
+                      Emission: 1
+                      anchor: 3
+              - name: Recent2
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Text:
+                      Text: Shockwave
+                      FontSize: 18
+                      Color: [0.588888884, 0.588888884, 0.588888884]
+                      ComponentName: Text
+                      Enabled: true
+                      Position: [40, 37.2999992]
+                      Size: [100, 50]
+                      Emission: 1
+                      anchor: 3
+              - name: Recent3
+                m_enabled: true
+                transform:
+                  position: [0, 0, 0]
+                  scale: [1, 1, 1]
+                  rotation: [1, 0, 0, 0]
+                  modelMatrix:
+                    - [1, 0, 0, 0]
+                    - [0, 1, 0, 0]
+                    - [0, 0, 1, 0]
+                    - [0, 0, 0, 1]
+                  globalPosition: [0, 0, 0]
+                  m_isDirty: false
+                children:
+                  []
+                components:
+                  - Text:
+                      Text: God's fury
+                      FontSize: 33
+                      Color: [0.766666651, 0.953333318, 1]
+                      ComponentName: Text
+                      Enabled: true
+                      Position: [38, 82.6999969]
+                      Size: [100, 50]
+                      Emission: 1
+                      anchor: 3
+            components:
+              []
+        components:
+          []
+      - name: Boss HP
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          - name: HP Bar
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [1, 0, 0, 1]
+                  m_HasTexture: false
+                  Clipping: [0, 0, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [0, 77]
+                  Size: [342.899994, 7]
+                  Emission: 1
+                  anchor: 1
+          - name: HP Bar bg
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Sprite:
+                  ModulateColor: [0.359259248, 0.359259248, 0.359259248, 1]
+                  m_HasTexture: false
+                  Clipping: [0, 0, 0, 0]
+                  ComponentName: Sprite
+                  Enabled: true
+                  Position: [0, 77]
+                  Size: [400, 7]
+                  Emission: 1
+                  anchor: 1
+          - name: Name
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Text:
+                  Text: "- Hades -"
+                  FontSize: 32
+                  Color: [1, 1, 1]
+                  ComponentName: Text
+                  Enabled: true
+                  Position: [0, 0]
+                  Size: [89.8000031, 50.7000008]
+                  Emission: 1
+                  anchor: 1
+          - name: Title
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, 0, 0, 0]
+                - [0, 1, 0, 0]
+                - [0, 0, 1, 0]
+                - [0, 0, 0, 1]
+              globalPosition: [0, 0, 0]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - Text:
+                  Text: Warden of the Damned
+                  FontSize: 18.5
+                  Color: [0.718518496, 0.718518496, 0.718518496]
+                  ComponentName: Text
+                  Enabled: true
+                  Position: [0, 0]
+                  Size: [126.699997, 68.6999969]
+                  Emission: 1
+                  anchor: 1
+        components:
+          []
+    components:
+      []
+LibraryAnimations:
+  {}

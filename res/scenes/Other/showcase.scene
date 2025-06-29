@@ -1,0 +1,1303 @@
+sceneName: Main Scene
+uuid: a370d701-8d6c-d47e-b787-31193659126a
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [-16.9749603, -3.1361804, 11.6155319]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [-16.9749603, -3.1361804, 11.6155319, 1]
+      globalPosition: [-16.9749603, -3.1361804, 11.6155319]
+      m_isDirty: false
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [0.644960701, -0.0383847579, -0.763251185]
+          Up: [0.0247749202, 0.999263108, -0.0293188188]
+          Right: [0.763814092, -0, 0.645436406]
+          WorldUp: [0, 1, 0]
+          Yaw: -580.198425
+          Pitch: 2.19982481
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.46492434
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+    uuid: 5cef9f83-edb1-2f25-d3d6-7b4241616f79
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Other\showcase.scene
+    name: Main Scene
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [1, 1, 1]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0, 0, 1, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: World Environment
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - WorldEnvironment:
+              ComponentName: WorldEnvironment
+              Enabled: true
+              skyboxPath: res/textures/hdri/skybox.hdr
+              m_skyType: 0
+              irradianceStrength: 0.0500000007
+              sampleDelta: 0.100000001
+        uuid: c97f561f-bb50-e0fc-4706-d44a83b2190a
+      - name: Directional Light
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [-0.153357223, 0.25396955, 0.789543092, 0.537217736]
+          modelMatrix:
+            - [-0.823962331, 0.236267373, 0.515038192, 0]
+            - [0.56581223, 0.293793142, 0.770416975, 0]
+            - [0.0307096392, 0.926209211, -0.375757575, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - DirectionalLight:
+              ComponentName: Directional Light
+              Enabled: true
+              diffuse: [0.400000006, 0.400000006, 0.400000006]
+              specular: [0.5, 0.5, 0.5]
+              ambient: [0.0500000007, 0.0500000007, 0.0500000007]
+              intensity: 1.5
+              ambientIntensity: 0.00999999978
+              direction: [-0.0307096392, -0.926209211, 0.375757575]
+        uuid: c8c5546c-bad2-cdfe-0051-5accaa649a89
+      - name: Floor
+        m_enabled: true
+        transform:
+          position: [0, -11.0188799, 0]
+          scale: [20, 1, 20]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [20, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 20, 0]
+            - [0, -11.0188799, 0, 1]
+          globalPosition: [0, -11.0188799, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/cube/cube.obj
+              MaterialBase:
+                materialName: Material
+                uuid: b58801b9-de10-9c64-3268-c4662a69b709
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 32
+                    texturePath: res/models/cube/plastic.jpg
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 33
+                    texturePath: res/models/cube/normal.jpg
+                    textureType: texture_normal
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 31
+                    texturePath: res/models/cube/roughness.jpg
+                    textureType: texture_roughness
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: 463f38c8-6098-d096-3a92-3dc049b0499f
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 37
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Color.jpg
+                    textureType: ""
+                  normal:
+                    textureID: 36
+                    texturePath: res\textures\marble\Marble021_1K-JPG_NormalGL.jpg
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 34
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Roughness.jpg
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 35
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Displacement.jpg
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: true
+                triplanarTilingScale: 1.20000005
+          - Tag:
+              ComponentName: Tag
+              Enabled: true
+              Name: Floor
+        uuid: 556b46b5-495a-c975-0083-526ec65a4d9b
+      - name: Cube1
+        m_enabled: true
+        transform:
+          position: [0, -1.8318572, 7.94493389]
+          scale: [1, 1, 1]
+          rotation: [-0.999999702, 0.000502023904, 0.000502023904, 0.000502023904]
+          modelMatrix:
+            - [0.999997795, -0.00149295153, 0.00149518368, 0]
+            - [0.00149518368, 0.999997795, -0.00149295153, 0]
+            - [-0.00149295153, 0.00149518368, 0.999997795, 0]
+            - [0, -1.8318572, 7.94493389, 1]
+          globalPosition: [0, -1.8318572, 7.94493389]
+          m_isDirty: true
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/cube/cube.obj
+              MaterialBase:
+                materialName: Material
+                uuid: b58801b9-de10-9c64-3268-c4662a69b709
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 32
+                    texturePath: res/models/cube/plastic.jpg
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 33
+                    texturePath: res/models/cube/normal.jpg
+                    textureType: texture_normal
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 31
+                    texturePath: res/models/cube/roughness.jpg
+                    textureType: texture_roughness
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/test.lua
+              scriptName: test.lua
+        uuid: d2938cf9-b007-c4ff-367a-ba1644185425
+      - name: Arena
+        m_enabled: true
+        transform:
+          position: [16.6782799, -10.3819323, -13.5882359]
+          scale: [2.00999999, 2.00999999, 2.00999999]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [2.00999999, 0, 0, 0]
+            - [0, 2.00999999, 0, 0]
+            - [0, 0, 2.00999999, 0]
+            - [16.6782799, -10.3819323, -13.5882359, 1]
+          globalPosition: [16.6782799, -10.3819323, -13.5882359]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/blockout/ArenaEmpty.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 0a1f5a4e-971a-0df1-e9b9-44d41f44c503
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: texture_normal
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: texture_roughness
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: 463f38c8-6098-d096-3a92-3dc049b0499f
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 37
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Color.jpg
+                    textureType: ""
+                  normal:
+                    textureID: 36
+                    texturePath: res\textures\marble\Marble021_1K-JPG_NormalGL.jpg
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 34
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Roughness.jpg
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 35
+                    texturePath: res\textures\marble\Marble021_1K-JPG_Displacement.jpg
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: true
+                triplanarTilingScale: 0.400000006
+        uuid: b48a5582-712d-f1c7-146d-feb044074f4a
+      - name: Hades
+        m_enabled: true
+        transform:
+          position: [16.0228939, -8.2149992, -13.231143]
+          scale: [0.0299999993, 0.0299999993, 0.0299999993]
+          rotation: [0.848664701, 0, -0.528931201, 0]
+          modelMatrix:
+            - [0.0132139064, 0, 0.0269331131, 0]
+            - [0, 0.0299999993, 0, 0]
+            - [-0.0269331131, 0, 0.0132139064, 0]
+            - [16.0228939, -8.2149992, -13.231143, 1]
+          globalPosition: [16.0228939, -8.2149992, -13.231143]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/hades/hades.fbx
+              MaterialBase:
+                materialName: Material
+                uuid: f8d37323-9c8c-c999-9f92-1a585a08fa7d
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: texture_diffuse
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: texture_specular
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: 86ea04e7-6fe4-72e7-a431-928a6d4df4d5
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 39
+                    texturePath: res\textures\hades\bear_diffuse.png
+                    textureType: ""
+                  normal:
+                    textureID: 40
+                    texturePath: res\textures\hades\bear_normal.png
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 38
+                    texturePath: res\textures\hades\bear_specular.png
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+          - Animator:
+              ComponentName: Animator
+              Enabled: true
+              CurrentAnimation: hades_music_vibe
+              Playing: true
+              m_Blending: false
+              m_BlendFactor: 1
+              animations:
+                animation:
+                  animationName: hades_music_vibe
+                  animationPath: res/animations/hades/hades_music_vibe.fbx
+                animation:
+                  animationName: hades_guitar
+                  animationPath: res/animations/hades/hades_guitar.fbx
+              animationTransitions:
+                transition:
+                  animationBase: hades_music_vibe
+                  animationTarget: hades_guitar
+                  duration: 0.300000012
+                  name: vibe-to-guitar
+                transition:
+                  animationBase: hades_guitar
+                  animationTarget: hades_music_vibe
+                  duration: 0.300000012
+                  name: guitar-to-vibe
+        uuid: 29323b37-ad99-9764-72d1-7b711866723c
+      - name: Firework
+        m_enabled: true
+        transform:
+          position: [-16.3077698, -10.0692215, -15.3821411]
+          scale: [1.79999995, 1.79999995, 1.79999995]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1.79999995, 0, 0, 0]
+            - [0, 1.79999995, 0, 0]
+            - [0, 0, 1.79999995, 0]
+            - [-16.3077698, -10.0692215, -15.3821411, 1]
+          globalPosition: [-16.3077698, -10.0692215, -15.3821411]
+          m_isDirty: false
+        children:
+          - name: Particles
+            m_enabled: true
+            transform:
+              position: [0, 0, 0]
+              scale: [1, 1, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1.79999995, 0, 0, 0]
+                - [0, 1.79999995, 0, 0]
+                - [0, 0, 1.79999995, 0]
+                - [-16.3077698, -10.0692215, -15.3821411, 1]
+              globalPosition: [-16.3077698, -10.0692215, -15.3821411]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - ParticleSystem:
+                  ComponentName: Particle System
+                  Enabled: true
+                  EmissionShape: 0
+                  DrawEmissionShape: false
+                  CubeSize: [1, 1, 1]
+                  SphereRadius: 1
+                  SphereSurfaceOnly: false
+                  Emitting: true
+                  MaxParticles: 1000
+                  SpawnRate: 100
+                  OneShot: false
+                  MinLifeTime: 2.79999995
+                  MaxLifeTime: 3.29999995
+                  MinSize: 1
+                  MaxSize: 1
+                  Gravity: [0, -9.81000042, 0]
+                  Albedo: [1, 0.888888896, 0, 1]
+                  MinInitialVelocity: [-1, 15.6999998, -1]
+                  MaxInitialVelocity: [1, 15.6999998, 1]
+                  CameraPosition: [-16.9749603, -3.1361804, 11.6155319]
+                  BlendingAdditive: false
+                  EmissionMultiplier: 95
+                  UseLocalSpace: false
+                  m_Initialized: true
+                  m_Texture:
+                    textureID: 53
+                    texturePath: res\textures\kenneyparticlepack\flare_01.png
+                    textureType: ""
+                  BillboardY: false
+                  ScaleOverTime: true
+                  BeginScaling: 0.920000017
+                  FadeOverTime: true
+                  BeginFading: 0.800000012
+            uuid: 3c99de70-b85f-477e-2c72-d457f33c81f9
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/vulcano_fireworks/fajerwerki.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 6f2ff15a-2057-a582-7ef0-ae262a200d9a
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              density: 2
+              samples: 97
+              fogColor: [1, 0, 0]
+              scattering: 10
+        uuid: c0683c79-b2ea-7e14-49bd-27415da2d6b4
+      - name: Text
+        m_enabled: true
+        transform:
+          position: [0, 0, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [1, 0, 0, 0]
+            - [0, 1, 0, 0]
+            - [0, 0, 1, 0]
+            - [0, 0, 0, 1]
+          globalPosition: [0, 0, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - Text:
+              Text: Press 'Z' to toggle camera.
+              FontSize: 32
+              Color: [1, 1, 1]
+              ComponentName: Text
+              Enabled: true
+              Position: [0, 20]
+              Size: [272.600006, 50]
+              Rotation: 0
+              Emission: 1
+              anchor: 1
+        uuid: f702d6fe-4ce4-80d2-b65f-e577d50a087a
+      - name: Room
+        m_enabled: true
+        transform:
+          position: [-5.9427433, -5.63999748, 25.2649231]
+          scale: [1, 1, 1]
+          rotation: [1, 0, -4.47918005e-08, -6.29685459e-08]
+          modelMatrix:
+            - [1, -1.25937092e-07, 8.9583601e-08, 0]
+            - [1.25937092e-07, 1, 5.6409489e-15, 0]
+            - [-8.9583601e-08, 5.6409489e-15, 1, 0]
+            - [-5.9427433, -5.63999748, 25.2649231, 1]
+          globalPosition: [-5.9427433, -5.63999748, 25.2649231]
+          m_isDirty: false
+        children:
+          - name: Cube
+            m_enabled: true
+            transform:
+              position: [4.40130997, -2.47693729, 6.71891403]
+              scale: [1, 9.06957054, 12.1696157]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [1, -1.25937092e-07, 8.9583601e-08, 0]
+                - [1.14219529e-06, 9.06957054, 5.11609831e-14, 0]
+                - [-1.090198e-06, 6.86481782e-14, 12.1696157, 0]
+                - [-1.54143429, -8.11693573, 31.9838371, 1]
+              globalPosition: [-1.54143429, -8.11693573, 31.9838371]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - MeshInstance:
+                  ComponentName: MeshInstance
+                  Enabled: true
+                  directory: ""
+                  m_modelPath: res/models/cube/cube.obj
+                  MaterialBase:
+                    materialName: Material
+                    uuid: b58801b9-de10-9c64-3268-c4662a69b709
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 32
+                        texturePath: res/models/cube/plastic.jpg
+                        textureType: texture_diffuse
+                      normal:
+                        textureID: 33
+                        texturePath: res/models/cube/normal.jpg
+                        textureType: texture_normal
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 31
+                        texturePath: res/models/cube/roughness.jpg
+                        textureType: texture_roughness
+                      ambientOcclusion:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+            uuid: 1562f23c-271e-98d7-fba5-13f22a4c2d79
+          - name: Cube1
+            m_enabled: true
+            transform:
+              position: [-2.96952057, -5.33518124, 6.17147636]
+              scale: [6.83705282, 1, 11.6220436]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [6.83705282, -8.61038529e-07, 6.12487838e-07, 0]
+                - [1.25937092e-07, 1, 5.6409489e-15, 0]
+                - [-1.04114451e-06, 6.5559354e-14, 11.6220436, 0]
+                - [-8.91226482, -10.9751778, 31.4363995, 1]
+              globalPosition: [-8.91226482, -10.9751778, 31.4363995]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - MeshInstance:
+                  ComponentName: MeshInstance
+                  Enabled: true
+                  directory: ""
+                  m_modelPath: res/models/cube/cube.obj
+                  MaterialBase:
+                    materialName: Material
+                    uuid: b58801b9-de10-9c64-3268-c4662a69b709
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 32
+                        texturePath: res/models/cube/plastic.jpg
+                        textureType: texture_diffuse
+                      normal:
+                        textureID: 33
+                        texturePath: res/models/cube/normal.jpg
+                        textureType: texture_normal
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 31
+                        texturePath: res/models/cube/roughness.jpg
+                        textureType: texture_roughness
+                      ambientOcclusion:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+                  MaterialOverride:
+                    materialName: Material
+                    uuid: d4ebd28b-8232-fdf2-d3da-4504aa04647a
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 50
+                        texturePath: res\textures\rocks\Rock062_2K-JPG_Color.jpg
+                        textureType: ""
+                      normal:
+                        textureID: 51
+                        texturePath: res\textures\rocks\Rock062_2K-JPG_NormalGL.jpg
+                        textureType: ""
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 49
+                        texturePath: res\textures\rocks\Rock062_2K-JPG_Roughness.jpg
+                        textureType: ""
+                      ambientOcclusion:
+                        textureID: 48
+                        texturePath: res\textures\rocks\Rock062_2K-JPG_AmbientOcclusion.jpg
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+            uuid: e8521beb-5852-f7e9-ded1-3de209571417
+          - name: Cube2
+            m_enabled: true
+            transform:
+              position: [-10.5987024, -1.89637709, 6.71891594]
+              scale: [1, 8.47006893, 12.1696157]
+              rotation: [1, 0, 0, 2.52668235e-22]
+              modelMatrix:
+                - [1, -1.25937092e-07, 8.9583601e-08, 0]
+                - [1.06669586e-06, 8.47006893, 4.77792244e-14, 0]
+                - [-1.090198e-06, 6.86481782e-14, 12.1696157, 0]
+                - [-16.5414467, -7.53637314, 31.9838371, 1]
+              globalPosition: [-16.5414467, -7.53637314, 31.983839]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - MeshInstance:
+                  ComponentName: MeshInstance
+                  Enabled: true
+                  directory: ""
+                  m_modelPath: res/models/cube/cube.obj
+                  MaterialBase:
+                    materialName: Material
+                    uuid: b58801b9-de10-9c64-3268-c4662a69b709
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 32
+                        texturePath: res/models/cube/plastic.jpg
+                        textureType: texture_diffuse
+                      normal:
+                        textureID: 33
+                        texturePath: res/models/cube/normal.jpg
+                        textureType: texture_normal
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 31
+                        texturePath: res/models/cube/roughness.jpg
+                        textureType: texture_roughness
+                      ambientOcclusion:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+                  MaterialOverride:
+                    materialName: Material
+                    uuid: 85a8be5f-33c6-5b15-2a1c-0dd45d42ce1a
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 70
+                        texturePath: res\textures\brick\Bricks059_2K-JPG_Color.jpg
+                        textureType: ""
+                      normal:
+                        textureID: 72
+                        texturePath: res\textures\brick\Bricks059_2K-JPG_NormalGL.jpg
+                        textureType: ""
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 73
+                        texturePath: res\textures\brick\Bricks059_2K-JPG_Roughness.jpg
+                        textureType: ""
+                      ambientOcclusion:
+                        textureID: 71
+                        texturePath: res\textures\brick\Bricks059_2K-JPG_AmbientOcclusion.jpg
+                        textureType: ""
+                      height:
+                        textureID: 74
+                        texturePath: res\textures\brick\Bricks059_2K-JPG_Displacement.jpg
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: true
+                    triplanarTilingScale: 0.899999976
+            uuid: 0130cc89-4e59-eb11-e9c3-b371474b4eb1
+          - name: Cube3
+            m_enabled: true
+            transform:
+              position: [-2.96952057, 5.66481876, 6.17147636]
+              scale: [6.83705282, 1, 11.6220436]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [6.83705282, -8.61038529e-07, 6.12487838e-07, 0]
+                - [1.25937092e-07, 1, 5.6409489e-15, 0]
+                - [-1.04114451e-06, 6.5559354e-14, 11.6220436, 0]
+                - [-8.91226387, 0.0248217583, 31.4363995, 1]
+              globalPosition: [-8.91226387, 0.0248217583, 31.4363995]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - MeshInstance:
+                  ComponentName: MeshInstance
+                  Enabled: true
+                  directory: ""
+                  m_modelPath: res/models/cube/cube.obj
+                  MaterialBase:
+                    materialName: Material
+                    uuid: b58801b9-de10-9c64-3268-c4662a69b709
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 32
+                        texturePath: res/models/cube/plastic.jpg
+                        textureType: texture_diffuse
+                      normal:
+                        textureID: 33
+                        texturePath: res/models/cube/normal.jpg
+                        textureType: texture_normal
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 31
+                        texturePath: res/models/cube/roughness.jpg
+                        textureType: texture_roughness
+                      ambientOcclusion:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+            uuid: 0b8050b0-6029-ff29-de7b-7f2f78fc85f7
+          - name: Cube4
+            m_enabled: true
+            transform:
+              position: [-2.62984467, 3.86238098e-05, 16.0587502]
+              scale: [8.69847202, 5.07974005, 1]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [8.69847202, -1.09546022e-06, 7.79240452e-07, 0]
+                - [6.39727716e-07, 5.07974005, 2.86545554e-14, 0]
+                - [-8.9583601e-08, 5.6409489e-15, 1, 0]
+                - [-8.57258987, -5.63995838, 41.3236732, 1]
+              globalPosition: [-8.57258987, -5.63995838, 41.3236732]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - MeshInstance:
+                  ComponentName: MeshInstance
+                  Enabled: true
+                  directory: ""
+                  m_modelPath: res/models/cube/cube.obj
+                  MaterialBase:
+                    materialName: Material
+                    uuid: b58801b9-de10-9c64-3268-c4662a69b709
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 32
+                        texturePath: res/models/cube/plastic.jpg
+                        textureType: texture_diffuse
+                      normal:
+                        textureID: 33
+                        texturePath: res/models/cube/normal.jpg
+                        textureType: texture_normal
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 31
+                        texturePath: res/models/cube/roughness.jpg
+                        textureType: texture_roughness
+                      ambientOcclusion:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+            uuid: ec41af6b-9b39-a9d2-73e6-ee5d157bf32a
+          - name: Light 1
+            m_enabled: true
+            transform:
+              position: [-7.66674137, -1.66850948, 11.6039734]
+              scale: [0.445900023, 0.445900023, 0.445900023]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [0.445900023, -5.61553506e-08, 3.99453306e-08, 0]
+                - [5.61553506e-08, 0.445900023, 2.51529928e-15, 0]
+                - [-3.99453306e-08, 2.51529928e-15, 0.445900023, 0]
+                - [-13.6094856, -7.30850601, 36.8688965, 1]
+              globalPosition: [-13.6094856, -7.30850601, 36.8688965]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - MeshInstance:
+                  ComponentName: MeshInstance
+                  Enabled: true
+                  directory: ""
+                  m_modelPath: res/models/cube/cube.obj
+                  MaterialBase:
+                    materialName: Material
+                    uuid: b58801b9-de10-9c64-3268-c4662a69b709
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 32
+                        texturePath: res/models/cube/plastic.jpg
+                        textureType: texture_diffuse
+                      normal:
+                        textureID: 33
+                        texturePath: res/models/cube/normal.jpg
+                        textureType: texture_normal
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 31
+                        texturePath: res/models/cube/roughness.jpg
+                        textureType: texture_roughness
+                      ambientOcclusion:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+              - PointLight:
+                  ComponentName: Point Light
+                  Enabled: true
+                  diffuse: [1, 1, 1]
+                  specular: [1, 1, 1]
+                  ambient: [0, 0, 0]
+                  intensity: 5
+                  ambientIntensity: 0.00999999978
+                  constant: 1
+                  linear: 0.0900000036
+                  quadratic: 0.0320000015
+                  castShadows: true
+                  shadowDistance: 147
+            uuid: f8449635-2a71-20ec-0641-463c66ebd68d
+          - name: Light 2
+            m_enabled: true
+            transform:
+              position: [0.602958679, 2.7638402, 8.00601006]
+              scale: [0.300000012, 0.300000012, 0.300000012]
+              rotation: [1, 0, 0, 0]
+              modelMatrix:
+                - [0.300000012, -3.77811276e-08, 2.68750817e-08, 0]
+                - [3.77811276e-08, 0.300000012, 1.69228469e-15, 0]
+                - [-2.68750817e-08, 1.69228469e-15, 0.300000012, 0]
+                - [-5.3397851, -2.87615728, 33.2709351, 1]
+              globalPosition: [-5.3397851, -2.87615728, 33.2709351]
+              m_isDirty: false
+            children:
+              []
+            components:
+              - MeshInstance:
+                  ComponentName: MeshInstance
+                  Enabled: true
+                  directory: ""
+                  m_modelPath: res/models/cube/cube.obj
+                  MaterialBase:
+                    materialName: Material
+                    uuid: b58801b9-de10-9c64-3268-c4662a69b709
+                    materialType: 0
+                    Textures:
+                      diffuse:
+                        textureID: 32
+                        texturePath: res/models/cube/plastic.jpg
+                        textureType: texture_diffuse
+                      normal:
+                        textureID: 33
+                        texturePath: res/models/cube/normal.jpg
+                        textureType: texture_normal
+                      metallic:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      roughness:
+                        textureID: 31
+                        texturePath: res/models/cube/roughness.jpg
+                        textureType: texture_roughness
+                      ambientOcclusion:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      height:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      specular:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                      emissive:
+                        textureID: 0
+                        texturePath: ""
+                        textureType: ""
+                    triplanar: false
+                    triplanarTilingScale: 1
+              - PointLight:
+                  ComponentName: Point Light
+                  Enabled: true
+                  diffuse: [1, 0.0444444418, 0]
+                  specular: [1, 1, 1]
+                  ambient: [0, 0, 0]
+                  intensity: 5
+                  ambientIntensity: 0.00999999978
+                  constant: 1
+                  linear: 0.0900000036
+                  quadratic: 0.0320000015
+                  castShadows: true
+                  shadowDistance: 216
+            uuid: 2a9d4733-b2aa-0c51-c5f4-a705244f77c5
+        components:
+          []
+        uuid: b8a45c9d-d216-2e15-e570-3dda4883e37b
+      - name: Pillar
+        m_enabled: true
+        transform:
+          position: [-0.518594623, -12.3121719, 7.8375988]
+          scale: [3.01999998, 3.01999998, 3.01999998]
+          rotation: [1, -3.86498868e-08, 0, 0]
+          modelMatrix:
+            - [3.01999998, 0, 0, 0]
+            - [0, 3.01999998, -2.3344532e-07, 0]
+            - [0, 2.3344532e-07, 3.01999998, 0]
+            - [-0.518594623, -12.3121719, 7.8375988, 1]
+          globalPosition: [-0.518594623, -12.3121719, 7.8375988]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/env/pilar.obj
+              MaterialBase:
+                materialName: Material
+                uuid: e453e821-4835-a58b-26ac-f739966adc7d
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              MaterialOverride:
+                materialName: Material
+                uuid: d4ebd28b-8232-fdf2-d3da-4504aa04647a
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 50
+                    texturePath: res\textures\rocks\Rock062_2K-JPG_Color.jpg
+                    textureType: ""
+                  normal:
+                    textureID: 51
+                    texturePath: res\textures\rocks\Rock062_2K-JPG_NormalGL.jpg
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 49
+                    texturePath: res\textures\rocks\Rock062_2K-JPG_Roughness.jpg
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 48
+                    texturePath: res\textures\rocks\Rock062_2K-JPG_AmbientOcclusion.jpg
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+        uuid: dbeca53e-822d-0423-6b56-27e4a88d0d17
+    components:
+      []
+    uuid: bbb867d1-b860-692b-fdd1-b3444fee9ca5
+LibraryAnimations:
+  Animation:
+    animationName: hades_music_vibe
+    animationPath: res/animations/hades/hades_music_vibe.fbx
+  Animation:
+    animationName: hades_guitar
+    animationPath: res/animations/hades/hades_guitar.fbx

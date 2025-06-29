@@ -1,0 +1,367 @@
+sceneName: New Scene
+uuid: 89b38105-d525-ede6-f12a-efa2b96b0458
+sceneCamera:
+  - name: sceneCamera
+    m_enabled: true
+    transform:
+      position: [-11.8429394, 26.4896526, 27.9324703]
+      scale: [1, 1, 1]
+      rotation: [-0.288959205, -0.0540770739, -0.939502358, 0.175822526]
+      modelMatrix:
+        - [-0.827156544, 0, -0.561971605, 0]
+        - [0.203222156, 0.932324231, -0.299119204, 0]
+        - [0.523939788, -0.361623496, -0.771178007, 0]
+        - [-11.8429394, 26.4896526, 27.9324703, 1]
+      globalPosition: [-11.8429394, 26.4896526, 27.9324703]
+      m_isDirty: false
+    children:
+      []
+    components:
+      - Camera:
+          ComponentName: Camera
+          Enabled: true
+          Front: [0.509274602, -0.550479233, -0.661522508]
+          Up: [0.33580339, 0.834848881, -0.436192006]
+          Right: [0.792385936, -0, 0.610020101]
+          WorldUp: [0, 1, 0]
+          Yaw: -1657.59094
+          Pitch: 33.3998947
+          MovementSpeed: 12.5
+          MouseSensitivity: 0.100000001
+          Zoom: 70
+          aspectRatio: 1.66188192
+          NearPlane: 0.100000001
+          FarPlane: 400
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/camera/camera_controller.lua
+          scriptName: camera_controller.lua
+    uuid: 3e97a314-e046-0629-5e1e-58b9d80cd219
+rootGameObject:
+  - isScene: true
+    pathToString: res\scenes\Objects\SpeakerForArena.scene
+    name: Speaker
+    m_enabled: true
+    transform:
+      position: [0, 0, 0]
+      scale: [5, 5, 5]
+      rotation: [1, 0, 0, 0]
+      modelMatrix:
+        - [5, 0, 0, 0]
+        - [0, 5, 0, 0]
+        - [0, 0, 5, 0]
+        - [0, 0, 0, 1]
+      globalPosition: [0, 0, 0]
+      m_isDirty: false
+    children:
+      - name: Speaker
+        m_enabled: true
+        transform:
+          position: [0, 0.0192451961, 0.349999994]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [5, 0, 0, 0]
+            - [0, 5, 0, 0]
+            - [0, 0, 5, 0]
+            - [0, 0.0962259769, 1.75, 1]
+          globalPosition: [0, 0.0962259769, 1.75]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/speaker_tall/SpeakerSpeaker.obj
+              MaterialBase:
+                materialName: Material
+                uuid: fa6b4f77-8860-778b-049d-07162fb97698
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              density: 2
+              samples: 100
+              fogColor: [0.211111128, 0.211111128, 0.211111128]
+              scattering: 2.60599995
+          - LuaComponent:
+              ComponentName: Lua Script
+              Enabled: true
+              scriptPath: res/scripts/speaker_mover.lua
+              scriptName: speaker_mover.lua
+        uuid: 3aa39738-3b2c-dab5-62e3-0b6e6896689d
+      - name: Base
+        m_enabled: true
+        transform:
+          position: [0, -0.973356366, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [5, 0, 0, 0]
+            - [0, 5, 0, 0]
+            - [0, 0, 5, 0]
+            - [0, -4.86678171, 0, 1]
+          globalPosition: [0, -4.86678171, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - MeshInstance:
+              ComponentName: MeshInstance
+              Enabled: true
+              directory: ""
+              m_modelPath: res/models/speaker_tall/SpeakerBase.obj
+              MaterialBase:
+                materialName: Material
+                uuid: 1b5ac971-c603-c14d-55fe-d28af8baf1e1
+                materialType: 0
+                Textures:
+                  diffuse:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  normal:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  metallic:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  roughness:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  ambientOcclusion:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  height:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  specular:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                  emissive:
+                    textureID: 0
+                    texturePath: ""
+                    textureType: ""
+                triplanar: false
+                triplanarTilingScale: 1
+              density: -0.0680000037
+              samples: 30
+              fogColor: [1, 0, 0]
+              scattering: 2.5
+        uuid: a38836f0-64a9-c8ec-e266-5021c8ba7bff
+      - name: Particles
+        m_enabled: true
+        transform:
+          position: [0, 0.809227347, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [5, 0, 0, 0]
+            - [0, 5, 0, 0]
+            - [0, 0, 5, 0]
+            - [0, 4.04613686, 0, 1]
+          globalPosition: [0, 4.04613686, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - ParticleSystem:
+              ComponentName: Particle System
+              Enabled: true
+              EmissionShape: 2
+              DrawEmissionShape: false
+              CubeSize: [6, 1, 6]
+              SphereRadius: 1
+              SphereSurfaceOnly: false
+              Emitting: false
+              MaxParticles: 10
+              SpawnRate: 1
+              OneShot: false
+              MinLifeTime: 1.29999995
+              MaxLifeTime: 2
+              MinSize: 0.800000012
+              MaxSize: 1.60000002
+              Gravity: [0, -13.8100004, 0]
+              Albedo: [1, 0.955555558, 0, 1]
+              MinInitialVelocity: [-1, 5.19999981, -1]
+              MaxInitialVelocity: [1, 6, 1]
+              CameraPosition: [-11.8429394, 26.4896526, 27.9324703]
+              BlendingAdditive: true
+              EmissionMultiplier: 41
+              UseLocalSpace: false
+              m_Initialized: true
+              m_Texture:
+                textureID: 31
+                texturePath: res\textures\kenneyparticlepack\spark_04.png
+                textureType: ""
+        uuid: cb07494f-d4c4-22e2-a927-9aa0a8aa0d04
+      - name: Smoke Particles
+        m_enabled: true
+        transform:
+          position: [0, 0.907438278, 0]
+          scale: [1, 1, 1]
+          rotation: [1, 0, 0, 0]
+          modelMatrix:
+            - [5, 0, 0, 0]
+            - [0, 5, 0, 0]
+            - [0, 0, 5, 0]
+            - [0, 4.53719139, 0, 1]
+          globalPosition: [0, 4.53719139, 0]
+          m_isDirty: false
+        children:
+          []
+        components:
+          - ParticleSystem:
+              ComponentName: Particle System
+              Enabled: true
+              EmissionShape: 2
+              DrawEmissionShape: false
+              CubeSize: [5, 1, 5]
+              SphereRadius: 1
+              SphereSurfaceOnly: false
+              Emitting: false
+              MaxParticles: 100
+              SpawnRate: 40
+              OneShot: false
+              MinLifeTime: 2.70000005
+              MaxLifeTime: 3.70000005
+              MinSize: 2
+              MaxSize: 2
+              Gravity: [0, 0.0900000036, 0]
+              Albedo: [0.203921571, 0.203921571, 0.203921571, 0.196078435]
+              MinInitialVelocity: [0, 2.29999995, 0]
+              MaxInitialVelocity: [0, 2.29999995, 0]
+              CameraPosition: [-11.8429394, 26.4896526, 27.9324703]
+              BlendingAdditive: false
+              EmissionMultiplier: 1
+              UseLocalSpace: false
+              m_Initialized: true
+              m_Texture:
+                textureID: 32
+                texturePath: res\textures\kenneyparticlepack\smoke_05.png
+                textureType: ""
+        uuid: 456589c3-0acc-05db-2cad-bc56e0af65f8
+    components:
+      - AudioSource:
+          ComponentName: Audio Source
+          Enabled: true
+          pos: [0, 0, 0]
+          bankPath: res\audio\orpheus\Build\Desktop\SpeakerSounds.bank
+          eventNames:
+            []
+          isAllPaused: false
+          flag: -842150451
+          activeEvents:
+            []
+      - CollisionShape:
+          ComponentName: CollisionShape
+          Enabled: true
+          m_shapeType: 0
+          m_boxSize: [1, 2, 1]
+          m_capsuleRadius: 0.5
+          m_capsuleHeight: 2
+          m_color: [0, 1, 0]
+          m_isVisible: false
+          m_WorldMin: [-12.5, -25, -2.5]
+          m_WorldMax: [12.5, 25, 2.5]
+          m_IsCollisionArea: true
+          m_collisionMask: 1
+          m_collisionLayer: 1
+          m_collisionPositionOffset: [0, 0, 0]
+      - PhysicsBody:
+          ComponentName: PhysicsBody
+          Enabled: true
+          mass: 1
+          velocity: [0, 0, 0]
+          useGravity: false
+          isStatic: true
+          restitution: 0.100000001
+          invMass: 0
+          accumulatedForces: [0, 0, 0]
+          linearDamping: 0.100000001
+          isGrounded: false
+          stabilizationPosition: [0, 0, 0]
+      - LuaComponent:
+          ComponentName: Lua Script
+          Enabled: true
+          scriptPath: res/scripts/speakers/speaker_collider.lua
+          scriptName: speaker_collider.lua
+    uuid: c39aa9b4-9f6e-4a8b-08d8-f38d428c831e
+LibraryAnimations:
+  Animation:
+    animationName: idle
+    animationPath: res/animations/idle.fbx
+  Animation:
+    animationName: run
+    animationPath: res/animations/run.fbx
+  Animation:
+    animationName: attack
+    animationPath: res/animations/attack_1.fbx
+  Animation:
+    animationName: hades_idle
+    animationPath: res/animations/hades/hades_idle.fbx
+  Animation:
+    animationName: attack_2
+    animationPath: res/animations/attack_2.fbx
+  Animation:
+    animationName: dance
+    animationPath: res/models/skeleton/skeleton.fbx
+  Animation:
+    animationName: twerk
+    animationPath: res/animations/twerk.fbx
+  Animation:
+    animationName: hades_run
+    animationPath: res/animations/hades/hades_run.fbx
+  Animation:
+    animationName: hades_guitar
+    animationPath: res/animations/hades/hades_guitar.fbx
+  Animation:
+    animationName: hades_stun
+    animationPath: res/animations/hades/hades_stun.fbx
+  Animation:
+    animationName: roll
+    animationPath: res/animations/roll.fbx
+  Animation:
+    animationName: hades_attack
+    animationPath: res/animations/hades/hades_attack.fbx
