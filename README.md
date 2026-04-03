@@ -2,7 +2,7 @@
 This is the public repository containing <b>dBengine</b> and its' editor. Compile the project using provided CMakeLists file.
 
 ## Learn more 
-To learn more about the engine, visit [author's blog](headeach.github.io).
+To learn more about the engine, visit [author's blog](https://headaech.github.io/).
 
 # How to run dBeditor? <br>
 To run dBeditor all you need to do is launch the dBengine.exe. That's all.
