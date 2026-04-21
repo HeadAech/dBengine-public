@@ -68,4 +68,6 @@ Signal<float, float> Signals::PostProcessing_TriggerCameraShake;
 
 Signal<> Signals::PostProcessing_ApplyProperties;
 
+Signal<> Signals::PostProcessing_ClearProperties;
+
 Signal<> Signals::ForceRenderLights;

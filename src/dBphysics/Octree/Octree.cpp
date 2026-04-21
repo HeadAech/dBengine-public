@@ -169,12 +169,16 @@ void Octree::getColliderBounds(CollisionShape *collider, glm::vec3 &outMin, glm:
 void Octree::Render(Shader *shader) const {
     if (!m_root || !m_visible)
         return;
+
     shader->Use();
+
+    glDisable(GL_DEPTH_TEST);
     renderNode(m_root.get(), shader);
+    glEnable(GL_DEPTH_TEST);
 }
 
 void Octree::renderNode(const OctreeNode *node, Shader *shader) const {
-    if (!node)
+    if (!node || !m_visible)
         return;
     glm::vec3 blue = glm::vec3(0.3f, 0.3f, 1.0f);
     shader->SetVec3("color", blue);

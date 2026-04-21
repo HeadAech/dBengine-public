@@ -9,7 +9,7 @@ function onReady()
 end
 
 function onMouseMotion(offsetX, offsetY)
-    if not (Input.IsCursorLocked() and camera.isUsed) then
+    if not ((Input.IsCursorLocked() or Input.IsCursorLockedByAction()) and camera.isUsed) then
         return
     end
 
@@ -49,8 +49,8 @@ function onUpdate(deltaTime)
         return
     end
 
-    if Input.IsActionJustPressed("toggle_camera") then
-        Input.SetCursorLocked(not Input.IsCursorLocked())
+    if Input.IsActionJustPressed("toggle_camera") and not Input.IsCursorLocked() then
+        Input.SetCursorLockedByAction(not Input.IsCursorLockedByAction())
     end
 
     if Input.IsActionPressed("forward") then
@@ -72,7 +72,7 @@ function onUpdate(deltaTime)
 end
 
 function movement(deltaTime, direction)
-    if not (Input.IsCursorLocked() and camera.isUsed) then
+    if not ((Input.IsCursorLocked() or Input.IsCursorLockedByAction()) and camera.isUsed) then
         return
     end
 

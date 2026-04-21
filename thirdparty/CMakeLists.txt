@@ -136,6 +136,9 @@ add_library(imgui STATIC ${imgui_SOURCE_DIR}/imgui.cpp
 					     ${imgui_SOURCE_DIR}/imgui_widgets.cpp)
 
 
+
+add_library(imgui::imgui ALIAS imgui)
+
 target_include_directories(ImGuiFileDialog PUBLIC
     ${imgui_SOURCE_DIR}
     ${imgui_SOURCE_DIR}/backends

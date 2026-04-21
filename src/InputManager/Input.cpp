@@ -81,14 +81,23 @@ bool Input::isKeyMouseButton(int key) {
     return inActions && inMouseActions;
 }
 
-void Input::SetCursorLocked(bool isLocked) {
-    m_cursorLocked = isLocked;
+void Input::UpdateCursorState(bool isLocked) { 
     if (isLocked) {
         m_firstMouse = true;
         glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     } else {
         glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
     }
+}
+
+void Input::SetCursorLocked(bool isLocked) {
+    m_cursorLocked = isLocked;
+    UpdateCursorState(isLocked);
+}
+
+void Input::SetCursorLockedByAction(bool isLocked) {
+    m_cursorLockedByAction = isLocked;
+    UpdateCursorState(isLocked);
 }
 
 void Input::ProcessMouseMovement(GLFWwindow *window, double xpos, double ypos) {

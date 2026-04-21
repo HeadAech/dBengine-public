@@ -252,6 +252,7 @@ void CollisionShape::Render(Shader *shader) const {
 
         glBindVertexArray(0);
     }
+    glEnable(GL_DEPTH_TEST);
 }
 
 void CollisionShape::RenderColliders(Shader *shader) {

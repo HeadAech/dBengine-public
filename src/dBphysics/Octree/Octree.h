@@ -64,8 +64,8 @@ private:
     int m_maxDepth = 2;
     mutable int m_nextNodeId = 0;
 
-    glm::vec3 m_worldMin = glm::vec3(-200.0f, -50.0f, -200.0f);
-    glm::vec3 m_worldMax = glm::vec3(200.0f, 130.0f, 200.0f);
+    glm::vec3 m_worldMin = glm::vec3(-500.0f, -200.0f, -500.0f);
+    glm::vec3 m_worldMax = glm::vec3(500.0f, 250.0f, 500.0f);
 
     std::unique_ptr<OctreeNode> buildNode(const glm::vec3 &min, const glm::vec3 &max, int depth,
                                           OctreeNode *parent = nullptr);

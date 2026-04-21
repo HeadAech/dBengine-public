@@ -25,7 +25,7 @@ void AddComponentPanel::Draw() {
         "Spot Light",      "Particle System",    "Animator",        
         "Physics Body",    "Tag",                "UI::Button",      
         "UI::Text",        "UI::Sprite",         "AISystem",      
-        "AIAgent",         "NavigationMesh",     "NavigationTarget"
+        "AIAgent",     "NavigationMesh",  "NavigationTarget", "World Environment"
     };
     static int selectedComponentToAdd = 0;
 
@@ -128,6 +128,8 @@ void AddComponentPanel::Draw() {
                 gui.selectedGameObject->AddComponent<NavigationMesh>();
             } else if (availableComponents.at(selectedComponentToAdd) == "NavigationTarget") {
                 gui.selectedGameObject->AddComponent<NavigationTarget>();
+            } else if (availableComponents.at(selectedComponentToAdd) == "World Environment") {
+                gui.selectedGameObject->AddComponent<WorldEnvironment>();
             }
 
             ImGui::CloseCurrentPopup();

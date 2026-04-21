@@ -241,6 +241,11 @@ public:
 
     static Signal<> PostProcessing_ApplyProperties;
 
+    /// <summary>
+    /// Clear all postprocessing effects, mainly used when changing scenes.
+    /// </summary>
+    static Signal<> PostProcessing_ClearProperties;
+
     static Signal<> ForceRenderLights;
 };
 

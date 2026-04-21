@@ -139,7 +139,7 @@ bool dBengine::Initialize() {
     }
 
     // Create window with graphics context
-    window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "dBengine v0.0.4", NULL, NULL);
+    window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "dBengine v0.1.0", NULL, NULL);
 
     GLFWimage images[1];
     images[0].pixels = stbi_load("res/textures/dBengine_logo_icon.png", &images[0].width, &images[0].height, 0, 4);
@@ -899,12 +899,13 @@ void dBengine::CheckSceneLoad()
 
 void dBengine::LoadSceneAsync(std::string filePath)
 {
+
     if (!Util::fileExists(filePath.data()))
     {
         //debug.PrintError("My sincerest apologies, but it appears the file located at '" + filePath + "' could not be found");
         return;
     }
-
+    Signals::PostProcessing_ClearProperties.emit();
     currentScene->isActive = false;
     renderer.prepForSceneLoad();
     //engineGUI.ShowLoadingScreen();
@@ -943,7 +944,7 @@ std::optional<std::shared_ptr<Scene>> dBengine::LoadSceneTask(std::string filePa
 }
 
 void dBengine::NewScene(std::string filePath) { 
-    
+    Signals::PostProcessing_ClearProperties.emit();
     auto it = std::find_if(scenes.begin(), scenes.end(),
                            [&](const std::shared_ptr<Scene> &s) { return s->name == currentScene->name; });
 

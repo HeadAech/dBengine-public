@@ -37,6 +37,7 @@ public:
     float irradianceStrength = 1.0f;
     float sampleDelta = 0.1f;
 
+    WorldEnvironment();
     WorldEnvironment(const std::string& skyboxPath);
     std::string m_skyboxPath;
     ~WorldEnvironment() = default; 

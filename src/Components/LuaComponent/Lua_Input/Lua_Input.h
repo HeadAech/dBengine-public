@@ -21,6 +21,7 @@ public:
     // getters
     sol::table Lua_GetMousePosition();
     bool Lua_IsCursorLocked();
+    bool Lua_IsCursorLockedByAction();
 
     // inputs actions
     bool Lua_IsActionJustPressed(std::string actionName);

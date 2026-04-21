@@ -5,6 +5,11 @@
 #include <GLFW/glfw3.h>
 #include "Components/Camera/Camera.h"
 
+WorldEnvironment::WorldEnvironment() { 
+    name = "WorldEnvironment";
+    icon = ICON_FA_GLOBE;
+}
+
 WorldEnvironment::WorldEnvironment(const std::string &skyboxPath) { 
 	name = "WorldEnvironment";
     icon = ICON_FA_GLOBE;

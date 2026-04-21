@@ -191,10 +191,10 @@ void ViewportPanel::Draw() {
         ImGui::BeginChild("OpenGL Frame");
 
         if (ImGui::IsWindowHovered(ImGuiHoveredFlags_AllowWhenBlockedByPopup)) {
-            //if (Input::GetInstance().IsActionJustPressed("mouse2")) {
-            //    m_movingCameraInEditor = true;
-            //    Input::GetInstance().SetCursorLocked(true);
-            //}
+            if (!Input::GetInstance().m_cursorLockedByAction && Input::GetInstance().IsActionJustPressed("mouse2")) {
+                m_movingCameraInEditor = true;
+                Input::GetInstance().SetCursorLocked(true);
+            }
 
             ImVec2 mousePos = ImGui::GetMousePos();
             ImVec2 windowPos = ImGui::GetWindowPos();
@@ -211,10 +211,11 @@ void ViewportPanel::Draw() {
             }
         }
 
-        //if (m_movingCameraInEditor && Input::GetInstance().IsActionJustReleased("mouse2")) {
-        //    m_movingCameraInEditor = false;
-        //    Input::GetInstance().SetCursorLocked(false);
-        //}
+        if (!Input::GetInstance().m_cursorLockedByAction && m_movingCameraInEditor 
+            && Input::GetInstance().IsActionJustReleased("mouse2")) {
+            m_movingCameraInEditor = false;
+            Input::GetInstance().SetCursorLocked(false);
+        }
 
         const float window_width = ImGui::GetContentRegionAvail().x;
         const float window_height = ImGui::GetContentRegionAvail().y;

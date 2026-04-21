@@ -237,9 +237,17 @@ void LuaComponent::SetScript(const std::string& path)
         {
             return Input::GetInstance().m_cursorLocked;
         },
+        "IsCursorLockedByAction", []()
+        {
+            return Input::GetInstance().m_cursorLockedByAction;
+        },
         "SetCursorLocked", [](bool set)
         {
             Input::GetInstance().SetCursorLocked(set);
+        },
+        "SetCursorLockedByAction", [](bool set)
+        {
+            Input::GetInstance().SetCursorLockedByAction(set);
         }
     );
 

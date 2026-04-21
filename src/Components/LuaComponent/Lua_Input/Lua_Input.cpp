@@ -23,7 +23,7 @@ void Lua_Input::Register() {
             "Input",
             // mouse
             "GetMousePosition", &Lua_Input::Lua_GetMousePosition, "IsCursorLocked", &Lua_Input::Lua_IsCursorLocked,
-            "SetCursorLocked", &Lua_Input::Lua_SetCursorLocked,
+            "SetCursorLocked", &Lua_Input::Lua_SetCursorLocked, "IsCursorLockedByAction", &Lua_Input::Lua_IsCursorLocked,
 
             // actions
             "IsActionJustPressed", &Lua_Input::Lua_IsActionJustPressed, "IsActionJustReleased",
@@ -56,6 +56,8 @@ sol::table Lua_Input::Lua_GetMousePosition() {
 }
 
 bool Lua_Input::Lua_IsCursorLocked() { return Input::GetInstance().m_cursorLocked; }
+
+bool Lua_Input::Lua_IsCursorLockedByAction() { return Input::GetInstance().m_cursorLockedByAction; }
 
 bool Lua_Input::Lua_IsActionJustPressed(std::string actionName) {
     return Input::GetInstance().IsActionJustPressed(actionName);

@@ -24,6 +24,11 @@ public:
     bool m_cursorLocked = false;
 
     /// <summary>
+    /// Boolean indicating whether a camera lock was made by InputAction
+    /// </summary>
+    bool m_cursorLockedByAction = false;
+
+    /// <summary>
     /// Boolean indicating whether the first mouse movement has occurred.
     /// </summary>
     bool m_firstMouse = true;
@@ -115,10 +120,22 @@ public:
     void RegisterAction(std::string actionName, int key, bool isMouseButton = false);
 
     /// <summary>
+    /// Helper function for updating the cursor state
+    /// </summary>
+    /// <param name="isLocked">Lock state (bool)</param>
+    void UpdateCursorState(bool isLocked); 
+
+    /// <summary>
     /// Sets the cursor lock state for the GLFW window.
     /// </summary>
     /// <param name="isLocked">Lock state (bool)</param>
     void SetCursorLocked(bool isLocked);
+
+    /// <summary>
+    /// Sets the cursor lock state for the GLFW window - Action only.
+    /// </summary>
+    /// <param name="isLockedByAction">Lock state (bool)</param>
+    void SetCursorLockedByAction(bool isLockedByAction);
 
     /// <summary>
     /// Processes mouse movement events for the given GLFW window.

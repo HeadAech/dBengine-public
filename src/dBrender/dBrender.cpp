@@ -76,6 +76,32 @@ dBrender::dBrender() {
                 m_HUDShader->SetFloat("u_ScanlineProbability", settings.scanlineProbability);
             }
         });
+
+    Signals::PostProcessing_ClearProperties.connect(this->uuid, [this]() {
+        auto &settings = EngineSettings::GetEngineSettings();
+        if (hdrShader) {
+            hdrShader->Use();
+            hdrShader->SetFloat("u_VignetteStrength", 0);
+            hdrShader->SetBool("u_EnableGlitchEffect", false);
+            hdrShader->SetFloat("glitchIntensity", 0);
+            hdrShader->SetFloat("glitchFrequency", 0);
+        }
+
+        if (m_HUDShader) {
+            m_HUDShader->Use();
+            m_HUDShader->SetFloat("u_FisheyeStrength", 0);
+            m_HUDShader->SetFloat("u_ChromaticStrength", 0);
+            m_HUDShader->SetFloat("u_ShadowRadius", settings.shadowRadius);
+            m_HUDShader->SetVec3("u_ShadowColor", settings.shadowColor);
+            m_HUDShader->SetFloat("u_ShadowIntensity", settings.shadowIntensity);
+            m_HUDShader->SetVec2("u_ShadowOffset", settings.shadowOffset);
+            m_HUDShader->SetBool("u_DistortionEnabled", false);
+            m_HUDShader->SetFloat("u_DisplacementStrength", 0);
+            m_HUDShader->SetFloat("u_DisplacementSpeed", 0);
+            m_HUDShader->SetFloat("u_ScanlineHeight", 0);
+            m_HUDShader->SetFloat("u_ScanlineProbability", 0);
+        }
+    });
 }
 
 dBrender &dBrender::GetInstance() {
